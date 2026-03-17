@@ -1,0 +1,3723 @@
+[
+  {
+    "result": "REVIEW",
+    "reason": "Found 1 potential focus order issue(s) requiring manual verification",
+    "evidence": {
+      "violations": [
+        {
+          "type": "order-divergence",
+          "percentage": "17.8",
+          "threshold": "10.0",
+          "severity": "medium",
+          "reason": "Tab order significantly differs from DOM order (17.8% divergence, threshold: 10.0%)",
+          "remediation": "Manual review required: Verify tab order preserves meaning and operability for this specific content"
+        }
+      ],
+      "tabSequence": [
+        {
+          "selector": "div#QNavMainHeaderNav > nav > div > a",
+          "tabIndex": 0,
+          "position": {
+            "top": 30,
+            "left": 40
+          }
+        },
+        {
+          "selector": "div#QNavMainHeaderNav > nav > div > ul > li > button",
+          "tabIndex": 0,
+          "position": {
+            "top": 26,
+            "left": 141
+          }
+        },
+        {
+          "selector": "div#QNavMainHeaderNav > nav > div > ul > li:nth-of-type(2) > button",
+          "tabIndex": 0,
+          "position": {
+            "top": 26,
+            "left": 260.59375
+          }
+        },
+        {
+          "selector": "div#QNavMainHeaderNav > nav > div > ul > li:nth-of-type(3) > button",
+          "tabIndex": 0,
+          "position": {
+            "top": 26,
+            "left": 382.7734375
+          }
+        },
+        {
+          "selector": "div#QNavMainHeaderNav > nav > div > ul > li:nth-of-type(4) > a",
+          "tabIndex": 0,
+          "position": {
+            "top": 26,
+            "left": 514.1796875
+          }
+        },
+        {
+          "selector": "div#QNavMainHeaderNav > nav > div > ul > li:nth-of-type(5) > button",
+          "tabIndex": 0,
+          "position": {
+            "top": 26,
+            "left": 590.75
+          }
+        },
+        {
+          "selector": "div#QNavMainHeaderNav > nav > div > div > div > button",
+          "tabIndex": 0,
+          "position": {
+            "top": 24,
+            "left": 904.109375
+          }
+        },
+        {
+          "selector": "div#QNavMainHeaderNav > nav > div > div > div:nth-of-type(2) > a",
+          "tabIndex": 0,
+          "position": {
+            "top": 25,
+            "left": 1005.5
+          }
+        },
+        {
+          "selector": "div#QNavMainHeaderNav > nav > div > div > button",
+          "tabIndex": 0,
+          "position": {
+            "top": 25,
+            "left": 1077.0859375
+          }
+        },
+        {
+          "selector": "html > body > div > main > article > section > div > div > div > section > div > div > div:nth-of-type(4) > div > button",
+          "tabIndex": 0,
+          "position": {
+            "top": 708.453125,
+            "left": 88.546875
+          }
+        },
+        {
+          "selector": "#button-container",
+          "tabIndex": 0,
+          "position": {
+            "top": 859.9921875,
+            "left": 24
+          }
+        },
+        {
+          "selector": "html > body > div > main > article > section:nth-of-type(4) > div > div > section > div:nth-of-type(2) > div > div:nth-of-type(2) > div > div > div > div > button",
+          "tabIndex": 0,
+          "position": {
+            "top": 1749.4921875,
+            "left": 104.546875
+          }
+        },
+        {
+          "selector": "html > body > div > main > article > section:nth-of-type(4) > div > div > section > div:nth-of-type(2) > div > div:nth-of-type(2) > div > div > div > div > div > div > div:nth-of-type(2) > a",
+          "tabIndex": 0,
+          "position": {
+            "top": 1795.4453125,
+            "left": 104.546875
+          }
+        },
+        {
+          "selector": "html > body > div > main > article > section:nth-of-type(4) > div > div > section > div:nth-of-type(2) > div > div:nth-of-type(2) > div > div > div > div:nth-of-type(2) > button",
+          "tabIndex": 0,
+          "position": {
+            "top": 1801.4453125,
+            "left": 104.546875
+          }
+        },
+        {
+          "selector": "html > body > div > main > article > section:nth-of-type(4) > div > div > section > div:nth-of-type(2) > div > div:nth-of-type(2) > div > div > div > div:nth-of-type(2) > div > div > div:nth-of-type(2) > a",
+          "tabIndex": 0,
+          "position": {
+            "top": 1894.3515625,
+            "left": 104.546875
+          }
+        },
+        {
+          "selector": "html > body > div > main > article > section:nth-of-type(4) > div > div > section > div:nth-of-type(2) > div > div:nth-of-type(2) > div > div > div > div:nth-of-type(3) > button",
+          "tabIndex": 0,
+          "position": {
+            "top": 1907.3515625,
+            "left": 104.546875
+          }
+        },
+        {
+          "selector": "html > body > div > main > article > section:nth-of-type(4) > div > div > section > div:nth-of-type(2) > div > div:nth-of-type(2) > div > div > div > div:nth-of-type(3) > div > div > div:nth-of-type(2) > a",
+          "tabIndex": 0,
+          "position": {
+            "top": 1962.3046875,
+            "left": 104.546875
+          }
+        },
+        {
+          "selector": "html > body > div > main > article > section:nth-of-type(5) > div > div > section > div:nth-of-type(2) > div > div:nth-of-type(2) > div > div > div > div > button",
+          "tabIndex": 0,
+          "position": {
+            "top": 2612.8046875,
+            "left": 104.546875
+          }
+        },
+        {
+          "selector": "html > body > div > main > article > section:nth-of-type(5) > div > div > section > div:nth-of-type(2) > div > div:nth-of-type(2) > div > div > div > div > div > div > div:nth-of-type(2) > a",
+          "tabIndex": 0,
+          "position": {
+            "top": 2650.2578125,
+            "left": 104.546875
+          }
+        },
+        {
+          "selector": "html > body > div > main > article > section:nth-of-type(5) > div > div > section > div:nth-of-type(2) > div > div:nth-of-type(2) > div > div > div > div:nth-of-type(2) > button",
+          "tabIndex": 0,
+          "position": {
+            "top": 2663.2578125,
+            "left": 104.546875
+          }
+        },
+        {
+          "selector": "html > body > div > main > article > section:nth-of-type(5) > div > div > section > div:nth-of-type(2) > div > div:nth-of-type(2) > div > div > div > div:nth-of-type(2) > div > div > div:nth-of-type(2) > a",
+          "tabIndex": 0,
+          "position": {
+            "top": 2728.7109375,
+            "left": 104.546875
+          }
+        },
+        {
+          "selector": "html > body > div > main > article > section:nth-of-type(5) > div > div > section > div:nth-of-type(2) > div > div:nth-of-type(2) > div > div > div > div:nth-of-type(3) > button",
+          "tabIndex": 0,
+          "position": {
+            "top": 2732.7109375,
+            "left": 104.546875
+          }
+        },
+        {
+          "selector": "html > body > div > main > article > section:nth-of-type(5) > div > div > section > div:nth-of-type(2) > div > div:nth-of-type(2) > div > div > div > div:nth-of-type(3) > div > div > div:nth-of-type(2) > a",
+          "tabIndex": 0,
+          "position": {
+            "top": 2798.1640625,
+            "left": 104.546875
+          }
+        },
+        {
+          "selector": "html > body > div > main > article > section:nth-of-type(6) > div > div > section > div:nth-of-type(2) > div > div:nth-of-type(2) > div > div > div > div > button",
+          "tabIndex": 0,
+          "position": {
+            "top": 3395.6640625,
+            "left": 104.546875
+          }
+        },
+        {
+          "selector": "html > body > div > main > article > section:nth-of-type(6) > div > div > section > div:nth-of-type(2) > div > div:nth-of-type(2) > div > div > div > div > div > div > div:nth-of-type(2) > a",
+          "tabIndex": 0,
+          "position": {
+            "top": 3439.1171875,
+            "left": 104.546875
+          }
+        },
+        {
+          "selector": "html > body > div > main > article > section:nth-of-type(6) > div > div > section > div:nth-of-type(2) > div > div:nth-of-type(2) > div > div > div > div:nth-of-type(2) > button",
+          "tabIndex": 0,
+          "position": {
+            "top": 3453.1171875,
+            "left": 104.546875
+          }
+        },
+        {
+          "selector": "html > body > div > main > article > section:nth-of-type(6) > div > div > section > div:nth-of-type(2) > div > div:nth-of-type(2) > div > div > div > div:nth-of-type(2) > div > div > div:nth-of-type(2) > a",
+          "tabIndex": 0,
+          "position": {
+            "top": 3512.5703125,
+            "left": 104.546875
+          }
+        },
+        {
+          "selector": "html > body > div > main > article > section:nth-of-type(6) > div > div > section > div:nth-of-type(2) > div > div:nth-of-type(2) > div > div > div > div:nth-of-type(3) > button",
+          "tabIndex": 0,
+          "position": {
+            "top": 3508.1015625,
+            "left": 104.546875
+          }
+        },
+        {
+          "selector": "html > body > div > main > article > section:nth-of-type(6) > div > div > section > div:nth-of-type(2) > div > div:nth-of-type(2) > div > div > div > div:nth-of-type(3) > div > div > div:nth-of-type(2) > a",
+          "tabIndex": 0,
+          "position": {
+            "top": 3564.0546875,
+            "left": 104.546875
+          }
+        },
+        {
+          "selector": "div#swiper-wrapper-79b35bd5cf210466c > div > div > div > div > div:nth-of-type(4) > a",
+          "tabIndex": 0,
+          "position": {
+            "top": 4504.0703125,
+            "left": 88
+          }
+        },
+        {
+          "selector": "div#swiper-wrapper-79b35bd5cf210466c > div > div > div > div > div:nth-of-type(4) > a:nth-of-type(2)",
+          "tabIndex": 0,
+          "position": {
+            "top": 4487.5703125,
+            "left": 274.34375
+          }
+        },
+        {
+          "selector": "div#swiper-wrapper-79b35bd5cf210466c > div:nth-of-type(2) > div > div > div > div:nth-of-type(4) > a",
+          "tabIndex": 0,
+          "position": {
+            "top": 4474.0703125,
+            "left": 87.9947509765625
+          }
+        },
+        {
+          "selector": "div#swiper-wrapper-79b35bd5cf210466c > div:nth-of-type(2) > div > div > div > div:nth-of-type(4) > a:nth-of-type(2)",
+          "tabIndex": 0,
+          "position": {
+            "top": 4463.0703125,
+            "left": 274.3385009765625
+          }
+        },
+        {
+          "selector": "div#swiper-wrapper-79b35bd5cf210466c > div:nth-of-type(3) > div > div > div > div:nth-of-type(4) > a",
+          "tabIndex": 0,
+          "position": {
+            "top": 4447.0703125,
+            "left": 87.989501953125
+          }
+        },
+        {
+          "selector": "div#swiper-wrapper-79b35bd5cf210466c > div:nth-of-type(3) > div > div > div > div:nth-of-type(4) > a:nth-of-type(2)",
+          "tabIndex": 0,
+          "position": {
+            "top": 4433.0703125,
+            "left": 274.333251953125
+          }
+        },
+        {
+          "selector": "div#swiper-wrapper-79b35bd5cf210466c > div:nth-of-type(4) > div > div > div > div:nth-of-type(4) > a",
+          "tabIndex": 0,
+          "position": {
+            "top": 4422.5703125,
+            "left": 87.984375
+          }
+        },
+        {
+          "selector": "div#swiper-wrapper-79b35bd5cf210466c > div:nth-of-type(4) > div > div > div > div:nth-of-type(4) > a:nth-of-type(2)",
+          "tabIndex": 0,
+          "position": {
+            "top": 4412.0703125,
+            "left": 274.328125
+          }
+        },
+        {
+          "selector": "div#swiper-wrapper-79b35bd5cf210466c > div:nth-of-type(3) > div > div > div > div:nth-of-type(4) > a",
+          "tabIndex": 0,
+          "position": {
+            "top": 4393.0703125,
+            "left": 87.989501953125
+          }
+        },
+        {
+          "selector": "div#swiper-wrapper-79b35bd5cf210466c > div:nth-of-type(3) > div > div > div > div:nth-of-type(4) > a:nth-of-type(2)",
+          "tabIndex": 0,
+          "position": {
+            "top": 4382.5703125,
+            "left": 274.333251953125
+          }
+        },
+        {
+          "selector": "div#swiper-wrapper-79b35bd5cf210466c > div:nth-of-type(4) > div > div > div > div:nth-of-type(4) > a",
+          "tabIndex": 0,
+          "position": {
+            "top": 4366.5703125,
+            "left": 87.984375
+          }
+        },
+        {
+          "selector": "div#swiper-wrapper-79b35bd5cf210466c > div:nth-of-type(4) > div > div > div > div:nth-of-type(4) > a:nth-of-type(2)",
+          "tabIndex": 0,
+          "position": {
+            "top": 4353.0703125,
+            "left": 274.328125
+          }
+        },
+        {
+          "selector": "div#swiper-wrapper-79b35bd5cf210466c > div:nth-of-type(3) > div > div > div > div:nth-of-type(4) > a",
+          "tabIndex": 0,
+          "position": {
+            "top": 4343.0703125,
+            "left": 87.989501953125
+          }
+        },
+        {
+          "selector": "div#swiper-wrapper-79b35bd5cf210466c > div:nth-of-type(3) > div > div > div > div:nth-of-type(4) > a:nth-of-type(2)",
+          "tabIndex": 0,
+          "position": {
+            "top": 4326.5703125,
+            "left": 274.333251953125
+          }
+        },
+        {
+          "selector": "div#swiper-wrapper-79b35bd5cf210466c > div:nth-of-type(4) > div > div > div > div:nth-of-type(4) > a",
+          "tabIndex": 0,
+          "position": {
+            "top": 4313.5703125,
+            "left": 87.984375
+          }
+        },
+        {
+          "selector": "div#swiper-wrapper-79b35bd5cf210466c > div:nth-of-type(4) > div > div > div > div:nth-of-type(4) > a:nth-of-type(2)",
+          "tabIndex": 0,
+          "position": {
+            "top": 4294.0703125,
+            "left": 274.328125
+          }
+        },
+        {
+          "selector": "div#swiper-wrapper-79b35bd5cf210466c > div:nth-of-type(3) > div > div > div > div:nth-of-type(4) > a",
+          "tabIndex": 0,
+          "position": {
+            "top": 4284.0703125,
+            "left": 87.989501953125
+          }
+        },
+        {
+          "selector": "div#swiper-wrapper-79b35bd5cf210466c > div:nth-of-type(3) > div > div > div > div:nth-of-type(4) > a:nth-of-type(2)",
+          "tabIndex": 0,
+          "position": {
+            "top": 4274.0703125,
+            "left": 274.333251953125
+          }
+        },
+        {
+          "selector": "div#swiper-wrapper-79b35bd5cf210466c > div:nth-of-type(4) > div > div > div > div:nth-of-type(4) > a",
+          "tabIndex": 0,
+          "position": {
+            "top": 4255.0703125,
+            "left": 87.984375
+          }
+        },
+        {
+          "selector": "div#swiper-wrapper-79b35bd5cf210466c > div:nth-of-type(4) > div > div > div > div:nth-of-type(4) > a:nth-of-type(2)",
+          "tabIndex": 0,
+          "position": {
+            "top": 4244.5703125,
+            "left": 274.328125
+          }
+        },
+        {
+          "selector": "div#swiper-wrapper-79b35bd5cf210466c > div:nth-of-type(3) > div > div > div > div:nth-of-type(4) > a",
+          "tabIndex": 0,
+          "position": {
+            "top": 4234.0703125,
+            "left": 87.989501953125
+          }
+        },
+        {
+          "selector": "div#swiper-wrapper-79b35bd5cf210466c > div:nth-of-type(3) > div > div > div > div:nth-of-type(4) > a:nth-of-type(2)",
+          "tabIndex": 0,
+          "position": {
+            "top": 4217.0703125,
+            "left": 274.333251953125
+          }
+        },
+        {
+          "selector": "div#swiper-wrapper-79b35bd5cf210466c > div:nth-of-type(4) > div > div > div > div:nth-of-type(4) > a",
+          "tabIndex": 0,
+          "position": {
+            "top": 4204.0703125,
+            "left": 87.984375
+          }
+        },
+        {
+          "selector": "div#swiper-wrapper-79b35bd5cf210466c > div:nth-of-type(4) > div > div > div > div:nth-of-type(4) > a:nth-of-type(2)",
+          "tabIndex": 0,
+          "position": {
+            "top": 4188.0703125,
+            "left": 274.328125
+          }
+        },
+        {
+          "selector": "div#swiper-wrapper-79b35bd5cf210466c > div:nth-of-type(3) > div > div > div > div:nth-of-type(4) > a",
+          "tabIndex": 0,
+          "position": {
+            "top": 4174.5703125,
+            "left": 87.989501953125
+          }
+        },
+        {
+          "selector": "div#swiper-wrapper-79b35bd5cf210466c > div:nth-of-type(3) > div > div > div > div:nth-of-type(4) > a:nth-of-type(2)",
+          "tabIndex": 0,
+          "position": {
+            "top": 4164.0703125,
+            "left": 274.333251953125
+          }
+        },
+        {
+          "selector": "div#swiper-wrapper-79b35bd5cf210466c > div:nth-of-type(4) > div > div > div > div:nth-of-type(4) > a",
+          "tabIndex": 0,
+          "position": {
+            "top": 4147.0703125,
+            "left": 87.984375
+          }
+        },
+        {
+          "selector": "div#swiper-wrapper-79b35bd5cf210466c > div:nth-of-type(4) > div > div > div > div:nth-of-type(4) > a:nth-of-type(2)",
+          "tabIndex": 0,
+          "position": {
+            "top": 4134.5703125,
+            "left": 274.328125
+          }
+        },
+        {
+          "selector": "div#swiper-wrapper-79b35bd5cf210466c > div:nth-of-type(3) > div > div > div > div:nth-of-type(4) > a",
+          "tabIndex": 0,
+          "position": {
+            "top": 4123.5703125,
+            "left": 87.989501953125
+          }
+        },
+        {
+          "selector": "div#swiper-wrapper-79b35bd5cf210466c > div:nth-of-type(3) > div > div > div > div:nth-of-type(4) > a:nth-of-type(2)",
+          "tabIndex": 0,
+          "position": {
+            "top": 4107.5703125,
+            "left": 274.333251953125
+          }
+        },
+        {
+          "selector": "div#swiper-wrapper-79b35bd5cf210466c > div:nth-of-type(4) > div > div > div > div:nth-of-type(4) > a",
+          "tabIndex": 0,
+          "position": {
+            "top": 4094.0703125,
+            "left": 87.984375
+          }
+        },
+        {
+          "selector": "div#swiper-wrapper-79b35bd5cf210466c > div:nth-of-type(4) > div > div > div > div:nth-of-type(4) > a:nth-of-type(2)",
+          "tabIndex": 0,
+          "position": {
+            "top": 4083.5703125,
+            "left": 274.328125
+          }
+        },
+        {
+          "selector": "div#swiper-wrapper-79b35bd5cf210466c > div:nth-of-type(3) > div > div > div > div:nth-of-type(4) > a",
+          "tabIndex": 0,
+          "position": {
+            "top": 4073.0703125,
+            "left": 87.989501953125
+          }
+        },
+        {
+          "selector": "div#swiper-wrapper-79b35bd5cf210466c > div:nth-of-type(3) > div > div > div > div:nth-of-type(4) > a:nth-of-type(2)",
+          "tabIndex": 0,
+          "position": {
+            "top": 4056.5703125,
+            "left": 274.333251953125
+          }
+        },
+        {
+          "selector": "div#swiper-wrapper-79b35bd5cf210466c > div:nth-of-type(4) > div > div > div > div:nth-of-type(4) > a",
+          "tabIndex": 0,
+          "position": {
+            "top": 4043.5703125,
+            "left": 87.984375
+          }
+        },
+        {
+          "selector": "div#swiper-wrapper-79b35bd5cf210466c > div:nth-of-type(4) > div > div > div > div:nth-of-type(4) > a:nth-of-type(2)",
+          "tabIndex": 0,
+          "position": {
+            "top": 4033.0703125,
+            "left": 274.328125
+          }
+        },
+        {
+          "selector": "div#swiper-wrapper-79b35bd5cf210466c > div:nth-of-type(3) > div > div > div > div:nth-of-type(4) > a",
+          "tabIndex": 0,
+          "position": {
+            "top": 4014.0703125,
+            "left": 87.989501953125
+          }
+        },
+        {
+          "selector": "div#swiper-wrapper-79b35bd5cf210466c > div:nth-of-type(3) > div > div > div > div:nth-of-type(4) > a:nth-of-type(2)",
+          "tabIndex": 0,
+          "position": {
+            "top": 4003.5703125,
+            "left": 274.333251953125
+          }
+        },
+        {
+          "selector": "div#swiper-wrapper-79b35bd5cf210466c > div:nth-of-type(4) > div > div > div > div:nth-of-type(4) > a",
+          "tabIndex": 0,
+          "position": {
+            "top": 3993.0703125,
+            "left": 87.984375
+          }
+        },
+        {
+          "selector": "div#swiper-wrapper-79b35bd5cf210466c > div:nth-of-type(4) > div > div > div > div:nth-of-type(4) > a:nth-of-type(2)",
+          "tabIndex": 0,
+          "position": {
+            "top": 3974.0703125,
+            "left": 274.328125
+          }
+        },
+        {
+          "selector": "div#swiper-wrapper-79b35bd5cf210466c > div:nth-of-type(3) > div > div > div > div:nth-of-type(4) > a",
+          "tabIndex": 0,
+          "position": {
+            "top": 3963.5703125,
+            "left": 87.989501953125
+          }
+        },
+        {
+          "selector": "div#swiper-wrapper-79b35bd5cf210466c > div:nth-of-type(3) > div > div > div > div:nth-of-type(4) > a:nth-of-type(2)",
+          "tabIndex": 0,
+          "position": {
+            "top": 3947.5703125,
+            "left": 274.333251953125
+          }
+        },
+        {
+          "selector": "div#swiper-wrapper-79b35bd5cf210466c > div:nth-of-type(4) > div > div > div > div:nth-of-type(4) > a",
+          "tabIndex": 0,
+          "position": {
+            "top": 3934.0703125,
+            "left": 87.984375
+          }
+        },
+        {
+          "selector": "div#swiper-wrapper-79b35bd5cf210466c > div:nth-of-type(4) > div > div > div > div:nth-of-type(4) > a:nth-of-type(2)",
+          "tabIndex": 0,
+          "position": {
+            "top": 3923.5703125,
+            "left": 274.328125
+          }
+        },
+        {
+          "selector": "div#swiper-wrapper-79b35bd5cf210466c > div:nth-of-type(3) > div > div > div > div:nth-of-type(4) > a",
+          "tabIndex": 0,
+          "position": {
+            "top": 3907.0703125,
+            "left": 87.989501953125
+          }
+        },
+        {
+          "selector": "div#swiper-wrapper-79b35bd5cf210466c > div:nth-of-type(3) > div > div > div > div:nth-of-type(4) > a:nth-of-type(2)",
+          "tabIndex": 0,
+          "position": {
+            "top": 3893.5703125,
+            "left": 274.333251953125
+          }
+        },
+        {
+          "selector": "div#swiper-wrapper-79b35bd5cf210466c > div:nth-of-type(4) > div > div > div > div:nth-of-type(4) > a",
+          "tabIndex": 0,
+          "position": {
+            "top": 3883.0703125,
+            "left": 87.984375
+          }
+        },
+        {
+          "selector": "div#swiper-wrapper-79b35bd5cf210466c > div:nth-of-type(4) > div > div > div > div:nth-of-type(4) > a:nth-of-type(2)",
+          "tabIndex": 0,
+          "position": {
+            "top": 3872.5703125,
+            "left": 274.328125
+          }
+        },
+        {
+          "selector": "div#swiper-wrapper-79b35bd5cf210466c > div:nth-of-type(3) > div > div > div > div:nth-of-type(4) > a",
+          "tabIndex": 0,
+          "position": {
+            "top": 3856.0703125,
+            "left": 87.989501953125
+          }
+        },
+        {
+          "selector": "div#swiper-wrapper-79b35bd5cf210466c > div:nth-of-type(3) > div > div > div > div:nth-of-type(4) > a:nth-of-type(2)",
+          "tabIndex": 0,
+          "position": {
+            "top": 3843.0703125,
+            "left": 274.333251953125
+          }
+        },
+        {
+          "selector": "div#swiper-wrapper-79b35bd5cf210466c > div:nth-of-type(4) > div > div > div > div:nth-of-type(4) > a",
+          "tabIndex": 0,
+          "position": {
+            "top": 3826.5703125,
+            "left": 87.984375
+          }
+        },
+        {
+          "selector": "div#swiper-wrapper-79b35bd5cf210466c > div:nth-of-type(4) > div > div > div > div:nth-of-type(4) > a:nth-of-type(2)",
+          "tabIndex": 0,
+          "position": {
+            "top": 3813.5703125,
+            "left": 274.328125
+          }
+        },
+        {
+          "selector": "div#swiper-wrapper-79b35bd5cf210466c > div:nth-of-type(3) > div > div > div > div:nth-of-type(4) > a",
+          "tabIndex": 0,
+          "position": {
+            "top": 3803.5703125,
+            "left": 87.989501953125
+          }
+        },
+        {
+          "selector": "div#swiper-wrapper-79b35bd5cf210466c > div:nth-of-type(3) > div > div > div > div:nth-of-type(4) > a:nth-of-type(2)",
+          "tabIndex": 0,
+          "position": {
+            "top": 3787.0703125,
+            "left": 274.333251953125
+          }
+        },
+        {
+          "selector": "div#swiper-wrapper-79b35bd5cf210466c > div:nth-of-type(4) > div > div > div > div:nth-of-type(4) > a",
+          "tabIndex": 0,
+          "position": {
+            "top": 3773.5703125,
+            "left": 87.984375
+          }
+        },
+        {
+          "selector": "div#swiper-wrapper-79b35bd5cf210466c > div:nth-of-type(4) > div > div > div > div:nth-of-type(4) > a:nth-of-type(2)",
+          "tabIndex": 0,
+          "position": {
+            "top": 3763.0703125,
+            "left": 274.328125
+          }
+        },
+        {
+          "selector": "div#swiper-wrapper-79b35bd5cf210466c > div:nth-of-type(3) > div > div > div > div:nth-of-type(4) > a",
+          "tabIndex": 0,
+          "position": {
+            "top": 3743.0703125,
+            "left": 87.989501953125
+          }
+        },
+        {
+          "selector": "div#swiper-wrapper-79b35bd5cf210466c > div:nth-of-type(3) > div > div > div > div:nth-of-type(4) > a:nth-of-type(2)",
+          "tabIndex": 0,
+          "position": {
+            "top": 3733.0703125,
+            "left": 274.333251953125
+          }
+        },
+        {
+          "selector": "div#swiper-wrapper-79b35bd5cf210466c > div:nth-of-type(4) > div > div > div > div:nth-of-type(4) > a",
+          "tabIndex": 0,
+          "position": {
+            "top": 3722.0703125,
+            "left": 87.984375
+          }
+        },
+        {
+          "selector": "div#swiper-wrapper-79b35bd5cf210466c > div:nth-of-type(4) > div > div > div > div:nth-of-type(4) > a:nth-of-type(2)",
+          "tabIndex": 0,
+          "position": {
+            "top": 3706.0703125,
+            "left": 274.328125
+          }
+        },
+        {
+          "selector": "div#swiper-wrapper-79b35bd5cf210466c > div:nth-of-type(3) > div > div > div > div:nth-of-type(4) > a",
+          "tabIndex": 0,
+          "position": {
+            "top": 3686.5703125,
+            "left": 87.989501953125
+          }
+        },
+        {
+          "selector": "div#swiper-wrapper-79b35bd5cf210466c > div:nth-of-type(3) > div > div > div > div:nth-of-type(4) > a:nth-of-type(2)",
+          "tabIndex": 0,
+          "position": {
+            "top": 3686.03125,
+            "left": 274.333251953125
+          }
+        },
+        {
+          "selector": "div#swiper-wrapper-79b35bd5cf210466c > div:nth-of-type(4) > div > div > div > div:nth-of-type(4) > a",
+          "tabIndex": 0,
+          "position": {
+            "top": 3675.53125,
+            "left": 87.984375
+          }
+        },
+        {
+          "selector": "div#swiper-wrapper-79b35bd5cf210466c > div:nth-of-type(4) > div > div > div > div:nth-of-type(4) > a:nth-of-type(2)",
+          "tabIndex": 0,
+          "position": {
+            "top": 3656.03125,
+            "left": 274.328125
+          }
+        },
+        {
+          "selector": "div#swiper-wrapper-79b35bd5cf210466c > div:nth-of-type(3) > div > div > div > div:nth-of-type(4) > a",
+          "tabIndex": 0,
+          "position": {
+            "top": 3645.53125,
+            "left": 87.989501953125
+          }
+        },
+        {
+          "selector": "div#swiper-wrapper-79b35bd5cf210466c > div:nth-of-type(3) > div > div > div > div:nth-of-type(4) > a:nth-of-type(2)",
+          "tabIndex": 0,
+          "position": {
+            "top": 3629.03125,
+            "left": 274.333251953125
+          }
+        },
+        {
+          "selector": "div#swiper-wrapper-79b35bd5cf210466c > div:nth-of-type(4) > div > div > div > div:nth-of-type(4) > a",
+          "tabIndex": 0,
+          "position": {
+            "top": 3615.53125,
+            "left": 87.984375
+          }
+        },
+        {
+          "selector": "div#swiper-wrapper-79b35bd5cf210466c > div:nth-of-type(4) > div > div > div > div:nth-of-type(4) > a:nth-of-type(2)",
+          "tabIndex": 0,
+          "position": {
+            "top": 3599.03125,
+            "left": 274.328125
+          }
+        },
+        {
+          "selector": "div#swiper-wrapper-79b35bd5cf210466c > div:nth-of-type(3) > div > div > div > div:nth-of-type(4) > a",
+          "tabIndex": 0,
+          "position": {
+            "top": 3585.53125,
+            "left": 87.989501953125
+          }
+        },
+        {
+          "selector": "div#swiper-wrapper-79b35bd5cf210466c > div:nth-of-type(3) > div > div > div > div:nth-of-type(4) > a:nth-of-type(2)",
+          "tabIndex": 0,
+          "position": {
+            "top": 3575.03125,
+            "left": 274.333251953125
+          }
+        },
+        {
+          "selector": "div#swiper-wrapper-79b35bd5cf210466c > div:nth-of-type(4) > div > div > div > div:nth-of-type(4) > a",
+          "tabIndex": 0,
+          "position": {
+            "top": 3558.03125,
+            "left": 87.984375
+          }
+        },
+        {
+          "selector": "div#swiper-wrapper-79b35bd5cf210466c > div:nth-of-type(4) > div > div > div > div:nth-of-type(4) > a:nth-of-type(2)",
+          "tabIndex": 0,
+          "position": {
+            "top": 3545.03125,
+            "left": 274.328125
+          }
+        },
+        {
+          "selector": "div#swiper-wrapper-79b35bd5cf210466c > div:nth-of-type(3) > div > div > div > div:nth-of-type(4) > a",
+          "tabIndex": 0,
+          "position": {
+            "top": 3528.53125,
+            "left": 87.989501953125
+          }
+        },
+        {
+          "selector": "div#swiper-wrapper-79b35bd5cf210466c > div:nth-of-type(3) > div > div > div > div:nth-of-type(4) > a:nth-of-type(2)",
+          "tabIndex": 0,
+          "position": {
+            "top": 3515.03125,
+            "left": 274.333251953125
+          }
+        },
+        {
+          "selector": "div#swiper-wrapper-79b35bd5cf210466c > div:nth-of-type(4) > div > div > div > div:nth-of-type(4) > a",
+          "tabIndex": 0,
+          "position": {
+            "top": 3504.03125,
+            "left": 87.984375
+          }
+        },
+        {
+          "selector": "div#swiper-wrapper-79b35bd5cf210466c > div:nth-of-type(4) > div > div > div > div:nth-of-type(4) > a:nth-of-type(2)",
+          "tabIndex": 0,
+          "position": {
+            "top": 3493.53125,
+            "left": 274.328125
+          }
+        },
+        {
+          "selector": "div#swiper-wrapper-79b35bd5cf210466c > div:nth-of-type(3) > div > div > div > div:nth-of-type(4) > a",
+          "tabIndex": 0,
+          "position": {
+            "top": 3477.53125,
+            "left": 87.989501953125
+          }
+        },
+        {
+          "selector": "div#swiper-wrapper-79b35bd5cf210466c > div:nth-of-type(3) > div > div > div > div:nth-of-type(4) > a:nth-of-type(2)",
+          "tabIndex": 0,
+          "position": {
+            "top": 3464.03125,
+            "left": 274.333251953125
+          }
+        }
+      ],
+      "summary": {
+        "totalFocusable": 107,
+        "orderDivergence": "0.18"
+      }
+    },
+    "violations": [
+      {
+        "type": "order-divergence",
+        "percentage": "17.8",
+        "threshold": "10.0",
+        "severity": "medium",
+        "reason": "Tab order significantly differs from DOM order (17.8% divergence, threshold: 10.0%)",
+        "remediation": "Manual review required: Verify tab order preserves meaning and operability for this specific content"
+      }
+    ],
+    "sc": "2.4.3",
+    "screenshot": "2.4.3/review_2_4_3.png",
+    "checkType": "page-level"
+  },
+  {
+    "result": "PASS",
+    "reason": "Focused element is fully visible (not obscured)",
+    "evidence": {
+      "obscuredRatio": 0
+    },
+    "sc": "2.4.11",
+    "element": {
+      "id": "E1",
+      "selector": "div#QNavMainHeaderNav > nav > div > a",
+      "tagName": "a",
+      "uniqueSelector": "div#QNavMainHeaderNav > nav > div > a"
+    },
+    "screenshot": null,
+    "checkType": "element-level"
+  },
+  {
+    "result": "PASS",
+    "reason": "Focused element is fully visible (not obscured)",
+    "evidence": {
+      "obscuredRatio": 0
+    },
+    "sc": "2.4.12",
+    "element": {
+      "id": "E1",
+      "selector": "div#QNavMainHeaderNav > nav > div > a",
+      "tagName": "a",
+      "uniqueSelector": "div#QNavMainHeaderNav > nav > div > a"
+    },
+    "screenshot": null,
+    "checkType": "element-level"
+  },
+  {
+    "result": "PASS",
+    "reason": "Outline appeared on focus",
+    "evidence": {
+      "changeType": "outline-appeared",
+      "measurement": {
+        "width": 1,
+        "style": "auto"
+      },
+      "allChanges": [
+        "outline-appeared"
+      ]
+    },
+    "sc": "2.4.7",
+    "element": {
+      "id": "E1",
+      "selector": "div#QNavMainHeaderNav > nav > div > a",
+      "tagName": "a",
+      "uniqueSelector": "div#QNavMainHeaderNav > nav > div > a"
+    },
+    "screenshot": null,
+    "checkType": "element-level"
+  },
+  {
+    "result": "FAIL",
+    "reason": "Focus indicator does not meet AAA requirements: Outline width 1.0px is below minimum 2px required for AAA",
+    "evidence": {
+      "failures": [
+        "Outline width 1.0px is below minimum 2px required for AAA"
+      ],
+      "changes": [
+        "outline-appeared"
+      ],
+      "measurements": {
+        "outlineWidth": 1,
+        "borderWidths": {
+          "top": 0,
+          "right": 0,
+          "bottom": 0,
+          "left": 0
+        }
+      },
+      "validation": {
+        "minContrastRatio": 3,
+        "minOutlineWidth": 2
+      }
+    },
+    "sc": "2.4.13",
+    "id": "b402d107-1d73-430a-9e15-69656e1d5992",
+    "element": {
+      "id": "E1",
+      "selector": "div#QNavMainHeaderNav > nav > div > a",
+      "tagName": "a",
+      "uniqueSelector": "div#QNavMainHeaderNav > nav > div > a"
+    },
+    "screenshot": "2.4.13/fail_2_4_13_E1.png",
+    "checkType": "element-level"
+  },
+  {
+    "result": "PASS",
+    "reason": "Focused element is fully visible (not obscured)",
+    "evidence": {
+      "obscuredRatio": 0
+    },
+    "sc": "2.4.11",
+    "element": {
+      "id": "E2",
+      "selector": "div#QNavMainHeaderNav > nav > div > ul > li > button",
+      "tagName": "button",
+      "uniqueSelector": "div#QNavMainHeaderNav > nav > div > ul > li > button"
+    },
+    "screenshot": null,
+    "checkType": "element-level"
+  },
+  {
+    "result": "PASS",
+    "reason": "Focused element is fully visible (not obscured)",
+    "evidence": {
+      "obscuredRatio": 0
+    },
+    "sc": "2.4.12",
+    "element": {
+      "id": "E2",
+      "selector": "div#QNavMainHeaderNav > nav > div > ul > li > button",
+      "tagName": "button",
+      "uniqueSelector": "div#QNavMainHeaderNav > nav > div > ul > li > button"
+    },
+    "screenshot": null,
+    "checkType": "element-level"
+  },
+  {
+    "result": "PASS",
+    "reason": "Outline appeared on focus",
+    "evidence": {
+      "changeType": "outline-appeared",
+      "measurement": {
+        "width": 1,
+        "style": "auto"
+      },
+      "allChanges": [
+        "outline-appeared"
+      ]
+    },
+    "sc": "2.4.7",
+    "element": {
+      "id": "E2",
+      "selector": "div#QNavMainHeaderNav > nav > div > ul > li > button",
+      "tagName": "button",
+      "uniqueSelector": "div#QNavMainHeaderNav > nav > div > ul > li > button"
+    },
+    "screenshot": null,
+    "checkType": "element-level"
+  },
+  {
+    "result": "FAIL",
+    "reason": "Focus indicator does not meet AAA requirements: Outline width 1.0px is below minimum 2px required for AAA",
+    "evidence": {
+      "failures": [
+        "Outline width 1.0px is below minimum 2px required for AAA"
+      ],
+      "changes": [
+        "outline-appeared"
+      ],
+      "measurements": {
+        "outlineWidth": 1,
+        "borderWidths": {
+          "top": 0,
+          "right": 0,
+          "bottom": 0,
+          "left": 0
+        }
+      },
+      "validation": {
+        "minContrastRatio": 3,
+        "minOutlineWidth": 2
+      }
+    },
+    "sc": "2.4.13",
+    "id": "9be0ef25-2a49-43e0-a1e5-99857ab54703",
+    "element": {
+      "id": "E2",
+      "selector": "div#QNavMainHeaderNav > nav > div > ul > li > button",
+      "tagName": "button",
+      "uniqueSelector": "div#QNavMainHeaderNav > nav > div > ul > li > button"
+    },
+    "screenshot": "2.4.13/fail_2_4_13_E2.png",
+    "checkType": "element-level"
+  },
+  {
+    "result": "PASS",
+    "reason": "Focused element is fully visible (not obscured)",
+    "evidence": {
+      "obscuredRatio": 0
+    },
+    "sc": "2.4.11",
+    "element": {
+      "id": "E3",
+      "selector": "div#QNavMainHeaderNav > nav > div > ul > li:nth-of-type(2) > button",
+      "tagName": "button",
+      "uniqueSelector": "div#QNavMainHeaderNav > nav > div > ul > li:nth-of-type(2) > button"
+    },
+    "screenshot": null,
+    "checkType": "element-level"
+  },
+  {
+    "result": "PASS",
+    "reason": "Focused element is fully visible (not obscured)",
+    "evidence": {
+      "obscuredRatio": 0
+    },
+    "sc": "2.4.12",
+    "element": {
+      "id": "E3",
+      "selector": "div#QNavMainHeaderNav > nav > div > ul > li:nth-of-type(2) > button",
+      "tagName": "button",
+      "uniqueSelector": "div#QNavMainHeaderNav > nav > div > ul > li:nth-of-type(2) > button"
+    },
+    "screenshot": null,
+    "checkType": "element-level"
+  },
+  {
+    "result": "PASS",
+    "reason": "Outline appeared on focus",
+    "evidence": {
+      "changeType": "outline-appeared",
+      "measurement": {
+        "width": 1,
+        "style": "auto"
+      },
+      "allChanges": [
+        "outline-appeared"
+      ]
+    },
+    "sc": "2.4.7",
+    "element": {
+      "id": "E3",
+      "selector": "div#QNavMainHeaderNav > nav > div > ul > li:nth-of-type(2) > button",
+      "tagName": "button",
+      "uniqueSelector": "div#QNavMainHeaderNav > nav > div > ul > li:nth-of-type(2) > button"
+    },
+    "screenshot": null,
+    "checkType": "element-level"
+  },
+  {
+    "result": "FAIL",
+    "reason": "Focus indicator does not meet AAA requirements: Outline width 1.0px is below minimum 2px required for AAA",
+    "evidence": {
+      "failures": [
+        "Outline width 1.0px is below minimum 2px required for AAA"
+      ],
+      "changes": [
+        "outline-appeared"
+      ],
+      "measurements": {
+        "outlineWidth": 1,
+        "borderWidths": {
+          "top": 0,
+          "right": 0,
+          "bottom": 0,
+          "left": 0
+        }
+      },
+      "validation": {
+        "minContrastRatio": 3,
+        "minOutlineWidth": 2
+      }
+    },
+    "sc": "2.4.13",
+    "id": "eebf53c2-143d-45a7-ad9d-2014be0153c5",
+    "element": {
+      "id": "E3",
+      "selector": "div#QNavMainHeaderNav > nav > div > ul > li:nth-of-type(2) > button",
+      "tagName": "button",
+      "uniqueSelector": "div#QNavMainHeaderNav > nav > div > ul > li:nth-of-type(2) > button"
+    },
+    "screenshot": "2.4.13/fail_2_4_13_E3.png",
+    "checkType": "element-level"
+  },
+  {
+    "result": "PASS",
+    "reason": "Focused element is fully visible (not obscured)",
+    "evidence": {
+      "obscuredRatio": 0
+    },
+    "sc": "2.4.11",
+    "element": {
+      "id": "E4",
+      "selector": "div#QNavMainHeaderNav > nav > div > ul > li:nth-of-type(3) > button",
+      "tagName": "button",
+      "uniqueSelector": "div#QNavMainHeaderNav > nav > div > ul > li:nth-of-type(3) > button"
+    },
+    "screenshot": null,
+    "checkType": "element-level"
+  },
+  {
+    "result": "PASS",
+    "reason": "Focused element is fully visible (not obscured)",
+    "evidence": {
+      "obscuredRatio": 0
+    },
+    "sc": "2.4.12",
+    "element": {
+      "id": "E4",
+      "selector": "div#QNavMainHeaderNav > nav > div > ul > li:nth-of-type(3) > button",
+      "tagName": "button",
+      "uniqueSelector": "div#QNavMainHeaderNav > nav > div > ul > li:nth-of-type(3) > button"
+    },
+    "screenshot": null,
+    "checkType": "element-level"
+  },
+  {
+    "result": "PASS",
+    "reason": "Outline appeared on focus",
+    "evidence": {
+      "changeType": "outline-appeared",
+      "measurement": {
+        "width": 1,
+        "style": "auto"
+      },
+      "allChanges": [
+        "outline-appeared"
+      ]
+    },
+    "sc": "2.4.7",
+    "element": {
+      "id": "E4",
+      "selector": "div#QNavMainHeaderNav > nav > div > ul > li:nth-of-type(3) > button",
+      "tagName": "button",
+      "uniqueSelector": "div#QNavMainHeaderNav > nav > div > ul > li:nth-of-type(3) > button"
+    },
+    "screenshot": null,
+    "checkType": "element-level"
+  },
+  {
+    "result": "FAIL",
+    "reason": "Focus indicator does not meet AAA requirements: Outline width 1.0px is below minimum 2px required for AAA",
+    "evidence": {
+      "failures": [
+        "Outline width 1.0px is below minimum 2px required for AAA"
+      ],
+      "changes": [
+        "outline-appeared"
+      ],
+      "measurements": {
+        "outlineWidth": 1,
+        "borderWidths": {
+          "top": 0,
+          "right": 0,
+          "bottom": 0,
+          "left": 0
+        }
+      },
+      "validation": {
+        "minContrastRatio": 3,
+        "minOutlineWidth": 2
+      }
+    },
+    "sc": "2.4.13",
+    "id": "81bf6eb4-2d6f-4d26-a45b-222c63479041",
+    "element": {
+      "id": "E4",
+      "selector": "div#QNavMainHeaderNav > nav > div > ul > li:nth-of-type(3) > button",
+      "tagName": "button",
+      "uniqueSelector": "div#QNavMainHeaderNav > nav > div > ul > li:nth-of-type(3) > button"
+    },
+    "screenshot": "2.4.13/fail_2_4_13_E4.png",
+    "checkType": "element-level"
+  },
+  {
+    "result": "PASS",
+    "reason": "Focused element is fully visible (not obscured)",
+    "evidence": {
+      "obscuredRatio": 0
+    },
+    "sc": "2.4.11",
+    "element": {
+      "id": "E5",
+      "selector": "div#QNavMainHeaderNav > nav > div > ul > li:nth-of-type(4) > a",
+      "tagName": "a",
+      "uniqueSelector": "div#QNavMainHeaderNav > nav > div > ul > li:nth-of-type(4) > a"
+    },
+    "screenshot": null,
+    "checkType": "element-level"
+  },
+  {
+    "result": "PASS",
+    "reason": "Focused element is fully visible (not obscured)",
+    "evidence": {
+      "obscuredRatio": 0
+    },
+    "sc": "2.4.12",
+    "element": {
+      "id": "E5",
+      "selector": "div#QNavMainHeaderNav > nav > div > ul > li:nth-of-type(4) > a",
+      "tagName": "a",
+      "uniqueSelector": "div#QNavMainHeaderNav > nav > div > ul > li:nth-of-type(4) > a"
+    },
+    "screenshot": null,
+    "checkType": "element-level"
+  },
+  {
+    "result": "PASS",
+    "reason": "Outline appeared on focus",
+    "evidence": {
+      "changeType": "outline-appeared",
+      "measurement": {
+        "width": 1,
+        "style": "auto"
+      },
+      "allChanges": [
+        "outline-appeared"
+      ]
+    },
+    "sc": "2.4.7",
+    "element": {
+      "id": "E5",
+      "selector": "div#QNavMainHeaderNav > nav > div > ul > li:nth-of-type(4) > a",
+      "tagName": "a",
+      "uniqueSelector": "div#QNavMainHeaderNav > nav > div > ul > li:nth-of-type(4) > a"
+    },
+    "screenshot": null,
+    "checkType": "element-level"
+  },
+  {
+    "result": "FAIL",
+    "reason": "Focus indicator does not meet AAA requirements: Outline width 1.0px is below minimum 2px required for AAA",
+    "evidence": {
+      "failures": [
+        "Outline width 1.0px is below minimum 2px required for AAA"
+      ],
+      "changes": [
+        "outline-appeared"
+      ],
+      "measurements": {
+        "outlineWidth": 1,
+        "borderWidths": {
+          "top": 0,
+          "right": 0,
+          "bottom": 0,
+          "left": 0
+        }
+      },
+      "validation": {
+        "minContrastRatio": 3,
+        "minOutlineWidth": 2
+      }
+    },
+    "sc": "2.4.13",
+    "id": "82b273e4-e8d2-4d2b-bd74-61adbcf163b4",
+    "element": {
+      "id": "E5",
+      "selector": "div#QNavMainHeaderNav > nav > div > ul > li:nth-of-type(4) > a",
+      "tagName": "a",
+      "uniqueSelector": "div#QNavMainHeaderNav > nav > div > ul > li:nth-of-type(4) > a"
+    },
+    "screenshot": "2.4.13/fail_2_4_13_E5.png",
+    "checkType": "element-level"
+  },
+  {
+    "result": "PASS",
+    "reason": "Focused element is fully visible (not obscured)",
+    "evidence": {
+      "obscuredRatio": 0
+    },
+    "sc": "2.4.11",
+    "element": {
+      "id": "E6",
+      "selector": "div#QNavMainHeaderNav > nav > div > ul > li:nth-of-type(5) > button",
+      "tagName": "button",
+      "uniqueSelector": "div#QNavMainHeaderNav > nav > div > ul > li:nth-of-type(5) > button"
+    },
+    "screenshot": null,
+    "checkType": "element-level"
+  },
+  {
+    "result": "PASS",
+    "reason": "Focused element is fully visible (not obscured)",
+    "evidence": {
+      "obscuredRatio": 0
+    },
+    "sc": "2.4.12",
+    "element": {
+      "id": "E6",
+      "selector": "div#QNavMainHeaderNav > nav > div > ul > li:nth-of-type(5) > button",
+      "tagName": "button",
+      "uniqueSelector": "div#QNavMainHeaderNav > nav > div > ul > li:nth-of-type(5) > button"
+    },
+    "screenshot": null,
+    "checkType": "element-level"
+  },
+  {
+    "result": "PASS",
+    "reason": "Outline appeared on focus",
+    "evidence": {
+      "changeType": "outline-appeared",
+      "measurement": {
+        "width": 1,
+        "style": "auto"
+      },
+      "allChanges": [
+        "outline-appeared"
+      ]
+    },
+    "sc": "2.4.7",
+    "element": {
+      "id": "E6",
+      "selector": "div#QNavMainHeaderNav > nav > div > ul > li:nth-of-type(5) > button",
+      "tagName": "button",
+      "uniqueSelector": "div#QNavMainHeaderNav > nav > div > ul > li:nth-of-type(5) > button"
+    },
+    "screenshot": null,
+    "checkType": "element-level"
+  },
+  {
+    "result": "FAIL",
+    "reason": "Focus indicator does not meet AAA requirements: Outline width 1.0px is below minimum 2px required for AAA",
+    "evidence": {
+      "failures": [
+        "Outline width 1.0px is below minimum 2px required for AAA"
+      ],
+      "changes": [
+        "outline-appeared"
+      ],
+      "measurements": {
+        "outlineWidth": 1,
+        "borderWidths": {
+          "top": 0,
+          "right": 0,
+          "bottom": 0,
+          "left": 0
+        }
+      },
+      "validation": {
+        "minContrastRatio": 3,
+        "minOutlineWidth": 2
+      }
+    },
+    "sc": "2.4.13",
+    "id": "b7d5bf46-2e2d-4e1c-8939-6cefbc8d8eb6",
+    "element": {
+      "id": "E6",
+      "selector": "div#QNavMainHeaderNav > nav > div > ul > li:nth-of-type(5) > button",
+      "tagName": "button",
+      "uniqueSelector": "div#QNavMainHeaderNav > nav > div > ul > li:nth-of-type(5) > button"
+    },
+    "screenshot": "2.4.13/fail_2_4_13_E6.png",
+    "checkType": "element-level"
+  },
+  {
+    "result": "PASS",
+    "reason": "Focused element is fully visible (not obscured)",
+    "evidence": {
+      "obscuredRatio": 0
+    },
+    "sc": "2.4.11",
+    "element": {
+      "id": "E7",
+      "selector": "div#QNavMainHeaderNav > nav > div > div > div > button",
+      "tagName": "button",
+      "uniqueSelector": "div#QNavMainHeaderNav > nav > div > div > div > button"
+    },
+    "screenshot": null,
+    "checkType": "element-level"
+  },
+  {
+    "result": "PASS",
+    "reason": "Focused element is fully visible (not obscured)",
+    "evidence": {
+      "obscuredRatio": 0
+    },
+    "sc": "2.4.12",
+    "element": {
+      "id": "E7",
+      "selector": "div#QNavMainHeaderNav > nav > div > div > div > button",
+      "tagName": "button",
+      "uniqueSelector": "div#QNavMainHeaderNav > nav > div > div > div > button"
+    },
+    "screenshot": null,
+    "checkType": "element-level"
+  },
+  {
+    "result": "PASS",
+    "reason": "Outline appeared on focus",
+    "evidence": {
+      "changeType": "outline-appeared",
+      "measurement": {
+        "width": 1,
+        "style": "auto"
+      },
+      "allChanges": [
+        "outline-appeared"
+      ]
+    },
+    "sc": "2.4.7",
+    "element": {
+      "id": "E7",
+      "selector": "div#QNavMainHeaderNav > nav > div > div > div > button",
+      "tagName": "button",
+      "uniqueSelector": "div#QNavMainHeaderNav > nav > div > div > div > button"
+    },
+    "screenshot": null,
+    "checkType": "element-level"
+  },
+  {
+    "result": "FAIL",
+    "reason": "Focus indicator does not meet AAA requirements: Outline width 1.0px is below minimum 2px required for AAA",
+    "evidence": {
+      "failures": [
+        "Outline width 1.0px is below minimum 2px required for AAA"
+      ],
+      "changes": [
+        "outline-appeared"
+      ],
+      "measurements": {
+        "outlineWidth": 1,
+        "borderWidths": {
+          "top": 0,
+          "right": 0,
+          "bottom": 0,
+          "left": 0
+        }
+      },
+      "validation": {
+        "minContrastRatio": 3,
+        "minOutlineWidth": 2
+      }
+    },
+    "sc": "2.4.13",
+    "id": "72e780ff-7fc2-4494-80ed-6a740e90a17e",
+    "element": {
+      "id": "E7",
+      "selector": "div#QNavMainHeaderNav > nav > div > div > div > button",
+      "tagName": "button",
+      "uniqueSelector": "div#QNavMainHeaderNav > nav > div > div > div > button"
+    },
+    "screenshot": "2.4.13/fail_2_4_13_E7.png",
+    "checkType": "element-level"
+  },
+  {
+    "result": "PASS",
+    "reason": "Focused element is fully visible (not obscured)",
+    "evidence": {
+      "obscuredRatio": 0
+    },
+    "sc": "2.4.11",
+    "element": {
+      "id": "E8",
+      "selector": "div#QNavMainHeaderNav > nav > div > div > div:nth-of-type(2) > a",
+      "tagName": "a",
+      "uniqueSelector": "div#QNavMainHeaderNav > nav > div > div > div:nth-of-type(2) > a"
+    },
+    "screenshot": null,
+    "checkType": "element-level"
+  },
+  {
+    "result": "PASS",
+    "reason": "Focused element is fully visible (not obscured)",
+    "evidence": {
+      "obscuredRatio": 0
+    },
+    "sc": "2.4.12",
+    "element": {
+      "id": "E8",
+      "selector": "div#QNavMainHeaderNav > nav > div > div > div:nth-of-type(2) > a",
+      "tagName": "a",
+      "uniqueSelector": "div#QNavMainHeaderNav > nav > div > div > div:nth-of-type(2) > a"
+    },
+    "screenshot": null,
+    "checkType": "element-level"
+  },
+  {
+    "result": "PASS",
+    "reason": "Outline appeared on focus",
+    "evidence": {
+      "changeType": "outline-appeared",
+      "measurement": {
+        "width": 1,
+        "style": "auto"
+      },
+      "allChanges": [
+        "outline-appeared"
+      ]
+    },
+    "sc": "2.4.7",
+    "element": {
+      "id": "E8",
+      "selector": "div#QNavMainHeaderNav > nav > div > div > div:nth-of-type(2) > a",
+      "tagName": "a",
+      "uniqueSelector": "div#QNavMainHeaderNav > nav > div > div > div:nth-of-type(2) > a"
+    },
+    "screenshot": null,
+    "checkType": "element-level"
+  },
+  {
+    "result": "FAIL",
+    "reason": "Focus indicator does not meet AAA requirements: Outline width 1.0px is below minimum 2px required for AAA",
+    "evidence": {
+      "failures": [
+        "Outline width 1.0px is below minimum 2px required for AAA"
+      ],
+      "changes": [
+        "outline-appeared"
+      ],
+      "measurements": {
+        "outlineWidth": 1,
+        "borderWidths": {
+          "top": 0,
+          "right": 0,
+          "bottom": 0,
+          "left": 0
+        }
+      },
+      "validation": {
+        "minContrastRatio": 3,
+        "minOutlineWidth": 2
+      }
+    },
+    "sc": "2.4.13",
+    "id": "70ff2d6c-db17-4fae-aa08-4c09497b7cc8",
+    "element": {
+      "id": "E8",
+      "selector": "div#QNavMainHeaderNav > nav > div > div > div:nth-of-type(2) > a",
+      "tagName": "a",
+      "uniqueSelector": "div#QNavMainHeaderNav > nav > div > div > div:nth-of-type(2) > a"
+    },
+    "screenshot": "2.4.13/fail_2_4_13_E8.png",
+    "checkType": "element-level"
+  },
+  {
+    "result": "PASS",
+    "reason": "Focused element is fully visible (not obscured)",
+    "evidence": {
+      "obscuredRatio": 0
+    },
+    "sc": "2.4.11",
+    "element": {
+      "id": "E9",
+      "selector": "div#QNavMainHeaderNav > nav > div > div > button",
+      "tagName": "button",
+      "uniqueSelector": "div#QNavMainHeaderNav > nav > div > div > button"
+    },
+    "screenshot": null,
+    "checkType": "element-level"
+  },
+  {
+    "result": "PASS",
+    "reason": "Focused element is fully visible (not obscured)",
+    "evidence": {
+      "obscuredRatio": 0
+    },
+    "sc": "2.4.12",
+    "element": {
+      "id": "E9",
+      "selector": "div#QNavMainHeaderNav > nav > div > div > button",
+      "tagName": "button",
+      "uniqueSelector": "div#QNavMainHeaderNav > nav > div > div > button"
+    },
+    "screenshot": null,
+    "checkType": "element-level"
+  },
+  {
+    "result": "PASS",
+    "reason": "Outline appeared on focus",
+    "evidence": {
+      "changeType": "outline-appeared",
+      "measurement": {
+        "width": 1,
+        "style": "auto"
+      },
+      "allChanges": [
+        "outline-appeared"
+      ]
+    },
+    "sc": "2.4.7",
+    "element": {
+      "id": "E9",
+      "selector": "div#QNavMainHeaderNav > nav > div > div > button",
+      "tagName": "button",
+      "uniqueSelector": "div#QNavMainHeaderNav > nav > div > div > button"
+    },
+    "screenshot": null,
+    "checkType": "element-level"
+  },
+  {
+    "result": "FAIL",
+    "reason": "Focus indicator does not meet AAA requirements: Outline width 1.0px is below minimum 2px required for AAA",
+    "evidence": {
+      "failures": [
+        "Outline width 1.0px is below minimum 2px required for AAA"
+      ],
+      "changes": [
+        "outline-appeared"
+      ],
+      "measurements": {
+        "outlineWidth": 1,
+        "borderWidths": {
+          "top": 0,
+          "right": 0,
+          "bottom": 0,
+          "left": 0
+        }
+      },
+      "validation": {
+        "minContrastRatio": 3,
+        "minOutlineWidth": 2
+      }
+    },
+    "sc": "2.4.13",
+    "id": "5870a883-bdcb-4128-bff6-02cf0556c6fe",
+    "element": {
+      "id": "E9",
+      "selector": "div#QNavMainHeaderNav > nav > div > div > button",
+      "tagName": "button",
+      "uniqueSelector": "div#QNavMainHeaderNav > nav > div > div > button"
+    },
+    "screenshot": "2.4.13/fail_2_4_13_E9.png",
+    "checkType": "element-level"
+  },
+  {
+    "result": "PASS",
+    "reason": "Focused element is fully visible (not obscured)",
+    "evidence": {
+      "obscuredRatio": 0
+    },
+    "sc": "2.4.11",
+    "element": {
+      "id": "E10",
+      "selector": "html > body > div > main > article > section > div > div > div > section > div > div > div:nth-of-type(4) > div > button",
+      "tagName": "button",
+      "uniqueSelector": "html > body > div > main > article > section > div > div > div > section > div > div > div:nth-of-type(4) > div > button"
+    },
+    "screenshot": null,
+    "checkType": "element-level"
+  },
+  {
+    "result": "PASS",
+    "reason": "Focused element is fully visible (not obscured)",
+    "evidence": {
+      "obscuredRatio": 0
+    },
+    "sc": "2.4.12",
+    "element": {
+      "id": "E10",
+      "selector": "html > body > div > main > article > section > div > div > div > section > div > div > div:nth-of-type(4) > div > button",
+      "tagName": "button",
+      "uniqueSelector": "html > body > div > main > article > section > div > div > div > section > div > div > div:nth-of-type(4) > div > button"
+    },
+    "screenshot": null,
+    "checkType": "element-level"
+  },
+  {
+    "result": "PASS",
+    "reason": "Outline appeared on focus",
+    "evidence": {
+      "changeType": "outline-appeared",
+      "measurement": {
+        "width": 1,
+        "style": "auto"
+      },
+      "allChanges": [
+        "outline-appeared",
+        "border-color-changed"
+      ]
+    },
+    "sc": "2.4.7",
+    "element": {
+      "id": "E10",
+      "selector": "html > body > div > main > article > section > div > div > div > section > div > div > div:nth-of-type(4) > div > button",
+      "tagName": "button",
+      "uniqueSelector": "html > body > div > main > article > section > div > div > div > section > div > div > div:nth-of-type(4) > div > button"
+    },
+    "screenshot": null,
+    "checkType": "element-level"
+  },
+  {
+    "result": "FAIL",
+    "reason": "Focus indicator does not meet AAA requirements: Outline width 1.0px is below minimum 2px required for AAA",
+    "evidence": {
+      "failures": [
+        "Outline width 1.0px is below minimum 2px required for AAA"
+      ],
+      "changes": [
+        "outline-appeared",
+        "border-color-changed"
+      ],
+      "measurements": {
+        "outlineWidth": 1,
+        "borderWidths": {
+          "top": 1,
+          "right": 1,
+          "bottom": 1,
+          "left": 1
+        }
+      },
+      "validation": {
+        "minContrastRatio": 3,
+        "minOutlineWidth": 2
+      }
+    },
+    "sc": "2.4.13",
+    "id": "0ae21ceb-602c-4f37-8f72-80eec75c4139",
+    "element": {
+      "id": "E10",
+      "selector": "html > body > div > main > article > section > div > div > div > section > div > div > div:nth-of-type(4) > div > button",
+      "tagName": "button",
+      "uniqueSelector": "html > body > div > main > article > section > div > div > div > section > div > div > div:nth-of-type(4) > div > button"
+    },
+    "screenshot": "2.4.13/fail_2_4_13_E10.png",
+    "checkType": "element-level"
+  },
+  {
+    "result": "PASS",
+    "reason": "Focused element is partially obscured but still visible (8.2% hidden)",
+    "evidence": {
+      "obscuredRatio": 0.08163265306122448,
+      "obscuredBy": [
+        "section.mt-0.mb-0.text-white.bg-surface-background-primary.relative"
+      ]
+    },
+    "sc": "2.4.11",
+    "element": {
+      "id": "E11",
+      "selector": "#button-container",
+      "tagName": "button",
+      "uniqueSelector": "#button-container"
+    },
+    "screenshot": null,
+    "checkType": "element-level"
+  },
+  {
+    "result": "FAIL",
+    "reason": "Focused element is obscured by other content (8.2% hidden. Obscured by: section.mt-0.mb-0.text-white.bg-surface-background-primary.relative)",
+    "evidence": {
+      "obscuredRatio": 0.08163265306122448,
+      "obscuredBy": [
+        "section.mt-0.mb-0.text-white.bg-surface-background-primary.relative"
+      ]
+    },
+    "sc": "2.4.12",
+    "id": "1fb5682d-a782-4202-9614-f4f7aff5b4c7",
+    "element": {
+      "id": "E11",
+      "selector": "#button-container",
+      "tagName": "button",
+      "uniqueSelector": "#button-container"
+    },
+    "screenshot": "2.4.12/fail_2_4_12_E11.png",
+    "checkType": "element-level"
+  },
+  {
+    "result": "PASS",
+    "reason": "Outline appeared on focus",
+    "evidence": {
+      "changeType": "outline-appeared",
+      "measurement": {
+        "width": 1,
+        "style": "auto"
+      },
+      "allChanges": [
+        "outline-appeared"
+      ]
+    },
+    "sc": "2.4.7",
+    "element": {
+      "id": "E11",
+      "selector": "#button-container",
+      "tagName": "button",
+      "uniqueSelector": "#button-container"
+    },
+    "screenshot": null,
+    "checkType": "element-level"
+  },
+  {
+    "result": "FAIL",
+    "reason": "Focus indicator does not meet AAA requirements: Outline width 1.0px is below minimum 2px required for AAA",
+    "evidence": {
+      "failures": [
+        "Outline width 1.0px is below minimum 2px required for AAA"
+      ],
+      "changes": [
+        "outline-appeared"
+      ],
+      "measurements": {
+        "outlineWidth": 1,
+        "borderWidths": {
+          "top": 0,
+          "right": 0,
+          "bottom": 0,
+          "left": 0
+        }
+      },
+      "validation": {
+        "minContrastRatio": 3,
+        "minOutlineWidth": 2
+      }
+    },
+    "sc": "2.4.13",
+    "id": "af0bec55-1c41-4d46-95a7-0be193fad188",
+    "element": {
+      "id": "E11",
+      "selector": "#button-container",
+      "tagName": "button",
+      "uniqueSelector": "#button-container"
+    },
+    "screenshot": "2.4.13/fail_2_4_13_E11.png",
+    "checkType": "element-level"
+  },
+  {
+    "result": "PASS",
+    "reason": "Focused element is fully visible (not obscured)",
+    "evidence": {
+      "obscuredRatio": 0
+    },
+    "sc": "2.4.11",
+    "element": {
+      "id": "E12",
+      "selector": "html > body > div > main > article > section:nth-of-type(4) > div > div > section > div:nth-of-type(2) > div > div:nth-of-type(2) > div > div > div > div > button",
+      "tagName": "button",
+      "uniqueSelector": "html > body > div > main > article > section:nth-of-type(4) > div > div > section > div:nth-of-type(2) > div > div:nth-of-type(2) > div > div > div > div > button"
+    },
+    "screenshot": null,
+    "checkType": "element-level"
+  },
+  {
+    "result": "PASS",
+    "reason": "Focused element is fully visible (not obscured)",
+    "evidence": {
+      "obscuredRatio": 0
+    },
+    "sc": "2.4.12",
+    "element": {
+      "id": "E12",
+      "selector": "html > body > div > main > article > section:nth-of-type(4) > div > div > section > div:nth-of-type(2) > div > div:nth-of-type(2) > div > div > div > div > button",
+      "tagName": "button",
+      "uniqueSelector": "html > body > div > main > article > section:nth-of-type(4) > div > div > section > div:nth-of-type(2) > div > div:nth-of-type(2) > div > div > div > div > button"
+    },
+    "screenshot": null,
+    "checkType": "element-level"
+  },
+  {
+    "result": "PASS",
+    "reason": "Outline appeared on focus",
+    "evidence": {
+      "changeType": "outline-appeared",
+      "measurement": {
+        "width": 1,
+        "style": "auto"
+      },
+      "allChanges": [
+        "outline-appeared"
+      ]
+    },
+    "sc": "2.4.7",
+    "element": {
+      "id": "E12",
+      "selector": "html > body > div > main > article > section:nth-of-type(4) > div > div > section > div:nth-of-type(2) > div > div:nth-of-type(2) > div > div > div > div > button",
+      "tagName": "button",
+      "uniqueSelector": "html > body > div > main > article > section:nth-of-type(4) > div > div > section > div:nth-of-type(2) > div > div:nth-of-type(2) > div > div > div > div > button"
+    },
+    "screenshot": null,
+    "checkType": "element-level"
+  },
+  {
+    "result": "FAIL",
+    "reason": "Focus indicator does not meet AAA requirements: Outline width 1.0px is below minimum 2px required for AAA",
+    "evidence": {
+      "failures": [
+        "Outline width 1.0px is below minimum 2px required for AAA"
+      ],
+      "changes": [
+        "outline-appeared"
+      ],
+      "measurements": {
+        "outlineWidth": 1,
+        "borderWidths": {
+          "top": 0,
+          "right": 0,
+          "bottom": 0,
+          "left": 0
+        }
+      },
+      "validation": {
+        "minContrastRatio": 3,
+        "minOutlineWidth": 2
+      }
+    },
+    "sc": "2.4.13",
+    "id": "380ded5d-9e72-48ce-a9fd-67686e98e576",
+    "element": {
+      "id": "E12",
+      "selector": "html > body > div > main > article > section:nth-of-type(4) > div > div > section > div:nth-of-type(2) > div > div:nth-of-type(2) > div > div > div > div > button",
+      "tagName": "button",
+      "uniqueSelector": "html > body > div > main > article > section:nth-of-type(4) > div > div > section > div:nth-of-type(2) > div > div:nth-of-type(2) > div > div > div > div > button"
+    },
+    "screenshot": "2.4.13/fail_2_4_13_E12.png",
+    "checkType": "element-level"
+  },
+  {
+    "result": "PASS",
+    "reason": "Focused element is partially obscured but still visible (14.3% hidden)",
+    "evidence": {
+      "obscuredRatio": 0.14285714285714285,
+      "obscuredBy": [
+        "button.headline--h6.text-left.grid.grid-cols-12.items-center.justify-between.py-6.gap"
+      ]
+    },
+    "sc": "2.4.11",
+    "element": {
+      "id": "E13",
+      "selector": "html > body > div > main > article > section:nth-of-type(4) > div > div > section > div:nth-of-type(2) > div > div:nth-of-type(2) > div > div > div > div > div > div > div:nth-of-type(2) > a",
+      "tagName": "a",
+      "uniqueSelector": "html > body > div > main > article > section:nth-of-type(4) > div > div > section > div:nth-of-type(2) > div > div:nth-of-type(2) > div > div > div > div > div > div > div:nth-of-type(2) > a"
+    },
+    "screenshot": null,
+    "checkType": "element-level"
+  },
+  {
+    "result": "FAIL",
+    "reason": "Focused element is obscured by other content (14.3% hidden. Obscured by: button.headline--h6.text-left.grid.grid-cols-12.items-center.justify-between.py-6.gap)",
+    "evidence": {
+      "obscuredRatio": 0.14285714285714285,
+      "obscuredBy": [
+        "button.headline--h6.text-left.grid.grid-cols-12.items-center.justify-between.py-6.gap"
+      ]
+    },
+    "sc": "2.4.12",
+    "id": "6b79f9a8-7fdf-4b18-a64d-86f4621379db",
+    "element": {
+      "id": "E13",
+      "selector": "html > body > div > main > article > section:nth-of-type(4) > div > div > section > div:nth-of-type(2) > div > div:nth-of-type(2) > div > div > div > div > div > div > div:nth-of-type(2) > a",
+      "tagName": "a",
+      "uniqueSelector": "html > body > div > main > article > section:nth-of-type(4) > div > div > section > div:nth-of-type(2) > div > div:nth-of-type(2) > div > div > div > div > div > div > div:nth-of-type(2) > a"
+    },
+    "screenshot": "2.4.12/fail_2_4_12_E13.png",
+    "checkType": "element-level"
+  },
+  {
+    "result": "PASS",
+    "reason": "Box shadow changed",
+    "evidence": {
+      "changeType": "box-shadow-changed",
+      "measurement": {
+        "shadow": "rgba(255, 255, 255, 0.957) 0px 0px 0px 1.91046px, rgba(176, 0, 214, 0.957) 0px 0px 0px 3.82092px, rgba(0, 0, 0, 0) 0px 0px 0px 0px"
+      },
+      "allChanges": [
+        "box-shadow-changed"
+      ]
+    },
+    "sc": "2.4.7",
+    "element": {
+      "id": "E13",
+      "selector": "html > body > div > main > article > section:nth-of-type(4) > div > div > section > div:nth-of-type(2) > div > div:nth-of-type(2) > div > div > div > div > div > div > div:nth-of-type(2) > a",
+      "tagName": "a",
+      "uniqueSelector": "html > body > div > main > article > section:nth-of-type(4) > div > div > section > div:nth-of-type(2) > div > div:nth-of-type(2) > div > div > div > div > div > div > div:nth-of-type(2) > a"
+    },
+    "screenshot": null,
+    "checkType": "element-level"
+  },
+  {
+    "result": "PASS",
+    "reason": "Focus indicator meets AAA requirements (3:1 contrast and/or 2px minimum size)",
+    "evidence": {
+      "changes": [
+        {
+          "type": "box-shadow-changed",
+          "measurement": {
+            "shadow": "rgba(255, 255, 255, 0.957) 0px 0px 0px 1.91046px, rgba(176, 0, 214, 0.957) 0px 0px 0px 3.82092px, rgba(0, 0, 0, 0) 0px 0px 0px 0px"
+          }
+        }
+      ],
+      "validation": {
+        "minContrastRatio": 3,
+        "minOutlineWidth": 2
+      }
+    },
+    "sc": "2.4.13",
+    "element": {
+      "id": "E13",
+      "selector": "html > body > div > main > article > section:nth-of-type(4) > div > div > section > div:nth-of-type(2) > div > div:nth-of-type(2) > div > div > div > div > div > div > div:nth-of-type(2) > a",
+      "tagName": "a",
+      "uniqueSelector": "html > body > div > main > article > section:nth-of-type(4) > div > div > section > div:nth-of-type(2) > div > div:nth-of-type(2) > div > div > div > div > div > div > div:nth-of-type(2) > a"
+    },
+    "screenshot": null,
+    "checkType": "element-level"
+  },
+  {
+    "result": "PASS",
+    "reason": "Focused element is fully visible (not obscured)",
+    "evidence": {
+      "obscuredRatio": 0
+    },
+    "sc": "2.4.11",
+    "element": {
+      "id": "E14",
+      "selector": "html > body > div > main > article > section:nth-of-type(4) > div > div > section > div:nth-of-type(2) > div > div:nth-of-type(2) > div > div > div > div:nth-of-type(2) > button",
+      "tagName": "button",
+      "uniqueSelector": "html > body > div > main > article > section:nth-of-type(4) > div > div > section > div:nth-of-type(2) > div > div:nth-of-type(2) > div > div > div > div:nth-of-type(2) > button"
+    },
+    "screenshot": null,
+    "checkType": "element-level"
+  },
+  {
+    "result": "PASS",
+    "reason": "Focused element is fully visible (not obscured)",
+    "evidence": {
+      "obscuredRatio": 0
+    },
+    "sc": "2.4.12",
+    "element": {
+      "id": "E14",
+      "selector": "html > body > div > main > article > section:nth-of-type(4) > div > div > section > div:nth-of-type(2) > div > div:nth-of-type(2) > div > div > div > div:nth-of-type(2) > button",
+      "tagName": "button",
+      "uniqueSelector": "html > body > div > main > article > section:nth-of-type(4) > div > div > section > div:nth-of-type(2) > div > div:nth-of-type(2) > div > div > div > div:nth-of-type(2) > button"
+    },
+    "screenshot": null,
+    "checkType": "element-level"
+  },
+  {
+    "result": "PASS",
+    "reason": "Outline appeared on focus",
+    "evidence": {
+      "changeType": "outline-appeared",
+      "measurement": {
+        "width": 1,
+        "style": "auto"
+      },
+      "allChanges": [
+        "outline-appeared"
+      ]
+    },
+    "sc": "2.4.7",
+    "element": {
+      "id": "E14",
+      "selector": "html > body > div > main > article > section:nth-of-type(4) > div > div > section > div:nth-of-type(2) > div > div:nth-of-type(2) > div > div > div > div:nth-of-type(2) > button",
+      "tagName": "button",
+      "uniqueSelector": "html > body > div > main > article > section:nth-of-type(4) > div > div > section > div:nth-of-type(2) > div > div:nth-of-type(2) > div > div > div > div:nth-of-type(2) > button"
+    },
+    "screenshot": null,
+    "checkType": "element-level"
+  },
+  {
+    "result": "FAIL",
+    "reason": "Focus indicator does not meet AAA requirements: Outline width 1.0px is below minimum 2px required for AAA",
+    "evidence": {
+      "failures": [
+        "Outline width 1.0px is below minimum 2px required for AAA"
+      ],
+      "changes": [
+        "outline-appeared"
+      ],
+      "measurements": {
+        "outlineWidth": 1,
+        "borderWidths": {
+          "top": 0,
+          "right": 0,
+          "bottom": 0,
+          "left": 0
+        }
+      },
+      "validation": {
+        "minContrastRatio": 3,
+        "minOutlineWidth": 2
+      }
+    },
+    "sc": "2.4.13",
+    "id": "42e8672d-191e-4147-873a-7a499f4efd41",
+    "element": {
+      "id": "E14",
+      "selector": "html > body > div > main > article > section:nth-of-type(4) > div > div > section > div:nth-of-type(2) > div > div:nth-of-type(2) > div > div > div > div:nth-of-type(2) > button",
+      "tagName": "button",
+      "uniqueSelector": "html > body > div > main > article > section:nth-of-type(4) > div > div > section > div:nth-of-type(2) > div > div:nth-of-type(2) > div > div > div > div:nth-of-type(2) > button"
+    },
+    "screenshot": "2.4.13/fail_2_4_13_E14.png",
+    "checkType": "element-level"
+  },
+  {
+    "result": "PASS",
+    "reason": "Focused element is partially obscured but still visible (14.3% hidden)",
+    "evidence": {
+      "obscuredRatio": 0.14285714285714285,
+      "obscuredBy": [
+        "button.headline--h6.text-left.grid.grid-cols-12.items-center.justify-between.py-6.gap"
+      ]
+    },
+    "sc": "2.4.11",
+    "element": {
+      "id": "E15",
+      "selector": "html > body > div > main > article > section:nth-of-type(4) > div > div > section > div:nth-of-type(2) > div > div:nth-of-type(2) > div > div > div > div:nth-of-type(2) > div > div > div:nth-of-type(2) > a",
+      "tagName": "a",
+      "uniqueSelector": "html > body > div > main > article > section:nth-of-type(4) > div > div > section > div:nth-of-type(2) > div > div:nth-of-type(2) > div > div > div > div:nth-of-type(2) > div > div > div:nth-of-type(2) > a"
+    },
+    "screenshot": null,
+    "checkType": "element-level"
+  },
+  {
+    "result": "FAIL",
+    "reason": "Focused element is obscured by other content (14.3% hidden. Obscured by: button.headline--h6.text-left.grid.grid-cols-12.items-center.justify-between.py-6.gap)",
+    "evidence": {
+      "obscuredRatio": 0.14285714285714285,
+      "obscuredBy": [
+        "button.headline--h6.text-left.grid.grid-cols-12.items-center.justify-between.py-6.gap"
+      ]
+    },
+    "sc": "2.4.12",
+    "id": "ec2410fe-0cd8-472a-b023-2c28921d3b35",
+    "element": {
+      "id": "E15",
+      "selector": "html > body > div > main > article > section:nth-of-type(4) > div > div > section > div:nth-of-type(2) > div > div:nth-of-type(2) > div > div > div > div:nth-of-type(2) > div > div > div:nth-of-type(2) > a",
+      "tagName": "a",
+      "uniqueSelector": "html > body > div > main > article > section:nth-of-type(4) > div > div > section > div:nth-of-type(2) > div > div:nth-of-type(2) > div > div > div > div:nth-of-type(2) > div > div > div:nth-of-type(2) > a"
+    },
+    "screenshot": "2.4.12/fail_2_4_12_E15.png",
+    "checkType": "element-level"
+  },
+  {
+    "result": "PASS",
+    "reason": "Box shadow changed",
+    "evidence": {
+      "changeType": "box-shadow-changed",
+      "measurement": {
+        "shadow": "rgba(255, 255, 255, 0.973) 0px 0px 0px 1.94262px, rgba(176, 0, 214, 0.973) 0px 0px 0px 3.88524px, rgba(0, 0, 0, 0) 0px 0px 0px 0px"
+      },
+      "allChanges": [
+        "box-shadow-changed"
+      ]
+    },
+    "sc": "2.4.7",
+    "element": {
+      "id": "E15",
+      "selector": "html > body > div > main > article > section:nth-of-type(4) > div > div > section > div:nth-of-type(2) > div > div:nth-of-type(2) > div > div > div > div:nth-of-type(2) > div > div > div:nth-of-type(2) > a",
+      "tagName": "a",
+      "uniqueSelector": "html > body > div > main > article > section:nth-of-type(4) > div > div > section > div:nth-of-type(2) > div > div:nth-of-type(2) > div > div > div > div:nth-of-type(2) > div > div > div:nth-of-type(2) > a"
+    },
+    "screenshot": null,
+    "checkType": "element-level"
+  },
+  {
+    "result": "PASS",
+    "reason": "Focus indicator meets AAA requirements (3:1 contrast and/or 2px minimum size)",
+    "evidence": {
+      "changes": [
+        {
+          "type": "box-shadow-changed",
+          "measurement": {
+            "shadow": "rgba(255, 255, 255, 0.973) 0px 0px 0px 1.94262px, rgba(176, 0, 214, 0.973) 0px 0px 0px 3.88524px, rgba(0, 0, 0, 0) 0px 0px 0px 0px"
+          }
+        }
+      ],
+      "validation": {
+        "minContrastRatio": 3,
+        "minOutlineWidth": 2
+      }
+    },
+    "sc": "2.4.13",
+    "element": {
+      "id": "E15",
+      "selector": "html > body > div > main > article > section:nth-of-type(4) > div > div > section > div:nth-of-type(2) > div > div:nth-of-type(2) > div > div > div > div:nth-of-type(2) > div > div > div:nth-of-type(2) > a",
+      "tagName": "a",
+      "uniqueSelector": "html > body > div > main > article > section:nth-of-type(4) > div > div > section > div:nth-of-type(2) > div > div:nth-of-type(2) > div > div > div > div:nth-of-type(2) > div > div > div:nth-of-type(2) > a"
+    },
+    "screenshot": null,
+    "checkType": "element-level"
+  },
+  {
+    "result": "PASS",
+    "reason": "Focused element is fully visible (not obscured)",
+    "evidence": {
+      "obscuredRatio": 0
+    },
+    "sc": "2.4.11",
+    "element": {
+      "id": "E16",
+      "selector": "html > body > div > main > article > section:nth-of-type(4) > div > div > section > div:nth-of-type(2) > div > div:nth-of-type(2) > div > div > div > div:nth-of-type(3) > button",
+      "tagName": "button",
+      "uniqueSelector": "html > body > div > main > article > section:nth-of-type(4) > div > div > section > div:nth-of-type(2) > div > div:nth-of-type(2) > div > div > div > div:nth-of-type(3) > button"
+    },
+    "screenshot": null,
+    "checkType": "element-level"
+  },
+  {
+    "result": "PASS",
+    "reason": "Focused element is fully visible (not obscured)",
+    "evidence": {
+      "obscuredRatio": 0
+    },
+    "sc": "2.4.12",
+    "element": {
+      "id": "E16",
+      "selector": "html > body > div > main > article > section:nth-of-type(4) > div > div > section > div:nth-of-type(2) > div > div:nth-of-type(2) > div > div > div > div:nth-of-type(3) > button",
+      "tagName": "button",
+      "uniqueSelector": "html > body > div > main > article > section:nth-of-type(4) > div > div > section > div:nth-of-type(2) > div > div:nth-of-type(2) > div > div > div > div:nth-of-type(3) > button"
+    },
+    "screenshot": null,
+    "checkType": "element-level"
+  },
+  {
+    "result": "PASS",
+    "reason": "Outline appeared on focus",
+    "evidence": {
+      "changeType": "outline-appeared",
+      "measurement": {
+        "width": 1,
+        "style": "auto"
+      },
+      "allChanges": [
+        "outline-appeared"
+      ]
+    },
+    "sc": "2.4.7",
+    "element": {
+      "id": "E16",
+      "selector": "html > body > div > main > article > section:nth-of-type(4) > div > div > section > div:nth-of-type(2) > div > div:nth-of-type(2) > div > div > div > div:nth-of-type(3) > button",
+      "tagName": "button",
+      "uniqueSelector": "html > body > div > main > article > section:nth-of-type(4) > div > div > section > div:nth-of-type(2) > div > div:nth-of-type(2) > div > div > div > div:nth-of-type(3) > button"
+    },
+    "screenshot": null,
+    "checkType": "element-level"
+  },
+  {
+    "result": "FAIL",
+    "reason": "Focus indicator does not meet AAA requirements: Outline width 1.0px is below minimum 2px required for AAA",
+    "evidence": {
+      "failures": [
+        "Outline width 1.0px is below minimum 2px required for AAA"
+      ],
+      "changes": [
+        "outline-appeared"
+      ],
+      "measurements": {
+        "outlineWidth": 1,
+        "borderWidths": {
+          "top": 0,
+          "right": 0,
+          "bottom": 0,
+          "left": 0
+        }
+      },
+      "validation": {
+        "minContrastRatio": 3,
+        "minOutlineWidth": 2
+      }
+    },
+    "sc": "2.4.13",
+    "id": "805f3527-e14e-400c-8a6b-04f067d73b3f",
+    "element": {
+      "id": "E16",
+      "selector": "html > body > div > main > article > section:nth-of-type(4) > div > div > section > div:nth-of-type(2) > div > div:nth-of-type(2) > div > div > div > div:nth-of-type(3) > button",
+      "tagName": "button",
+      "uniqueSelector": "html > body > div > main > article > section:nth-of-type(4) > div > div > section > div:nth-of-type(2) > div > div:nth-of-type(2) > div > div > div > div:nth-of-type(3) > button"
+    },
+    "screenshot": "2.4.13/fail_2_4_13_E16.png",
+    "checkType": "element-level"
+  },
+  {
+    "result": "PASS",
+    "reason": "Focused element is partially obscured but still visible (14.3% hidden)",
+    "evidence": {
+      "obscuredRatio": 0.14285714285714285,
+      "obscuredBy": [
+        "body.path-frontpage.bg-gray-light"
+      ]
+    },
+    "sc": "2.4.11",
+    "element": {
+      "id": "E17",
+      "selector": "html > body > div > main > article > section:nth-of-type(4) > div > div > section > div:nth-of-type(2) > div > div:nth-of-type(2) > div > div > div > div:nth-of-type(3) > div > div > div:nth-of-type(2) > a",
+      "tagName": "a",
+      "uniqueSelector": "html > body > div > main > article > section:nth-of-type(4) > div > div > section > div:nth-of-type(2) > div > div:nth-of-type(2) > div > div > div > div:nth-of-type(3) > div > div > div:nth-of-type(2) > a"
+    },
+    "screenshot": null,
+    "checkType": "element-level"
+  },
+  {
+    "result": "FAIL",
+    "reason": "Focused element is obscured by other content (14.3% hidden. Obscured by: body.path-frontpage.bg-gray-light)",
+    "evidence": {
+      "obscuredRatio": 0.14285714285714285,
+      "obscuredBy": [
+        "body.path-frontpage.bg-gray-light"
+      ]
+    },
+    "sc": "2.4.12",
+    "id": "1385d4dc-b51c-41dc-8f71-06aaa7e3cafc",
+    "element": {
+      "id": "E17",
+      "selector": "html > body > div > main > article > section:nth-of-type(4) > div > div > section > div:nth-of-type(2) > div > div:nth-of-type(2) > div > div > div > div:nth-of-type(3) > div > div > div:nth-of-type(2) > a",
+      "tagName": "a",
+      "uniqueSelector": "html > body > div > main > article > section:nth-of-type(4) > div > div > section > div:nth-of-type(2) > div > div:nth-of-type(2) > div > div > div > div:nth-of-type(3) > div > div > div:nth-of-type(2) > a"
+    },
+    "screenshot": "2.4.12/fail_2_4_12_E17.png",
+    "checkType": "element-level"
+  },
+  {
+    "result": "PASS",
+    "reason": "Box shadow changed",
+    "evidence": {
+      "changeType": "box-shadow-changed",
+      "measurement": {
+        "shadow": "rgba(255, 255, 255, 1) 0px 0px 0px 1.99663px, rgba(176, 0, 214, 1) 0px 0px 0px 3.99326px, rgba(0, 0, 0, 0) 0px 0px 0px 0px"
+      },
+      "allChanges": [
+        "box-shadow-changed"
+      ]
+    },
+    "sc": "2.4.7",
+    "element": {
+      "id": "E17",
+      "selector": "html > body > div > main > article > section:nth-of-type(4) > div > div > section > div:nth-of-type(2) > div > div:nth-of-type(2) > div > div > div > div:nth-of-type(3) > div > div > div:nth-of-type(2) > a",
+      "tagName": "a",
+      "uniqueSelector": "html > body > div > main > article > section:nth-of-type(4) > div > div > section > div:nth-of-type(2) > div > div:nth-of-type(2) > div > div > div > div:nth-of-type(3) > div > div > div:nth-of-type(2) > a"
+    },
+    "screenshot": null,
+    "checkType": "element-level"
+  },
+  {
+    "result": "PASS",
+    "reason": "Focus indicator meets AAA requirements (3:1 contrast and/or 2px minimum size)",
+    "evidence": {
+      "changes": [
+        {
+          "type": "box-shadow-changed",
+          "measurement": {
+            "shadow": "rgba(255, 255, 255, 1) 0px 0px 0px 1.99663px, rgba(176, 0, 214, 1) 0px 0px 0px 3.99326px, rgba(0, 0, 0, 0) 0px 0px 0px 0px"
+          }
+        }
+      ],
+      "validation": {
+        "minContrastRatio": 3,
+        "minOutlineWidth": 2
+      }
+    },
+    "sc": "2.4.13",
+    "element": {
+      "id": "E17",
+      "selector": "html > body > div > main > article > section:nth-of-type(4) > div > div > section > div:nth-of-type(2) > div > div:nth-of-type(2) > div > div > div > div:nth-of-type(3) > div > div > div:nth-of-type(2) > a",
+      "tagName": "a",
+      "uniqueSelector": "html > body > div > main > article > section:nth-of-type(4) > div > div > section > div:nth-of-type(2) > div > div:nth-of-type(2) > div > div > div > div:nth-of-type(3) > div > div > div:nth-of-type(2) > a"
+    },
+    "screenshot": null,
+    "checkType": "element-level"
+  },
+  {
+    "result": "PASS",
+    "reason": "Focused element is fully visible (not obscured)",
+    "evidence": {
+      "obscuredRatio": 0
+    },
+    "sc": "2.4.11",
+    "element": {
+      "id": "E18",
+      "selector": "html > body > div > main > article > section:nth-of-type(5) > div > div > section > div:nth-of-type(2) > div > div:nth-of-type(2) > div > div > div > div > button",
+      "tagName": "button",
+      "uniqueSelector": "html > body > div > main > article > section:nth-of-type(5) > div > div > section > div:nth-of-type(2) > div > div:nth-of-type(2) > div > div > div > div > button"
+    },
+    "screenshot": null,
+    "checkType": "element-level"
+  },
+  {
+    "result": "PASS",
+    "reason": "Focused element is fully visible (not obscured)",
+    "evidence": {
+      "obscuredRatio": 0
+    },
+    "sc": "2.4.12",
+    "element": {
+      "id": "E18",
+      "selector": "html > body > div > main > article > section:nth-of-type(5) > div > div > section > div:nth-of-type(2) > div > div:nth-of-type(2) > div > div > div > div > button",
+      "tagName": "button",
+      "uniqueSelector": "html > body > div > main > article > section:nth-of-type(5) > div > div > section > div:nth-of-type(2) > div > div:nth-of-type(2) > div > div > div > div > button"
+    },
+    "screenshot": null,
+    "checkType": "element-level"
+  },
+  {
+    "result": "PASS",
+    "reason": "Outline appeared on focus",
+    "evidence": {
+      "changeType": "outline-appeared",
+      "measurement": {
+        "width": 1,
+        "style": "auto"
+      },
+      "allChanges": [
+        "outline-appeared"
+      ]
+    },
+    "sc": "2.4.7",
+    "element": {
+      "id": "E18",
+      "selector": "html > body > div > main > article > section:nth-of-type(5) > div > div > section > div:nth-of-type(2) > div > div:nth-of-type(2) > div > div > div > div > button",
+      "tagName": "button",
+      "uniqueSelector": "html > body > div > main > article > section:nth-of-type(5) > div > div > section > div:nth-of-type(2) > div > div:nth-of-type(2) > div > div > div > div > button"
+    },
+    "screenshot": null,
+    "checkType": "element-level"
+  },
+  {
+    "result": "FAIL",
+    "reason": "Focus indicator does not meet AAA requirements: Outline width 1.0px is below minimum 2px required for AAA",
+    "evidence": {
+      "failures": [
+        "Outline width 1.0px is below minimum 2px required for AAA"
+      ],
+      "changes": [
+        "outline-appeared"
+      ],
+      "measurements": {
+        "outlineWidth": 1,
+        "borderWidths": {
+          "top": 0,
+          "right": 0,
+          "bottom": 0,
+          "left": 0
+        }
+      },
+      "validation": {
+        "minContrastRatio": 3,
+        "minOutlineWidth": 2
+      }
+    },
+    "sc": "2.4.13",
+    "id": "6959d217-f518-466c-8088-83eb8ed9dde9",
+    "element": {
+      "id": "E18",
+      "selector": "html > body > div > main > article > section:nth-of-type(5) > div > div > section > div:nth-of-type(2) > div > div:nth-of-type(2) > div > div > div > div > button",
+      "tagName": "button",
+      "uniqueSelector": "html > body > div > main > article > section:nth-of-type(5) > div > div > section > div:nth-of-type(2) > div > div:nth-of-type(2) > div > div > div > div > button"
+    },
+    "screenshot": "2.4.13/fail_2_4_13_E18.png",
+    "checkType": "element-level"
+  },
+  {
+    "result": "PASS",
+    "reason": "Focused element is partially obscured but still visible (14.3% hidden)",
+    "evidence": {
+      "obscuredRatio": 0.14285714285714285,
+      "obscuredBy": [
+        "button.headline--h6.text-left.grid.grid-cols-12.items-center.justify-between.py-6.gap"
+      ]
+    },
+    "sc": "2.4.11",
+    "element": {
+      "id": "E19",
+      "selector": "html > body > div > main > article > section:nth-of-type(5) > div > div > section > div:nth-of-type(2) > div > div:nth-of-type(2) > div > div > div > div > div > div > div:nth-of-type(2) > a",
+      "tagName": "a",
+      "uniqueSelector": "html > body > div > main > article > section:nth-of-type(5) > div > div > section > div:nth-of-type(2) > div > div:nth-of-type(2) > div > div > div > div > div > div > div:nth-of-type(2) > a"
+    },
+    "screenshot": null,
+    "checkType": "element-level"
+  },
+  {
+    "result": "FAIL",
+    "reason": "Focused element is obscured by other content (14.3% hidden. Obscured by: button.headline--h6.text-left.grid.grid-cols-12.items-center.justify-between.py-6.gap)",
+    "evidence": {
+      "obscuredRatio": 0.14285714285714285,
+      "obscuredBy": [
+        "button.headline--h6.text-left.grid.grid-cols-12.items-center.justify-between.py-6.gap"
+      ]
+    },
+    "sc": "2.4.12",
+    "id": "272d1385-8db6-4500-916b-8838eacd00c8",
+    "element": {
+      "id": "E19",
+      "selector": "html > body > div > main > article > section:nth-of-type(5) > div > div > section > div:nth-of-type(2) > div > div:nth-of-type(2) > div > div > div > div > div > div > div:nth-of-type(2) > a",
+      "tagName": "a",
+      "uniqueSelector": "html > body > div > main > article > section:nth-of-type(5) > div > div > section > div:nth-of-type(2) > div > div:nth-of-type(2) > div > div > div > div > div > div > div:nth-of-type(2) > a"
+    },
+    "screenshot": "2.4.12/fail_2_4_12_E19.png",
+    "checkType": "element-level"
+  },
+  {
+    "result": "PASS",
+    "reason": "Box shadow changed",
+    "evidence": {
+      "changeType": "box-shadow-changed",
+      "measurement": {
+        "shadow": "rgba(255, 255, 255, 1) 0px 0px 0px 2px, rgba(176, 0, 214, 1) 0px 0px 0px 4px, rgba(0, 0, 0, 0) 0px 0px 0px 0px"
+      },
+      "allChanges": [
+        "box-shadow-changed"
+      ]
+    },
+    "sc": "2.4.7",
+    "element": {
+      "id": "E19",
+      "selector": "html > body > div > main > article > section:nth-of-type(5) > div > div > section > div:nth-of-type(2) > div > div:nth-of-type(2) > div > div > div > div > div > div > div:nth-of-type(2) > a",
+      "tagName": "a",
+      "uniqueSelector": "html > body > div > main > article > section:nth-of-type(5) > div > div > section > div:nth-of-type(2) > div > div:nth-of-type(2) > div > div > div > div > div > div > div:nth-of-type(2) > a"
+    },
+    "screenshot": null,
+    "checkType": "element-level"
+  },
+  {
+    "result": "PASS",
+    "reason": "Focus indicator meets AAA requirements (3:1 contrast and/or 2px minimum size)",
+    "evidence": {
+      "changes": [
+        {
+          "type": "box-shadow-changed",
+          "measurement": {
+            "shadow": "rgba(255, 255, 255, 1) 0px 0px 0px 2px, rgba(176, 0, 214, 1) 0px 0px 0px 4px, rgba(0, 0, 0, 0) 0px 0px 0px 0px"
+          }
+        }
+      ],
+      "validation": {
+        "minContrastRatio": 3,
+        "minOutlineWidth": 2
+      }
+    },
+    "sc": "2.4.13",
+    "element": {
+      "id": "E19",
+      "selector": "html > body > div > main > article > section:nth-of-type(5) > div > div > section > div:nth-of-type(2) > div > div:nth-of-type(2) > div > div > div > div > div > div > div:nth-of-type(2) > a",
+      "tagName": "a",
+      "uniqueSelector": "html > body > div > main > article > section:nth-of-type(5) > div > div > section > div:nth-of-type(2) > div > div:nth-of-type(2) > div > div > div > div > div > div > div:nth-of-type(2) > a"
+    },
+    "screenshot": null,
+    "checkType": "element-level"
+  },
+  {
+    "result": "PASS",
+    "reason": "Focused element is fully visible (not obscured)",
+    "evidence": {
+      "obscuredRatio": 0
+    },
+    "sc": "2.4.11",
+    "element": {
+      "id": "E20",
+      "selector": "html > body > div > main > article > section:nth-of-type(5) > div > div > section > div:nth-of-type(2) > div > div:nth-of-type(2) > div > div > div > div:nth-of-type(2) > button",
+      "tagName": "button",
+      "uniqueSelector": "html > body > div > main > article > section:nth-of-type(5) > div > div > section > div:nth-of-type(2) > div > div:nth-of-type(2) > div > div > div > div:nth-of-type(2) > button"
+    },
+    "screenshot": null,
+    "checkType": "element-level"
+  },
+  {
+    "result": "PASS",
+    "reason": "Focused element is fully visible (not obscured)",
+    "evidence": {
+      "obscuredRatio": 0
+    },
+    "sc": "2.4.12",
+    "element": {
+      "id": "E20",
+      "selector": "html > body > div > main > article > section:nth-of-type(5) > div > div > section > div:nth-of-type(2) > div > div:nth-of-type(2) > div > div > div > div:nth-of-type(2) > button",
+      "tagName": "button",
+      "uniqueSelector": "html > body > div > main > article > section:nth-of-type(5) > div > div > section > div:nth-of-type(2) > div > div:nth-of-type(2) > div > div > div > div:nth-of-type(2) > button"
+    },
+    "screenshot": null,
+    "checkType": "element-level"
+  },
+  {
+    "result": "PASS",
+    "reason": "Outline appeared on focus",
+    "evidence": {
+      "changeType": "outline-appeared",
+      "measurement": {
+        "width": 1,
+        "style": "auto"
+      },
+      "allChanges": [
+        "outline-appeared"
+      ]
+    },
+    "sc": "2.4.7",
+    "element": {
+      "id": "E20",
+      "selector": "html > body > div > main > article > section:nth-of-type(5) > div > div > section > div:nth-of-type(2) > div > div:nth-of-type(2) > div > div > div > div:nth-of-type(2) > button",
+      "tagName": "button",
+      "uniqueSelector": "html > body > div > main > article > section:nth-of-type(5) > div > div > section > div:nth-of-type(2) > div > div:nth-of-type(2) > div > div > div > div:nth-of-type(2) > button"
+    },
+    "screenshot": null,
+    "checkType": "element-level"
+  },
+  {
+    "result": "FAIL",
+    "reason": "Focus indicator does not meet AAA requirements: Outline width 1.0px is below minimum 2px required for AAA",
+    "evidence": {
+      "failures": [
+        "Outline width 1.0px is below minimum 2px required for AAA"
+      ],
+      "changes": [
+        "outline-appeared"
+      ],
+      "measurements": {
+        "outlineWidth": 1,
+        "borderWidths": {
+          "top": 0,
+          "right": 0,
+          "bottom": 0,
+          "left": 0
+        }
+      },
+      "validation": {
+        "minContrastRatio": 3,
+        "minOutlineWidth": 2
+      }
+    },
+    "sc": "2.4.13",
+    "id": "898d0d9f-8685-4a7d-a7ed-e489e053f2b8",
+    "element": {
+      "id": "E20",
+      "selector": "html > body > div > main > article > section:nth-of-type(5) > div > div > section > div:nth-of-type(2) > div > div:nth-of-type(2) > div > div > div > div:nth-of-type(2) > button",
+      "tagName": "button",
+      "uniqueSelector": "html > body > div > main > article > section:nth-of-type(5) > div > div > section > div:nth-of-type(2) > div > div:nth-of-type(2) > div > div > div > div:nth-of-type(2) > button"
+    },
+    "screenshot": "2.4.13/fail_2_4_13_E20.png",
+    "checkType": "element-level"
+  },
+  {
+    "result": "PASS",
+    "reason": "Focused element is partially obscured but still visible (14.3% hidden)",
+    "evidence": {
+      "obscuredRatio": 0.14285714285714285,
+      "obscuredBy": [
+        "body.path-frontpage.bg-gray-light"
+      ]
+    },
+    "sc": "2.4.11",
+    "element": {
+      "id": "E21",
+      "selector": "html > body > div > main > article > section:nth-of-type(5) > div > div > section > div:nth-of-type(2) > div > div:nth-of-type(2) > div > div > div > div:nth-of-type(2) > div > div > div:nth-of-type(2) > a",
+      "tagName": "a",
+      "uniqueSelector": "html > body > div > main > article > section:nth-of-type(5) > div > div > section > div:nth-of-type(2) > div > div:nth-of-type(2) > div > div > div > div:nth-of-type(2) > div > div > div:nth-of-type(2) > a"
+    },
+    "screenshot": null,
+    "checkType": "element-level"
+  },
+  {
+    "result": "FAIL",
+    "reason": "Focused element is obscured by other content (14.3% hidden. Obscured by: body.path-frontpage.bg-gray-light)",
+    "evidence": {
+      "obscuredRatio": 0.14285714285714285,
+      "obscuredBy": [
+        "body.path-frontpage.bg-gray-light"
+      ]
+    },
+    "sc": "2.4.12",
+    "id": "fe54cf4d-3ed3-4709-ae09-95abb0e5a9b6",
+    "element": {
+      "id": "E21",
+      "selector": "html > body > div > main > article > section:nth-of-type(5) > div > div > section > div:nth-of-type(2) > div > div:nth-of-type(2) > div > div > div > div:nth-of-type(2) > div > div > div:nth-of-type(2) > a",
+      "tagName": "a",
+      "uniqueSelector": "html > body > div > main > article > section:nth-of-type(5) > div > div > section > div:nth-of-type(2) > div > div:nth-of-type(2) > div > div > div > div:nth-of-type(2) > div > div > div:nth-of-type(2) > a"
+    },
+    "screenshot": "2.4.12/fail_2_4_12_E21.png",
+    "checkType": "element-level"
+  },
+  {
+    "result": "PASS",
+    "reason": "Box shadow changed",
+    "evidence": {
+      "changeType": "box-shadow-changed",
+      "measurement": {
+        "shadow": "rgba(255, 255, 255, 1) 0px 0px 0px 1.99999px, rgba(176, 0, 214, 1) 0px 0px 0px 3.99999px, rgba(0, 0, 0, 0) 0px 0px 0px 0px"
+      },
+      "allChanges": [
+        "box-shadow-changed"
+      ]
+    },
+    "sc": "2.4.7",
+    "element": {
+      "id": "E21",
+      "selector": "html > body > div > main > article > section:nth-of-type(5) > div > div > section > div:nth-of-type(2) > div > div:nth-of-type(2) > div > div > div > div:nth-of-type(2) > div > div > div:nth-of-type(2) > a",
+      "tagName": "a",
+      "uniqueSelector": "html > body > div > main > article > section:nth-of-type(5) > div > div > section > div:nth-of-type(2) > div > div:nth-of-type(2) > div > div > div > div:nth-of-type(2) > div > div > div:nth-of-type(2) > a"
+    },
+    "screenshot": null,
+    "checkType": "element-level"
+  },
+  {
+    "result": "PASS",
+    "reason": "Focus indicator meets AAA requirements (3:1 contrast and/or 2px minimum size)",
+    "evidence": {
+      "changes": [
+        {
+          "type": "box-shadow-changed",
+          "measurement": {
+            "shadow": "rgba(255, 255, 255, 1) 0px 0px 0px 1.99999px, rgba(176, 0, 214, 1) 0px 0px 0px 3.99999px, rgba(0, 0, 0, 0) 0px 0px 0px 0px"
+          }
+        }
+      ],
+      "validation": {
+        "minContrastRatio": 3,
+        "minOutlineWidth": 2
+      }
+    },
+    "sc": "2.4.13",
+    "element": {
+      "id": "E21",
+      "selector": "html > body > div > main > article > section:nth-of-type(5) > div > div > section > div:nth-of-type(2) > div > div:nth-of-type(2) > div > div > div > div:nth-of-type(2) > div > div > div:nth-of-type(2) > a",
+      "tagName": "a",
+      "uniqueSelector": "html > body > div > main > article > section:nth-of-type(5) > div > div > section > div:nth-of-type(2) > div > div:nth-of-type(2) > div > div > div > div:nth-of-type(2) > div > div > div:nth-of-type(2) > a"
+    },
+    "screenshot": null,
+    "checkType": "element-level"
+  },
+  {
+    "result": "PASS",
+    "reason": "Focused element is fully visible (not obscured)",
+    "evidence": {
+      "obscuredRatio": 0
+    },
+    "sc": "2.4.11",
+    "element": {
+      "id": "E22",
+      "selector": "html > body > div > main > article > section:nth-of-type(5) > div > div > section > div:nth-of-type(2) > div > div:nth-of-type(2) > div > div > div > div:nth-of-type(3) > button",
+      "tagName": "button",
+      "uniqueSelector": "html > body > div > main > article > section:nth-of-type(5) > div > div > section > div:nth-of-type(2) > div > div:nth-of-type(2) > div > div > div > div:nth-of-type(3) > button"
+    },
+    "screenshot": null,
+    "checkType": "element-level"
+  },
+  {
+    "result": "PASS",
+    "reason": "Focused element is fully visible (not obscured)",
+    "evidence": {
+      "obscuredRatio": 0
+    },
+    "sc": "2.4.12",
+    "element": {
+      "id": "E22",
+      "selector": "html > body > div > main > article > section:nth-of-type(5) > div > div > section > div:nth-of-type(2) > div > div:nth-of-type(2) > div > div > div > div:nth-of-type(3) > button",
+      "tagName": "button",
+      "uniqueSelector": "html > body > div > main > article > section:nth-of-type(5) > div > div > section > div:nth-of-type(2) > div > div:nth-of-type(2) > div > div > div > div:nth-of-type(3) > button"
+    },
+    "screenshot": null,
+    "checkType": "element-level"
+  },
+  {
+    "result": "PASS",
+    "reason": "Outline appeared on focus",
+    "evidence": {
+      "changeType": "outline-appeared",
+      "measurement": {
+        "width": 1,
+        "style": "auto"
+      },
+      "allChanges": [
+        "outline-appeared"
+      ]
+    },
+    "sc": "2.4.7",
+    "element": {
+      "id": "E22",
+      "selector": "html > body > div > main > article > section:nth-of-type(5) > div > div > section > div:nth-of-type(2) > div > div:nth-of-type(2) > div > div > div > div:nth-of-type(3) > button",
+      "tagName": "button",
+      "uniqueSelector": "html > body > div > main > article > section:nth-of-type(5) > div > div > section > div:nth-of-type(2) > div > div:nth-of-type(2) > div > div > div > div:nth-of-type(3) > button"
+    },
+    "screenshot": null,
+    "checkType": "element-level"
+  },
+  {
+    "result": "FAIL",
+    "reason": "Focus indicator does not meet AAA requirements: Outline width 1.0px is below minimum 2px required for AAA",
+    "evidence": {
+      "failures": [
+        "Outline width 1.0px is below minimum 2px required for AAA"
+      ],
+      "changes": [
+        "outline-appeared"
+      ],
+      "measurements": {
+        "outlineWidth": 1,
+        "borderWidths": {
+          "top": 0,
+          "right": 0,
+          "bottom": 0,
+          "left": 0
+        }
+      },
+      "validation": {
+        "minContrastRatio": 3,
+        "minOutlineWidth": 2
+      }
+    },
+    "sc": "2.4.13",
+    "id": "3427ae9e-ada0-4ac6-9734-d6e05a67c275",
+    "element": {
+      "id": "E22",
+      "selector": "html > body > div > main > article > section:nth-of-type(5) > div > div > section > div:nth-of-type(2) > div > div:nth-of-type(2) > div > div > div > div:nth-of-type(3) > button",
+      "tagName": "button",
+      "uniqueSelector": "html > body > div > main > article > section:nth-of-type(5) > div > div > section > div:nth-of-type(2) > div > div:nth-of-type(2) > div > div > div > div:nth-of-type(3) > button"
+    },
+    "screenshot": "2.4.13/fail_2_4_13_E22.png",
+    "checkType": "element-level"
+  },
+  {
+    "result": "PASS",
+    "reason": "Focused element is partially obscured but still visible (14.3% hidden)",
+    "evidence": {
+      "obscuredRatio": 0.14285714285714285,
+      "obscuredBy": [
+        "body.path-frontpage.bg-gray-light"
+      ]
+    },
+    "sc": "2.4.11",
+    "element": {
+      "id": "E23",
+      "selector": "html > body > div > main > article > section:nth-of-type(5) > div > div > section > div:nth-of-type(2) > div > div:nth-of-type(2) > div > div > div > div:nth-of-type(3) > div > div > div:nth-of-type(2) > a",
+      "tagName": "a",
+      "uniqueSelector": "html > body > div > main > article > section:nth-of-type(5) > div > div > section > div:nth-of-type(2) > div > div:nth-of-type(2) > div > div > div > div:nth-of-type(3) > div > div > div:nth-of-type(2) > a"
+    },
+    "screenshot": null,
+    "checkType": "element-level"
+  },
+  {
+    "result": "FAIL",
+    "reason": "Focused element is obscured by other content (14.3% hidden. Obscured by: body.path-frontpage.bg-gray-light)",
+    "evidence": {
+      "obscuredRatio": 0.14285714285714285,
+      "obscuredBy": [
+        "body.path-frontpage.bg-gray-light"
+      ]
+    },
+    "sc": "2.4.12",
+    "id": "ebeb763e-f424-48a9-bad3-ab9c98b7a2e7",
+    "element": {
+      "id": "E23",
+      "selector": "html > body > div > main > article > section:nth-of-type(5) > div > div > section > div:nth-of-type(2) > div > div:nth-of-type(2) > div > div > div > div:nth-of-type(3) > div > div > div:nth-of-type(2) > a",
+      "tagName": "a",
+      "uniqueSelector": "html > body > div > main > article > section:nth-of-type(5) > div > div > section > div:nth-of-type(2) > div > div:nth-of-type(2) > div > div > div > div:nth-of-type(3) > div > div > div:nth-of-type(2) > a"
+    },
+    "screenshot": "2.4.12/fail_2_4_12_E23.png",
+    "checkType": "element-level"
+  },
+  {
+    "result": "PASS",
+    "reason": "Box shadow changed",
+    "evidence": {
+      "changeType": "box-shadow-changed",
+      "measurement": {
+        "shadow": "rgba(255, 255, 255, 1) 0px 0px 0px 1.99999px, rgba(176, 0, 214, 1) 0px 0px 0px 3.99998px, rgba(0, 0, 0, 0) 0px 0px 0px 0px"
+      },
+      "allChanges": [
+        "box-shadow-changed"
+      ]
+    },
+    "sc": "2.4.7",
+    "element": {
+      "id": "E23",
+      "selector": "html > body > div > main > article > section:nth-of-type(5) > div > div > section > div:nth-of-type(2) > div > div:nth-of-type(2) > div > div > div > div:nth-of-type(3) > div > div > div:nth-of-type(2) > a",
+      "tagName": "a",
+      "uniqueSelector": "html > body > div > main > article > section:nth-of-type(5) > div > div > section > div:nth-of-type(2) > div > div:nth-of-type(2) > div > div > div > div:nth-of-type(3) > div > div > div:nth-of-type(2) > a"
+    },
+    "screenshot": null,
+    "checkType": "element-level"
+  },
+  {
+    "result": "PASS",
+    "reason": "Focus indicator meets AAA requirements (3:1 contrast and/or 2px minimum size)",
+    "evidence": {
+      "changes": [
+        {
+          "type": "box-shadow-changed",
+          "measurement": {
+            "shadow": "rgba(255, 255, 255, 1) 0px 0px 0px 1.99999px, rgba(176, 0, 214, 1) 0px 0px 0px 3.99998px, rgba(0, 0, 0, 0) 0px 0px 0px 0px"
+          }
+        }
+      ],
+      "validation": {
+        "minContrastRatio": 3,
+        "minOutlineWidth": 2
+      }
+    },
+    "sc": "2.4.13",
+    "element": {
+      "id": "E23",
+      "selector": "html > body > div > main > article > section:nth-of-type(5) > div > div > section > div:nth-of-type(2) > div > div:nth-of-type(2) > div > div > div > div:nth-of-type(3) > div > div > div:nth-of-type(2) > a",
+      "tagName": "a",
+      "uniqueSelector": "html > body > div > main > article > section:nth-of-type(5) > div > div > section > div:nth-of-type(2) > div > div:nth-of-type(2) > div > div > div > div:nth-of-type(3) > div > div > div:nth-of-type(2) > a"
+    },
+    "screenshot": null,
+    "checkType": "element-level"
+  },
+  {
+    "result": "PASS",
+    "reason": "Focused element is fully visible (not obscured)",
+    "evidence": {
+      "obscuredRatio": 0
+    },
+    "sc": "2.4.11",
+    "element": {
+      "id": "E24",
+      "selector": "html > body > div > main > article > section:nth-of-type(6) > div > div > section > div:nth-of-type(2) > div > div:nth-of-type(2) > div > div > div > div > button",
+      "tagName": "button",
+      "uniqueSelector": "html > body > div > main > article > section:nth-of-type(6) > div > div > section > div:nth-of-type(2) > div > div:nth-of-type(2) > div > div > div > div > button"
+    },
+    "screenshot": null,
+    "checkType": "element-level"
+  },
+  {
+    "result": "PASS",
+    "reason": "Focused element is fully visible (not obscured)",
+    "evidence": {
+      "obscuredRatio": 0
+    },
+    "sc": "2.4.12",
+    "element": {
+      "id": "E24",
+      "selector": "html > body > div > main > article > section:nth-of-type(6) > div > div > section > div:nth-of-type(2) > div > div:nth-of-type(2) > div > div > div > div > button",
+      "tagName": "button",
+      "uniqueSelector": "html > body > div > main > article > section:nth-of-type(6) > div > div > section > div:nth-of-type(2) > div > div:nth-of-type(2) > div > div > div > div > button"
+    },
+    "screenshot": null,
+    "checkType": "element-level"
+  },
+  {
+    "result": "PASS",
+    "reason": "Outline appeared on focus",
+    "evidence": {
+      "changeType": "outline-appeared",
+      "measurement": {
+        "width": 1,
+        "style": "auto"
+      },
+      "allChanges": [
+        "outline-appeared"
+      ]
+    },
+    "sc": "2.4.7",
+    "element": {
+      "id": "E24",
+      "selector": "html > body > div > main > article > section:nth-of-type(6) > div > div > section > div:nth-of-type(2) > div > div:nth-of-type(2) > div > div > div > div > button",
+      "tagName": "button",
+      "uniqueSelector": "html > body > div > main > article > section:nth-of-type(6) > div > div > section > div:nth-of-type(2) > div > div:nth-of-type(2) > div > div > div > div > button"
+    },
+    "screenshot": null,
+    "checkType": "element-level"
+  },
+  {
+    "result": "FAIL",
+    "reason": "Focus indicator does not meet AAA requirements: Outline width 1.0px is below minimum 2px required for AAA",
+    "evidence": {
+      "failures": [
+        "Outline width 1.0px is below minimum 2px required for AAA"
+      ],
+      "changes": [
+        "outline-appeared"
+      ],
+      "measurements": {
+        "outlineWidth": 1,
+        "borderWidths": {
+          "top": 0,
+          "right": 0,
+          "bottom": 0,
+          "left": 0
+        }
+      },
+      "validation": {
+        "minContrastRatio": 3,
+        "minOutlineWidth": 2
+      }
+    },
+    "sc": "2.4.13",
+    "id": "49bc02cd-afc4-44b8-859f-21a79608ab9b",
+    "element": {
+      "id": "E24",
+      "selector": "html > body > div > main > article > section:nth-of-type(6) > div > div > section > div:nth-of-type(2) > div > div:nth-of-type(2) > div > div > div > div > button",
+      "tagName": "button",
+      "uniqueSelector": "html > body > div > main > article > section:nth-of-type(6) > div > div > section > div:nth-of-type(2) > div > div:nth-of-type(2) > div > div > div > div > button"
+    },
+    "screenshot": "2.4.13/fail_2_4_13_E24.png",
+    "checkType": "element-level"
+  },
+  {
+    "result": "PASS",
+    "reason": "Focused element is partially obscured but still visible (14.3% hidden)",
+    "evidence": {
+      "obscuredRatio": 0.14285714285714285,
+      "obscuredBy": [
+        "button.headline--h6.text-left.grid.grid-cols-12.items-center.justify-between.py-6.gap"
+      ]
+    },
+    "sc": "2.4.11",
+    "element": {
+      "id": "E25",
+      "selector": "html > body > div > main > article > section:nth-of-type(6) > div > div > section > div:nth-of-type(2) > div > div:nth-of-type(2) > div > div > div > div > div > div > div:nth-of-type(2) > a",
+      "tagName": "a",
+      "uniqueSelector": "html > body > div > main > article > section:nth-of-type(6) > div > div > section > div:nth-of-type(2) > div > div:nth-of-type(2) > div > div > div > div > div > div > div:nth-of-type(2) > a"
+    },
+    "screenshot": null,
+    "checkType": "element-level"
+  },
+  {
+    "result": "FAIL",
+    "reason": "Focused element is obscured by other content (14.3% hidden. Obscured by: button.headline--h6.text-left.grid.grid-cols-12.items-center.justify-between.py-6.gap)",
+    "evidence": {
+      "obscuredRatio": 0.14285714285714285,
+      "obscuredBy": [
+        "button.headline--h6.text-left.grid.grid-cols-12.items-center.justify-between.py-6.gap"
+      ]
+    },
+    "sc": "2.4.12",
+    "id": "09dc3a1d-7cb6-4b74-82fb-d0b5bdc67029",
+    "element": {
+      "id": "E25",
+      "selector": "html > body > div > main > article > section:nth-of-type(6) > div > div > section > div:nth-of-type(2) > div > div:nth-of-type(2) > div > div > div > div > div > div > div:nth-of-type(2) > a",
+      "tagName": "a",
+      "uniqueSelector": "html > body > div > main > article > section:nth-of-type(6) > div > div > section > div:nth-of-type(2) > div > div:nth-of-type(2) > div > div > div > div > div > div > div:nth-of-type(2) > a"
+    },
+    "screenshot": "2.4.12/fail_2_4_12_E25.png",
+    "checkType": "element-level"
+  },
+  {
+    "result": "PASS",
+    "reason": "Box shadow changed",
+    "evidence": {
+      "changeType": "box-shadow-changed",
+      "measurement": {
+        "shadow": "rgba(255, 255, 255, 0.984) 0px 0px 0px 1.96847px, rgba(176, 0, 214, 0.984) 0px 0px 0px 3.93694px, rgba(0, 0, 0, 0) 0px 0px 0px 0px"
+      },
+      "allChanges": [
+        "box-shadow-changed"
+      ]
+    },
+    "sc": "2.4.7",
+    "element": {
+      "id": "E25",
+      "selector": "html > body > div > main > article > section:nth-of-type(6) > div > div > section > div:nth-of-type(2) > div > div:nth-of-type(2) > div > div > div > div > div > div > div:nth-of-type(2) > a",
+      "tagName": "a",
+      "uniqueSelector": "html > body > div > main > article > section:nth-of-type(6) > div > div > section > div:nth-of-type(2) > div > div:nth-of-type(2) > div > div > div > div > div > div > div:nth-of-type(2) > a"
+    },
+    "screenshot": null,
+    "checkType": "element-level"
+  },
+  {
+    "result": "PASS",
+    "reason": "Focus indicator meets AAA requirements (3:1 contrast and/or 2px minimum size)",
+    "evidence": {
+      "changes": [
+        {
+          "type": "box-shadow-changed",
+          "measurement": {
+            "shadow": "rgba(255, 255, 255, 0.984) 0px 0px 0px 1.96847px, rgba(176, 0, 214, 0.984) 0px 0px 0px 3.93694px, rgba(0, 0, 0, 0) 0px 0px 0px 0px"
+          }
+        }
+      ],
+      "validation": {
+        "minContrastRatio": 3,
+        "minOutlineWidth": 2
+      }
+    },
+    "sc": "2.4.13",
+    "element": {
+      "id": "E25",
+      "selector": "html > body > div > main > article > section:nth-of-type(6) > div > div > section > div:nth-of-type(2) > div > div:nth-of-type(2) > div > div > div > div > div > div > div:nth-of-type(2) > a",
+      "tagName": "a",
+      "uniqueSelector": "html > body > div > main > article > section:nth-of-type(6) > div > div > section > div:nth-of-type(2) > div > div:nth-of-type(2) > div > div > div > div > div > div > div:nth-of-type(2) > a"
+    },
+    "screenshot": null,
+    "checkType": "element-level"
+  },
+  {
+    "result": "PASS",
+    "reason": "Focused element is fully visible (not obscured)",
+    "evidence": {
+      "obscuredRatio": 0
+    },
+    "sc": "2.4.11",
+    "element": {
+      "id": "E26",
+      "selector": "html > body > div > main > article > section:nth-of-type(6) > div > div > section > div:nth-of-type(2) > div > div:nth-of-type(2) > div > div > div > div:nth-of-type(2) > button",
+      "tagName": "button",
+      "uniqueSelector": "html > body > div > main > article > section:nth-of-type(6) > div > div > section > div:nth-of-type(2) > div > div:nth-of-type(2) > div > div > div > div:nth-of-type(2) > button"
+    },
+    "screenshot": null,
+    "checkType": "element-level"
+  },
+  {
+    "result": "PASS",
+    "reason": "Focused element is fully visible (not obscured)",
+    "evidence": {
+      "obscuredRatio": 0
+    },
+    "sc": "2.4.12",
+    "element": {
+      "id": "E26",
+      "selector": "html > body > div > main > article > section:nth-of-type(6) > div > div > section > div:nth-of-type(2) > div > div:nth-of-type(2) > div > div > div > div:nth-of-type(2) > button",
+      "tagName": "button",
+      "uniqueSelector": "html > body > div > main > article > section:nth-of-type(6) > div > div > section > div:nth-of-type(2) > div > div:nth-of-type(2) > div > div > div > div:nth-of-type(2) > button"
+    },
+    "screenshot": null,
+    "checkType": "element-level"
+  },
+  {
+    "result": "PASS",
+    "reason": "Outline appeared on focus",
+    "evidence": {
+      "changeType": "outline-appeared",
+      "measurement": {
+        "width": 1,
+        "style": "auto"
+      },
+      "allChanges": [
+        "outline-appeared"
+      ]
+    },
+    "sc": "2.4.7",
+    "element": {
+      "id": "E26",
+      "selector": "html > body > div > main > article > section:nth-of-type(6) > div > div > section > div:nth-of-type(2) > div > div:nth-of-type(2) > div > div > div > div:nth-of-type(2) > button",
+      "tagName": "button",
+      "uniqueSelector": "html > body > div > main > article > section:nth-of-type(6) > div > div > section > div:nth-of-type(2) > div > div:nth-of-type(2) > div > div > div > div:nth-of-type(2) > button"
+    },
+    "screenshot": null,
+    "checkType": "element-level"
+  },
+  {
+    "result": "FAIL",
+    "reason": "Focus indicator does not meet AAA requirements: Outline width 1.0px is below minimum 2px required for AAA",
+    "evidence": {
+      "failures": [
+        "Outline width 1.0px is below minimum 2px required for AAA"
+      ],
+      "changes": [
+        "outline-appeared"
+      ],
+      "measurements": {
+        "outlineWidth": 1,
+        "borderWidths": {
+          "top": 0,
+          "right": 0,
+          "bottom": 0,
+          "left": 0
+        }
+      },
+      "validation": {
+        "minContrastRatio": 3,
+        "minOutlineWidth": 2
+      }
+    },
+    "sc": "2.4.13",
+    "id": "f61f9cba-aed1-453a-afce-76205a659112",
+    "element": {
+      "id": "E26",
+      "selector": "html > body > div > main > article > section:nth-of-type(6) > div > div > section > div:nth-of-type(2) > div > div:nth-of-type(2) > div > div > div > div:nth-of-type(2) > button",
+      "tagName": "button",
+      "uniqueSelector": "html > body > div > main > article > section:nth-of-type(6) > div > div > section > div:nth-of-type(2) > div > div:nth-of-type(2) > div > div > div > div:nth-of-type(2) > button"
+    },
+    "screenshot": "2.4.13/fail_2_4_13_E26.png",
+    "checkType": "element-level"
+  },
+  {
+    "result": "PASS",
+    "reason": "Focused element is partially obscured but still visible (14.3% hidden)",
+    "evidence": {
+      "obscuredRatio": 0.14285714285714285,
+      "obscuredBy": [
+        "button.headline--h6.text-left.grid.grid-cols-12.items-center.justify-between.py-6.gap"
+      ]
+    },
+    "sc": "2.4.11",
+    "element": {
+      "id": "E27",
+      "selector": "html > body > div > main > article > section:nth-of-type(6) > div > div > section > div:nth-of-type(2) > div > div:nth-of-type(2) > div > div > div > div:nth-of-type(2) > div > div > div:nth-of-type(2) > a",
+      "tagName": "a",
+      "uniqueSelector": "html > body > div > main > article > section:nth-of-type(6) > div > div > section > div:nth-of-type(2) > div > div:nth-of-type(2) > div > div > div > div:nth-of-type(2) > div > div > div:nth-of-type(2) > a"
+    },
+    "screenshot": null,
+    "checkType": "element-level"
+  },
+  {
+    "result": "FAIL",
+    "reason": "Focused element is obscured by other content (14.3% hidden. Obscured by: button.headline--h6.text-left.grid.grid-cols-12.items-center.justify-between.py-6.gap)",
+    "evidence": {
+      "obscuredRatio": 0.14285714285714285,
+      "obscuredBy": [
+        "button.headline--h6.text-left.grid.grid-cols-12.items-center.justify-between.py-6.gap"
+      ]
+    },
+    "sc": "2.4.12",
+    "id": "e4221cc4-60be-49d1-a87c-5eb84a05da3d",
+    "element": {
+      "id": "E27",
+      "selector": "html > body > div > main > article > section:nth-of-type(6) > div > div > section > div:nth-of-type(2) > div > div:nth-of-type(2) > div > div > div > div:nth-of-type(2) > div > div > div:nth-of-type(2) > a",
+      "tagName": "a",
+      "uniqueSelector": "html > body > div > main > article > section:nth-of-type(6) > div > div > section > div:nth-of-type(2) > div > div:nth-of-type(2) > div > div > div > div:nth-of-type(2) > div > div > div:nth-of-type(2) > a"
+    },
+    "screenshot": "2.4.12/fail_2_4_12_E27.png",
+    "checkType": "element-level"
+  },
+  {
+    "result": "PASS",
+    "reason": "Box shadow changed",
+    "evidence": {
+      "changeType": "box-shadow-changed",
+      "measurement": {
+        "shadow": "rgba(255, 255, 255, 0.992) 0px 0px 0px 1.98661px, rgba(176, 0, 214, 0.992) 0px 0px 0px 3.97322px, rgba(0, 0, 0, 0) 0px 0px 0px 0px"
+      },
+      "allChanges": [
+        "box-shadow-changed"
+      ]
+    },
+    "sc": "2.4.7",
+    "element": {
+      "id": "E27",
+      "selector": "html > body > div > main > article > section:nth-of-type(6) > div > div > section > div:nth-of-type(2) > div > div:nth-of-type(2) > div > div > div > div:nth-of-type(2) > div > div > div:nth-of-type(2) > a",
+      "tagName": "a",
+      "uniqueSelector": "html > body > div > main > article > section:nth-of-type(6) > div > div > section > div:nth-of-type(2) > div > div:nth-of-type(2) > div > div > div > div:nth-of-type(2) > div > div > div:nth-of-type(2) > a"
+    },
+    "screenshot": null,
+    "checkType": "element-level"
+  },
+  {
+    "result": "PASS",
+    "reason": "Focus indicator meets AAA requirements (3:1 contrast and/or 2px minimum size)",
+    "evidence": {
+      "changes": [
+        {
+          "type": "box-shadow-changed",
+          "measurement": {
+            "shadow": "rgba(255, 255, 255, 0.992) 0px 0px 0px 1.98661px, rgba(176, 0, 214, 0.992) 0px 0px 0px 3.97322px, rgba(0, 0, 0, 0) 0px 0px 0px 0px"
+          }
+        }
+      ],
+      "validation": {
+        "minContrastRatio": 3,
+        "minOutlineWidth": 2
+      }
+    },
+    "sc": "2.4.13",
+    "element": {
+      "id": "E27",
+      "selector": "html > body > div > main > article > section:nth-of-type(6) > div > div > section > div:nth-of-type(2) > div > div:nth-of-type(2) > div > div > div > div:nth-of-type(2) > div > div > div:nth-of-type(2) > a",
+      "tagName": "a",
+      "uniqueSelector": "html > body > div > main > article > section:nth-of-type(6) > div > div > section > div:nth-of-type(2) > div > div:nth-of-type(2) > div > div > div > div:nth-of-type(2) > div > div > div:nth-of-type(2) > a"
+    },
+    "screenshot": null,
+    "checkType": "element-level"
+  },
+  {
+    "result": "PASS",
+    "reason": "Focused element is fully visible (not obscured)",
+    "evidence": {
+      "obscuredRatio": 0
+    },
+    "sc": "2.4.11",
+    "element": {
+      "id": "E28",
+      "selector": "html > body > div > main > article > section:nth-of-type(6) > div > div > section > div:nth-of-type(2) > div > div:nth-of-type(2) > div > div > div > div:nth-of-type(3) > button",
+      "tagName": "button",
+      "uniqueSelector": "html > body > div > main > article > section:nth-of-type(6) > div > div > section > div:nth-of-type(2) > div > div:nth-of-type(2) > div > div > div > div:nth-of-type(3) > button"
+    },
+    "screenshot": null,
+    "checkType": "element-level"
+  },
+  {
+    "result": "PASS",
+    "reason": "Focused element is fully visible (not obscured)",
+    "evidence": {
+      "obscuredRatio": 0
+    },
+    "sc": "2.4.12",
+    "element": {
+      "id": "E28",
+      "selector": "html > body > div > main > article > section:nth-of-type(6) > div > div > section > div:nth-of-type(2) > div > div:nth-of-type(2) > div > div > div > div:nth-of-type(3) > button",
+      "tagName": "button",
+      "uniqueSelector": "html > body > div > main > article > section:nth-of-type(6) > div > div > section > div:nth-of-type(2) > div > div:nth-of-type(2) > div > div > div > div:nth-of-type(3) > button"
+    },
+    "screenshot": null,
+    "checkType": "element-level"
+  },
+  {
+    "result": "PASS",
+    "reason": "Outline appeared on focus",
+    "evidence": {
+      "changeType": "outline-appeared",
+      "measurement": {
+        "width": 1,
+        "style": "auto"
+      },
+      "allChanges": [
+        "outline-appeared"
+      ]
+    },
+    "sc": "2.4.7",
+    "element": {
+      "id": "E28",
+      "selector": "html > body > div > main > article > section:nth-of-type(6) > div > div > section > div:nth-of-type(2) > div > div:nth-of-type(2) > div > div > div > div:nth-of-type(3) > button",
+      "tagName": "button",
+      "uniqueSelector": "html > body > div > main > article > section:nth-of-type(6) > div > div > section > div:nth-of-type(2) > div > div:nth-of-type(2) > div > div > div > div:nth-of-type(3) > button"
+    },
+    "screenshot": null,
+    "checkType": "element-level"
+  },
+  {
+    "result": "FAIL",
+    "reason": "Focus indicator does not meet AAA requirements: Outline width 1.0px is below minimum 2px required for AAA",
+    "evidence": {
+      "failures": [
+        "Outline width 1.0px is below minimum 2px required for AAA"
+      ],
+      "changes": [
+        "outline-appeared"
+      ],
+      "measurements": {
+        "outlineWidth": 1,
+        "borderWidths": {
+          "top": 0,
+          "right": 0,
+          "bottom": 0,
+          "left": 0
+        }
+      },
+      "validation": {
+        "minContrastRatio": 3,
+        "minOutlineWidth": 2
+      }
+    },
+    "sc": "2.4.13",
+    "id": "422d020c-31d6-406e-8b54-6f0c4944199c",
+    "element": {
+      "id": "E28",
+      "selector": "html > body > div > main > article > section:nth-of-type(6) > div > div > section > div:nth-of-type(2) > div > div:nth-of-type(2) > div > div > div > div:nth-of-type(3) > button",
+      "tagName": "button",
+      "uniqueSelector": "html > body > div > main > article > section:nth-of-type(6) > div > div > section > div:nth-of-type(2) > div > div:nth-of-type(2) > div > div > div > div:nth-of-type(3) > button"
+    },
+    "screenshot": "2.4.13/fail_2_4_13_E28.png",
+    "checkType": "element-level"
+  },
+  {
+    "result": "PASS",
+    "reason": "Focused element is partially obscured but still visible (14.3% hidden)",
+    "evidence": {
+      "obscuredRatio": 0.14285714285714285,
+      "obscuredBy": [
+        "body.path-frontpage.bg-gray-light"
+      ]
+    },
+    "sc": "2.4.11",
+    "element": {
+      "id": "E29",
+      "selector": "html > body > div > main > article > section:nth-of-type(6) > div > div > section > div:nth-of-type(2) > div > div:nth-of-type(2) > div > div > div > div:nth-of-type(3) > div > div > div:nth-of-type(2) > a",
+      "tagName": "a",
+      "uniqueSelector": "html > body > div > main > article > section:nth-of-type(6) > div > div > section > div:nth-of-type(2) > div > div:nth-of-type(2) > div > div > div > div:nth-of-type(3) > div > div > div:nth-of-type(2) > a"
+    },
+    "screenshot": null,
+    "checkType": "element-level"
+  },
+  {
+    "result": "FAIL",
+    "reason": "Focused element is obscured by other content (14.3% hidden. Obscured by: body.path-frontpage.bg-gray-light)",
+    "evidence": {
+      "obscuredRatio": 0.14285714285714285,
+      "obscuredBy": [
+        "body.path-frontpage.bg-gray-light"
+      ]
+    },
+    "sc": "2.4.12",
+    "id": "2a98f40c-127a-4199-91f9-3e413ea2a443",
+    "element": {
+      "id": "E29",
+      "selector": "html > body > div > main > article > section:nth-of-type(6) > div > div > section > div:nth-of-type(2) > div > div:nth-of-type(2) > div > div > div > div:nth-of-type(3) > div > div > div:nth-of-type(2) > a",
+      "tagName": "a",
+      "uniqueSelector": "html > body > div > main > article > section:nth-of-type(6) > div > div > section > div:nth-of-type(2) > div > div:nth-of-type(2) > div > div > div > div:nth-of-type(3) > div > div > div:nth-of-type(2) > a"
+    },
+    "screenshot": "2.4.12/fail_2_4_12_E29.png",
+    "checkType": "element-level"
+  },
+  {
+    "result": "PASS",
+    "reason": "Box shadow changed",
+    "evidence": {
+      "changeType": "box-shadow-changed",
+      "measurement": {
+        "shadow": "rgba(255, 255, 255, 0.533) 0px 0px 0px 1.06789px, rgba(176, 0, 214, 0.533) 0px 0px 0px 2.13577px, rgba(0, 0, 0, 0) 0px 0px 0px 0px"
+      },
+      "allChanges": [
+        "box-shadow-changed"
+      ]
+    },
+    "sc": "2.4.7",
+    "element": {
+      "id": "E29",
+      "selector": "html > body > div > main > article > section:nth-of-type(6) > div > div > section > div:nth-of-type(2) > div > div:nth-of-type(2) > div > div > div > div:nth-of-type(3) > div > div > div:nth-of-type(2) > a",
+      "tagName": "a",
+      "uniqueSelector": "html > body > div > main > article > section:nth-of-type(6) > div > div > section > div:nth-of-type(2) > div > div:nth-of-type(2) > div > div > div > div:nth-of-type(3) > div > div > div:nth-of-type(2) > a"
+    },
+    "screenshot": null,
+    "checkType": "element-level"
+  },
+  {
+    "result": "PASS",
+    "reason": "Focus indicator meets AAA requirements (3:1 contrast and/or 2px minimum size)",
+    "evidence": {
+      "changes": [
+        {
+          "type": "box-shadow-changed",
+          "measurement": {
+            "shadow": "rgba(255, 255, 255, 0.533) 0px 0px 0px 1.06789px, rgba(176, 0, 214, 0.533) 0px 0px 0px 2.13577px, rgba(0, 0, 0, 0) 0px 0px 0px 0px"
+          }
+        }
+      ],
+      "validation": {
+        "minContrastRatio": 3,
+        "minOutlineWidth": 2
+      }
+    },
+    "sc": "2.4.13",
+    "element": {
+      "id": "E29",
+      "selector": "html > body > div > main > article > section:nth-of-type(6) > div > div > section > div:nth-of-type(2) > div > div:nth-of-type(2) > div > div > div > div:nth-of-type(3) > div > div > div:nth-of-type(2) > a",
+      "tagName": "a",
+      "uniqueSelector": "html > body > div > main > article > section:nth-of-type(6) > div > div > section > div:nth-of-type(2) > div > div:nth-of-type(2) > div > div > div > div:nth-of-type(3) > div > div > div:nth-of-type(2) > a"
+    },
+    "screenshot": null,
+    "checkType": "element-level"
+  },
+  {
+    "result": "PASS",
+    "reason": "Focused element is fully visible (not obscured)",
+    "evidence": {
+      "obscuredRatio": 0
+    },
+    "sc": "2.4.11",
+    "element": {
+      "id": "E30",
+      "selector": "div#swiper-wrapper-79b35bd5cf210466c > div > div > div > div > div:nth-of-type(4) > a",
+      "tagName": "a",
+      "uniqueSelector": "div#swiper-wrapper-79b35bd5cf210466c > div > div > div > div > div:nth-of-type(4) > a"
+    },
+    "screenshot": null,
+    "checkType": "element-level"
+  },
+  {
+    "result": "PASS",
+    "reason": "Focused element is fully visible (not obscured)",
+    "evidence": {
+      "obscuredRatio": 0
+    },
+    "sc": "2.4.12",
+    "element": {
+      "id": "E30",
+      "selector": "div#swiper-wrapper-79b35bd5cf210466c > div > div > div > div > div:nth-of-type(4) > a",
+      "tagName": "a",
+      "uniqueSelector": "div#swiper-wrapper-79b35bd5cf210466c > div > div > div > div > div:nth-of-type(4) > a"
+    },
+    "screenshot": null,
+    "checkType": "element-level"
+  },
+  {
+    "result": "PASS",
+    "reason": "Outline appeared on focus",
+    "evidence": {
+      "changeType": "outline-appeared",
+      "measurement": {
+        "width": 1,
+        "style": "auto"
+      },
+      "allChanges": [
+        "outline-appeared",
+        "border-color-changed"
+      ]
+    },
+    "sc": "2.4.7",
+    "element": {
+      "id": "E30",
+      "selector": "div#swiper-wrapper-79b35bd5cf210466c > div > div > div > div > div:nth-of-type(4) > a",
+      "tagName": "a",
+      "uniqueSelector": "div#swiper-wrapper-79b35bd5cf210466c > div > div > div > div > div:nth-of-type(4) > a"
+    },
+    "screenshot": null,
+    "checkType": "element-level"
+  },
+  {
+    "result": "FAIL",
+    "reason": "Focus indicator does not meet AAA requirements: Outline width 1.0px is below minimum 2px required for AAA",
+    "evidence": {
+      "failures": [
+        "Outline width 1.0px is below minimum 2px required for AAA"
+      ],
+      "changes": [
+        "outline-appeared",
+        "border-color-changed"
+      ],
+      "measurements": {
+        "outlineWidth": 1,
+        "borderWidths": {
+          "top": 1,
+          "right": 1,
+          "bottom": 1,
+          "left": 1
+        }
+      },
+      "validation": {
+        "minContrastRatio": 3,
+        "minOutlineWidth": 2
+      }
+    },
+    "sc": "2.4.13",
+    "id": "34498853-2598-4a48-8751-3d3342e7a559",
+    "element": {
+      "id": "E30",
+      "selector": "div#swiper-wrapper-79b35bd5cf210466c > div > div > div > div > div:nth-of-type(4) > a",
+      "tagName": "a",
+      "uniqueSelector": "div#swiper-wrapper-79b35bd5cf210466c > div > div > div > div > div:nth-of-type(4) > a"
+    },
+    "screenshot": "2.4.13/fail_2_4_13_E30.png",
+    "checkType": "element-level"
+  },
+  {
+    "result": "PASS",
+    "reason": "Focused element is fully visible (not obscured)",
+    "evidence": {
+      "obscuredRatio": 0
+    },
+    "sc": "2.4.11",
+    "element": {
+      "id": "E31",
+      "selector": "div#swiper-wrapper-79b35bd5cf210466c > div > div > div > div > div:nth-of-type(4) > a:nth-of-type(2)",
+      "tagName": "a",
+      "uniqueSelector": "div#swiper-wrapper-79b35bd5cf210466c > div > div > div > div > div:nth-of-type(4) > a:nth-of-type(2)"
+    },
+    "screenshot": null,
+    "checkType": "element-level"
+  },
+  {
+    "result": "PASS",
+    "reason": "Focused element is fully visible (not obscured)",
+    "evidence": {
+      "obscuredRatio": 0
+    },
+    "sc": "2.4.12",
+    "element": {
+      "id": "E31",
+      "selector": "div#swiper-wrapper-79b35bd5cf210466c > div > div > div > div > div:nth-of-type(4) > a:nth-of-type(2)",
+      "tagName": "a",
+      "uniqueSelector": "div#swiper-wrapper-79b35bd5cf210466c > div > div > div > div > div:nth-of-type(4) > a:nth-of-type(2)"
+    },
+    "screenshot": null,
+    "checkType": "element-level"
+  },
+  {
+    "result": "PASS",
+    "reason": "Box shadow changed",
+    "evidence": {
+      "changeType": "box-shadow-changed",
+      "measurement": {
+        "shadow": "rgba(255, 255, 255, 0.973) 0px 0px 0px 1.94473px, rgba(176, 0, 214, 0.973) 0px 0px 0px 3.88946px, rgba(0, 0, 0, 0) 0px 0px 0px 0px"
+      },
+      "allChanges": [
+        "box-shadow-changed"
+      ]
+    },
+    "sc": "2.4.7",
+    "element": {
+      "id": "E31",
+      "selector": "div#swiper-wrapper-79b35bd5cf210466c > div > div > div > div > div:nth-of-type(4) > a:nth-of-type(2)",
+      "tagName": "a",
+      "uniqueSelector": "div#swiper-wrapper-79b35bd5cf210466c > div > div > div > div > div:nth-of-type(4) > a:nth-of-type(2)"
+    },
+    "screenshot": null,
+    "checkType": "element-level"
+  },
+  {
+    "result": "PASS",
+    "reason": "Focus indicator meets AAA requirements (3:1 contrast and/or 2px minimum size)",
+    "evidence": {
+      "changes": [
+        {
+          "type": "box-shadow-changed",
+          "measurement": {
+            "shadow": "rgba(255, 255, 255, 0.973) 0px 0px 0px 1.94473px, rgba(176, 0, 214, 0.973) 0px 0px 0px 3.88946px, rgba(0, 0, 0, 0) 0px 0px 0px 0px"
+          }
+        }
+      ],
+      "validation": {
+        "minContrastRatio": 3,
+        "minOutlineWidth": 2
+      }
+    },
+    "sc": "2.4.13",
+    "element": {
+      "id": "E31",
+      "selector": "div#swiper-wrapper-79b35bd5cf210466c > div > div > div > div > div:nth-of-type(4) > a:nth-of-type(2)",
+      "tagName": "a",
+      "uniqueSelector": "div#swiper-wrapper-79b35bd5cf210466c > div > div > div > div > div:nth-of-type(4) > a:nth-of-type(2)"
+    },
+    "screenshot": null,
+    "checkType": "element-level"
+  },
+  {
+    "result": "PASS",
+    "reason": "Focused element is fully visible (not obscured)",
+    "evidence": {
+      "obscuredRatio": 0
+    },
+    "sc": "2.4.11",
+    "element": {
+      "id": "E32",
+      "selector": "div#swiper-wrapper-79b35bd5cf210466c > div:nth-of-type(2) > div > div > div > div:nth-of-type(4) > a",
+      "tagName": "a",
+      "uniqueSelector": "div#swiper-wrapper-79b35bd5cf210466c > div:nth-of-type(2) > div > div > div > div:nth-of-type(4) > a"
+    },
+    "screenshot": null,
+    "checkType": "element-level"
+  },
+  {
+    "result": "PASS",
+    "reason": "Focused element is fully visible (not obscured)",
+    "evidence": {
+      "obscuredRatio": 0
+    },
+    "sc": "2.4.12",
+    "element": {
+      "id": "E32",
+      "selector": "div#swiper-wrapper-79b35bd5cf210466c > div:nth-of-type(2) > div > div > div > div:nth-of-type(4) > a",
+      "tagName": "a",
+      "uniqueSelector": "div#swiper-wrapper-79b35bd5cf210466c > div:nth-of-type(2) > div > div > div > div:nth-of-type(4) > a"
+    },
+    "screenshot": null,
+    "checkType": "element-level"
+  },
+  {
+    "result": "PASS",
+    "reason": "Outline appeared on focus",
+    "evidence": {
+      "changeType": "outline-appeared",
+      "measurement": {
+        "width": 1,
+        "style": "auto"
+      },
+      "allChanges": [
+        "outline-appeared",
+        "border-color-changed"
+      ]
+    },
+    "sc": "2.4.7",
+    "element": {
+      "id": "E32",
+      "selector": "div#swiper-wrapper-79b35bd5cf210466c > div:nth-of-type(2) > div > div > div > div:nth-of-type(4) > a",
+      "tagName": "a",
+      "uniqueSelector": "div#swiper-wrapper-79b35bd5cf210466c > div:nth-of-type(2) > div > div > div > div:nth-of-type(4) > a"
+    },
+    "screenshot": null,
+    "checkType": "element-level"
+  }
+]
