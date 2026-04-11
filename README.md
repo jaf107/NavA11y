@@ -1,73 +1,89 @@
-# Dynamic Accessibility Testing Tool
+# NavA11y: A Dynamic Analysis Approach for WCAG 2.4 Focus-Behavior Evaluation
 
-A purely dynamic accessibility testing tool that performs automated WCAG compliance checks (Focus Behavior) on web pages using browser automation (Playwright), unlike static analysis tools which cannot detect interaction-based violations.
+> **Abu Jafar Saifullah, Tasmia Zerin, Zerina Begum, Kazi Sakib**  
+> Institute of Information Technology, University of Dhaka, Bangladesh  
+> *Accepted at ENASE 2026 (to appear)*
 
-**Current Focus**: WCAG 2.4 Navigable — Focus Visible, Focus Appearance, Focus Order, and Focus Not Obscured.
+NavA11y is a dynamic accessibility testing tool that evaluates all five WCAG 2.4 focus-behavior Success Criteria (SCs) by driving a real browser, simulating keyboard navigation, and inspecting the rendered page state at each focus event. Unlike static analysis tools which inspect HTML, CSS, or ARIA attributes, NavA11y detects violations that only manifest at runtime, such as missing focus indicators, incorrect tab order, and element obscuration.
 
-## Features
+## Key Results
 
-- ✅ **Dynamic Analysis**: Testing via Playwright interaction
-- ✅ **Focus Visible (2.4.7 AA)**: Detects missing focus indicators
-- ✅ **Focus Appearance (2.4.13 AAA)**: Validates stricter AAA requirements (contrast & size)
-- ✅ **Focus Order (2.4.3 A)**: Detects logical/visual order mismatches and focus traps
-- ✅ **Focus Not Obscured (2.4.11 AA / 2.4.12 AAA)**: Detects elements hidden by overlapping content
-- ✅ **Visual Reports**: HTML reports with annotated screenshots
+- **100% precision and recall** on a 22-page labeled dataset (D_d) covering all five focus-behavior SCs, with no false positives.
+- **2,947 violations detected** across 26 real-world production websites (D_r), with a **90% true positive rate** confirmed by independent manual verification on a stratified sample.
+
+## WCAG 2.4 Focus-Behavior Success Criteria
+
+| SC | Full Name | Level |
+| -- | --------- | ----- |
+| 2.4.3 | Focus Order | A |
+| 2.4.7 | Focus Visible | AA |
+| 2.4.11 | Focus Not Obscured (Minimum) | AA |
+| 2.4.12 | Focus Not Obscured (Enhanced) | AAA |
+| 2.4.13 | Focus Appearance | AAA |
+
+## How It Works
+
+NavA11y performs two parallel analyses:
+
+- **Page-Level Analysis (PLA)** — simulates a full keyboard traversal of the page to evaluate SC 2.4.3 (Focus Order). It records three orderings: DOM order, tab sequence, and visual reading order, and checks for rank divergence (Kendall τ), positive `tabindex` misuse, focus traps, truncated sequences, and spatial jumps.
+
+- **Element-Level Analysis (ELA)** — individually focuses each tabbable element and captures its rendered CSS state before and after focus. It uses a 22-property CSSOM snapshot to evaluate SC 2.4.7 and 2.4.13, and a 7×7 grid occlusion probe to evaluate SC 2.4.11 and 2.4.12.
+
+For a full description of the architecture and algorithms, see [ARCHITECTURE.md](ARCHITECTURE.md).
 
 ## Installation
 
-### Prerequisites
-- Node.js 16+
-- pnpm (recommended) or npm
-
-### Setup
+**Prerequisites:** Node.js 16+, pnpm (or npm)
 
 ```bash
 # Install dependencies
 pnpm install
 
-# Install browsers
+# Install Chromium
 npx playwright install chromium
 ```
 
 ## Usage
 
-### Test a URL
-
 ```bash
+# Test a URL
 node run-check.js --url https://example.com
-```
 
-### Test a Local File
-
-```bash
+# Test a local file
 node run-check.js --file ./fixtures/test-page.html
 ```
 
-## Reports
+Reports are generated in `reports/<site>/`:
 
-Generated in `reports/`:
-- `index.html`: Human-readable report with screenshots
-- `results.json`: Machine-readable results
-
-## Supported WCAG Checks
-
-| Check | Level | Description |
-|-------|-------|-------------|
-| **2.4.3 Focus Order** | A | Tab order matches visual/DOM order |
-| **2.4.7 Focus Visible** | AA | Visible focus indicator present |
-| **2.4.11 Focus Not Obscured** | AA | Element not fully hidden |
-| **2.4.12 Focus Not Obscured** | AAA | Element not partially hidden |
-| **2.4.13 Focus Appearance** | AAA | 3:1 contrast, 2px minimum |
+- `index.html` — interactive report with per-SC filtering and annotated screenshots
+- `results.json` — machine-readable results with full evidence
 
 ## Datasets
 
-### 1. Semrush Validation Dataset (Real-World)
-A dataset of 27 high-traffic websites derived from the Semrush top 30 list.
-- **List:** `evaluation/dataset.json`
-- **Run Benchmark:** `node evaluation/run-all-benchmark.mjs`
+### D_d — Focus Behavior Dataset (Synthetic, Labeled)
 
-### 2. Focus Behavior Dataset (Synthetic Test Cases)
-A comprehensive set of 142 accessibility test cases from the [GDS accessibility-tool-audit](https://github.com/alphagov/accessibility-tool-audit).
-- **Files:** `dataset/focus-behavior-dataset/tests/`
+A dataset of 22 labeled HTML test pages extended from the [GDS Accessibility Tool Audit](https://github.com/alphagov/accessibility-tool-audit), with known ground-truth verdicts covering all five focus-behavior SCs. Used for precision/recall evaluation.
+
+- **Test pages:** `dataset/focus-behavior-dataset/tests/`
 - **Metadata:** `dataset/focus-behavior-dataset/tests.json`
-- **Run Audit:** `node evaluation/run-gds-evaluation.mjs`
+- **Run evaluation:** `node evaluation/run-gds-evaluation.mjs`
+
+### D_r — Real-World Dataset (Production Websites)
+
+26 high-traffic production websites drawn from the Semrush top-30 site rankings.
+
+- **Site list:** `evaluation/dataset.json`
+- **Run benchmark:** `node evaluation/run-all-benchmark.mjs`
+
+## Citation
+
+The paper is accepted at ENASE 2026 and will be presented in May 2026. A full citation will be added once the proceedings are published. If you use NavA11y or the dataset in your work, please cite:
+
+```bibtex
+@inproceedings{saifullah2026nava11y,
+  title     = {NavA11y: A Dynamic Analysis Approach for WCAG 2.4 Focus-Behavior Evaluation},
+  author    = {Saifullah, Abu Jafar and Zerin, Tasmia and Begum, Zerina and Sakib, Kazi},
+  booktitle = {Proceedings of the 21st International Conference on Evaluation of Novel Approaches to Software Engineering (ENASE)},
+  year      = {2026}
+}
+```
