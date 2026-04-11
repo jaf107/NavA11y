@@ -87,3 +87,7 @@ The paper is accepted at ENASE 2026 and will be presented in May 2026. A full ci
   year      = {2026}
 }
 ```
+
+## License
+
+[MIT](LICENSE) — © 2026 Abu Jafar Saifullah, Tasmia Zerin, Zerina Begum, Kazi Sakib
