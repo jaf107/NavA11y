@@ -2,7 +2,7 @@
 
 ## 5.1 Introduction
 
-This chapter presents and analyses the experimental results of NavA11y. NavA11y is a dynamic accessibility testing tool that evaluates the five WCAG 2.4 focus-behavior Success Criteria, namely SC 2.4.3 (Focus Order), SC 2.4.7 (Focus Visible), SC 2.4.11 (Focus Not Obscured — Minimum), SC 2.4.12 (Focus Not Obscured — Enhanced), and SC 2.4.13 (Focus Appearance). The purpose of this chapter is to show what the tool was tested on, why each experiment was run, and how the measured outcomes answer the research questions of this thesis.
+This chapter presents and analyses the experimental results of NavA11y. NavA11y is a dynamic accessibility testing tool that evaluates the five WCAG 2.4 focus-behavior Success Criteria, namely SC 2.4.3 (Focus Order), SC 2.4.7 (Focus Visible), SC 2.4.11 (Focus Not Obscured, Minimum), SC 2.4.12 (Focus Not Obscured, Enhanced), and SC 2.4.13 (Focus Appearance). The purpose of this chapter is to show what the tool was tested on, why each experiment was run, and how the measured outcomes answer the research questions of this thesis.
 
 The evaluation is organised around two research questions. The first research question (RQ-1) asks how accurately NavA11y detects focus-behavior violations when the correct answer is already known. We answer this question because a detection tool is only useful if its verdicts are correct, and the only way to prove correctness is to test it against pages whose violations have been labelled in advance. The second research question (RQ-2) asks how prevalent these violations are on real production websites and how trustworthy the tool's verdicts are in the wild. We answer this question because a tool that works on small synthetic pages must also work on large, complex, real-world pages to be practically valuable.
 
@@ -80,14 +80,14 @@ This section presents the raw outcomes of both experiments. We report the labell
 
 **Labelled dataset (D_d).** NavA11y was run on the pages of D_d, which define 32 individual criterion-level verdicts (some pages target more than one criterion). Of these 32 verdicts, 14 correspond to known violations and 18 correspond to known conforming cases. NavA11y classified every one of them correctly. It produced no false positives and no false negatives. The overall confusion matrix is shown in Table 5.1, and the resulting metrics in Table 5.2.
 
-**Table 5.1 — Overall confusion matrix on D_d (32 verdicts).**
+**Table 5.1: Overall confusion matrix on D_d (32 verdicts).**
 
 | | Predicted Violation | Predicted Pass |
 | --- | --- | --- |
 | **Actual Violation** | TP = 14 | FN = 0 |
 | **Actual Pass** | FP = 0 | TN = 18 |
 
-**Table 5.2 — Overall detection metrics on D_d.**
+**Table 5.2: Overall detection metrics on D_d.**
 
 | Metric | Value |
 | --- | --- |
@@ -98,7 +98,7 @@ This section presents the raw outcomes of both experiments. We report the labell
 
 The per-criterion breakdown in Table 5.3 shows that this perfect score is not concentrated in one easy criterion. Every criterion was tested with both violation cases and, where applicable, conforming cases, and each was scored correctly.
 
-**Table 5.3 — Per-criterion results on D_d.**
+**Table 5.3: Per-criterion results on D_d.**
 
 | Criterion | TP | TN | FP | FN | Precision | Recall |
 | --- | --- | --- | --- | --- | --- | --- |
@@ -111,7 +111,7 @@ The per-criterion breakdown in Table 5.3 shows that this perfect score is not co
 
 **Real-world dataset (D_r).** NavA11y was then run on all 25 production websites of D_r. Across these sites it performed 9,544 element-level focus checks and detected 2,780 focus-behavior violations in total. Every one of the 25 sites had at least one violation, which shows that focus-behavior problems are not rare edge cases but are present on essentially all major websites we tested. The mean number of violations per site was 111.2, and the median was 76; the gap between the mean and the median shows that a few very large sites pull the average up. The least-affected site had a single violation, while the most-affected site (walmart.com) had 629. Table 5.4 lists the full per-site results.
 
-**Table 5.4 — Per-site violation counts on D_r, broken down by criterion.**
+**Table 5.4: Per-site violation counts on D_r, broken down by criterion.**
 
 | Site | Total | 2.4.3 | 2.4.7 | 2.4.11 | 2.4.12 | 2.4.13 |
 | --- | --- | --- | --- | --- | --- | --- |
@@ -144,7 +144,7 @@ The per-criterion breakdown in Table 5.3 shows that this perfect score is not co
 
 Aggregating across all sites reveals a clear pattern in which criteria fail most often, shown in Table 5.5. SC 2.4.13 (Focus Appearance, AAA) is by far the most violated criterion, accounting for more than half of all violations. The two obscuration criteria (SC 2.4.12 and SC 2.4.11) together account for nearly two-fifths. SC 2.4.7 is comparatively rare, and SC 2.4.3 is rare in this corpus because most home pages have a reasonable tab order.
 
-**Table 5.5 — Aggregate violations by criterion across D_r.**
+**Table 5.5: Aggregate violations by criterion across D_r.**
 
 | Criterion | Level | Violations | Share |
 | --- | --- | --- | --- |
@@ -169,11 +169,11 @@ It is worth stating plainly which standard machine-learning figures are **not ap
 
 ## 5.5 Comparative Analysis
 
-This section compares NavA11y with existing accessibility tools, because a new tool is only worth building if it does something the existing tools cannot. We compared NavA11y against four widely used automated checkers — axe-core, pa11y, Lighthouse, and QualWeb — focusing on the five focus-behavior criteria.
+This section compares NavA11y with existing accessibility tools, because a new tool is only worth building if it does something the existing tools cannot. We compared NavA11y against four widely used automated checkers (axe-core, pa11y, Lighthouse, and QualWeb), focusing on the five focus-behavior criteria.
 
 The central finding is one of coverage. The existing tools are predominantly static analysers: they inspect the HTML, CSS, and ARIA attributes of a page, but they do not drive the keyboard, move focus from element to element, or measure the rendered visual state after focus. As a result, they have no rule at all for the three runtime criteria that NavA11y was built to evaluate, SC 2.4.11, SC 2.4.12, and SC 2.4.13, and they offer only partial, markup-level heuristics for SC 2.4.3 and SC 2.4.7. Table 5.6 summarises this coverage gap.
 
-**Table 5.6 — Focus-behavior criterion coverage by tool.**
+**Table 5.6: Focus-behavior criterion coverage by tool.**
 
 | Criterion | axe-core | pa11y | Lighthouse | QualWeb | NavA11y |
 | --- | --- | --- | --- | --- | --- |
@@ -183,7 +183,7 @@ The central finding is one of coverage. The existing tools are predominantly sta
 | SC 2.4.12 Focus Not Obscured (Enh) | no | no | no | no | **yes** |
 | SC 2.4.13 Focus Appearance | no | no | no | no | **yes** |
 
-This gap was confirmed on the six original GDS focus test pages. On the focus pages whose violations only manifest at runtime — a missing visual focus indicator, a reversed focus order caused by CSS floats, and a scripted keyboard trap — the static tools reported the page as having no detectable issue, because the defect is invisible in the source markup and only appears once the page is rendered and navigated. NavA11y detected all of them, as shown by its perfect recall on D_d in Section 5.4.1. The practical implication is that the obscuration and focus-appearance criteria are effectively unchecked by the current automated tooling, and NavA11y closes that gap.
+This gap was confirmed on the six original GDS focus test pages. On the focus pages whose violations only manifest at runtime (a missing visual focus indicator, a reversed focus order caused by CSS floats, and a scripted keyboard trap), the static tools reported the page as having no detectable issue, because the defect is invisible in the source markup and only appears once the page is rendered and navigated. NavA11y detected all of them, as shown by its perfect recall on D_d in Section 5.4.1. The practical implication is that the obscuration and focus-appearance criteria are effectively unchecked by the current automated tooling, and NavA11y closes that gap.
 
 ## 5.6 Statistical Analysis
 

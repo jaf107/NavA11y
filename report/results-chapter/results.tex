@@ -11,7 +11,7 @@
 This chapter presents and analyses the experimental results of NavA11y. NavA11y is a
 dynamic accessibility testing tool that evaluates the five WCAG~2.4 focus-behavior Success
 Criteria, namely SC~2.4.3 (Focus Order), SC~2.4.7 (Focus Visible), SC~2.4.11 (Focus Not
-Obscured --- Minimum), SC~2.4.12 (Focus Not Obscured --- Enhanced), and SC~2.4.13 (Focus
+Obscured, Minimum), SC~2.4.12 (Focus Not Obscured, Enhanced), and SC~2.4.13 (Focus
 Appearance). The purpose of this chapter is to show what the tool was tested on, why each
 experiment was run, and how the measured outcomes answer the research questions of this
 thesis.
@@ -348,7 +348,7 @@ such curves would be misleading, so they are deliberately omitted.
 
 This section compares NavA11y with existing accessibility tools, because a new tool is only
 worth building if it does something the existing tools cannot. We compared NavA11y against
-four widely used automated checkers --- axe-core, pa11y, Lighthouse, and QualWeb ---
+four widely used automated checkers (axe-core, pa11y, Lighthouse, and QualWeb),
 focusing on the five focus-behavior criteria.
 
 The central finding is one of coverage. The existing tools are predominantly static
@@ -377,8 +377,8 @@ summarises this coverage gap.
 \end{table}
 
 This gap was confirmed on the original GDS focus test pages. On the pages whose violations
-only manifest at runtime --- a missing visual focus indicator, a reversed focus order
-caused by CSS floats, and a scripted keyboard trap --- the static tools reported the page as
+only manifest at runtime (a missing visual focus indicator, a reversed focus order
+caused by CSS floats, and a scripted keyboard trap), the static tools reported the page as
 having no detectable issue, because the defect is invisible in the source markup and only
 appears once the page is rendered and navigated. NavA11y detected all of them, as shown by
 its perfect recall on $D_d$ in Section~\ref{subsec:quant}. The practical implication is that
@@ -403,8 +403,8 @@ Instead we report two things that are valid for this setting. First, we attach a
 interval to the measured detection rate. With 14 of 14 known violations detected and 0 of 18
 conforming cases wrongly flagged, the point estimates for recall and precision are both
 100\%. Using the Wilson score interval for a binomial proportion, the 95\% confidence
-interval for recall ($14/14$) is approximately 78\%--100\%, and for specificity ($18/18$) is
-approximately 82\%--100\%. The intervals are wide because the labelled sample is small, and
+interval for recall ($14/14$) is approximately 78\% to 100\%, and for specificity ($18/18$) is
+approximately 82\% to 100\%. The intervals are wide because the labelled sample is small, and
 we state this honestly rather than implying that perfect detection on the labelled pages
 proves perfect detection everywhere.
 
