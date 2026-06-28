@@ -30,3 +30,12 @@ npm-debug.log*
 # Playwright
 test-results/
 playwright-report/
+
+# LaTeX build artifacts
+*.aux
+*.fls
+*.fdb_latexmk
+*.synctex.gz
+report/**/*.log
+report/**/*.out
+report/**/*.toc

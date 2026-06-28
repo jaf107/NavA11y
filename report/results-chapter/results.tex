@@ -16,15 +16,19 @@ Appearance). The purpose of this chapter is to show what the tool was tested on,
 experiment was run, and how the measured outcomes answer the research questions of this
 thesis.
 
-The evaluation is organised around two research questions. The first research question
-(RQ-1) asks how accurately NavA11y detects focus-behavior violations when the correct
-answer is already known. We answer this question because a detection tool is only useful
-if its verdicts are correct, and the only way to prove correctness is to test it against
-pages whose violations have been labelled in advance. The second research question (RQ-2)
-asks how prevalent these violations are on real production websites and how trustworthy the
-tool's verdicts are in the wild. We answer this question because a tool that works on small
-synthetic pages must also work on large, complex, real-world pages to be practically
-valuable.
+The evaluation is organised around two research questions:
+
+\begin{description}
+  \item[RQ-1.] How accurately does NavA11y detect focus-behavior violations when the
+    correct answer is already known?
+  \item[RQ-2.] How prevalent are these violations on real production websites, and how
+    trustworthy are the tool's verdicts in the wild?
+\end{description}
+
+We study RQ-1 because a detection tool is only useful if its verdicts are correct, and the
+only way to prove correctness is to test it against pages whose violations have been
+labelled in advance. We study RQ-2 because a tool that works on small synthetic pages must
+also work on large, complex, real-world pages to be practically valuable.
 
 One property of NavA11y shapes the entire analysis. NavA11y is a deterministic, rule-based
 system. It does not learn from data, it has no training phase, and it produces no
@@ -98,14 +102,14 @@ rendering before measurement began.
   \centering
   \caption{Fixed decision thresholds used by NavA11y.}
   \label{tab:thresholds}
-  \begin{tabular}{lll}
+  \begin{tabular}{l p{6.2cm} p{5.6cm}}
     \toprule
     Criterion & Threshold & Meaning \\
     \midrule
     SC~2.4.11 & obscured ratio $\geq 0.99$ & Fails only when almost entirely hidden. \\
     SC~2.4.12 & obscured ratio $> 0.0$ & Fails on any obscuration at all. \\
-    SC~2.4.7 & outline width $\geq \SI{0.5}{px}$, luminance $\Delta\,0.05$ & A visible change must appear on focus. \\
-    SC~2.4.13 & contrast $\geq 3{:}1$, outline width $\geq \SI{2}{px}$ & Must meet the AAA appearance bar. \\
+    SC~2.4.7 & outline width $\geq 0.5$~px, luminance $\Delta\,0.05$ & A visible change must appear on focus. \\
+    SC~2.4.13 & contrast $\geq 3{:}1$, outline width $\geq 2$~px & Must meet the AAA appearance bar. \\
     SC~2.4.3 & max order divergence $0.10$ & Tab order may diverge only slightly from reading order. \\
     \bottomrule
   \end{tabular}
@@ -170,8 +174,8 @@ results, because they show what the tool finds when it is applied at scale.
 individual criterion-level verdicts (some pages target more than one criterion). Of these
 32 verdicts, 14 correspond to known violations and 18 correspond to known conforming cases.
 NavA11y classified every one of them correctly, with no false positives and no false
-negatives. The overall confusion matrix is shown in Table~\ref{tab:cm}, the resulting
-metrics in Table~\ref{tab:metrics}, and the per-criterion breakdown in
+negatives, so precision, recall, F1, and accuracy are all 100\%. The overall confusion
+matrix is shown in Table~\ref{tab:cm}, and the per-criterion breakdown in
 Table~\ref{tab:persc}.
 
 \begin{table}[ht]
@@ -184,22 +188,6 @@ Table~\ref{tab:persc}.
     \midrule
     Actual Violation & $TP = 14$ & $FN = 0$ \\
     Actual Pass      & $FP = 0$  & $TN = 18$ \\
-    \bottomrule
-  \end{tabular}
-\end{table}
-
-\begin{table}[ht]
-  \centering
-  \caption{Overall detection metrics on $D_d$.}
-  \label{tab:metrics}
-  \begin{tabular}{lc}
-    \toprule
-    Metric & Value \\
-    \midrule
-    Precision & 100.0\% \\
-    Recall    & 100.0\% \\
-    F1 score  & 100.0\% \\
-    Accuracy  & 100.0\% \\
     \bottomrule
   \end{tabular}
 \end{table}
@@ -297,17 +285,16 @@ have a reasonable tab order.
 
 \subsection{Visual Results}
 \label{subsec:visual}
-This subsection presents the results graphically and through tool screenshots, because some
-patterns are easier to see in a figure than in a table. Figure~\ref{fig:cm} shows the
-confusion matrix of the labelled dataset as a heat map; the off-diagonal cells are both
-zero, which visualises the absence of any error. Figure~\ref{fig:bysc} is a bar chart of
-the aggregate violations by criterion, which makes the dominance of SC~2.4.13 immediately
-visible. Figure~\ref{fig:persite} is a horizontal bar chart of total violations per site,
-ordered from most to least affected, which shows the long-tailed distribution across the
-corpus. Figure~\ref{fig:report} is a screenshot of the interactive HTML report that NavA11y
-generates for each site; the report lets a reviewer filter by criterion and shows an
-annotated screenshot of each flagged element, which is the visual evidence behind each
-verdict.
+This subsection presents the visual evidence behind the verdicts, which the numeric tables
+in Section~\ref{subsec:quant} cannot show on their own. We do not repeat the quantitative
+results as charts here, because the confusion matrix, the per-criterion totals, and the
+per-site totals are already given exactly in Tables~\ref{tab:cm}, \ref{tab:persite}, and
+\ref{tab:aggsc}. Figure~\ref{fig:report} is a screenshot of the interactive HTML report
+that NavA11y generates for each site. The report lets a reviewer filter by criterion and
+shows an annotated screenshot of each flagged element, with the focus indicator and any
+obscuring overlay marked directly on the rendered page. These annotated screenshots are the
+visual evidence behind each verdict, and they are what a human reviewer inspects during the
+manual verification described in Section~\ref{sec:res-stats}.
 
 It is worth stating plainly which standard machine-learning figures are \emph{not
 applicable} here. ROC curves and precision-recall curves require a tunable probability
@@ -317,28 +304,7 @@ such curves would be misleading, so they are deliberately omitted.
 
 \begin{figure}[ht]
   \centering
-  % \includegraphics[width=0.5\textwidth]{figures/fig5_1_confusion_matrix.png}
-  \caption{Confusion matrix on the labelled dataset $D_d$.}
-  \label{fig:cm}
-\end{figure}
-
-\begin{figure}[ht]
-  \centering
-  % \includegraphics[width=0.8\textwidth]{figures/fig5_2_violations_by_sc.png}
-  \caption{Aggregate violations by criterion across $D_r$.}
-  \label{fig:bysc}
-\end{figure}
-
-\begin{figure}[ht]
-  \centering
-  % \includegraphics[width=0.8\textwidth]{figures/fig5_3_violations_per_site.png}
-  \caption{Total violations per site across $D_r$.}
-  \label{fig:persite}
-\end{figure}
-
-\begin{figure}[ht]
-  \centering
-  % \includegraphics[width=0.9\textwidth]{figures/fig5_4_report_screenshot.png}
+  \includegraphics[width=0.9\textwidth]{figures/fig5_4_report_screenshot.png}
   \caption{NavA11y interactive HTML report with annotated focus evidence.}
   \label{fig:report}
 \end{figure}

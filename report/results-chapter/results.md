@@ -4,7 +4,12 @@
 
 This chapter presents and analyses the experimental results of NavA11y. NavA11y is a dynamic accessibility testing tool that evaluates the five WCAG 2.4 focus-behavior Success Criteria, namely SC 2.4.3 (Focus Order), SC 2.4.7 (Focus Visible), SC 2.4.11 (Focus Not Obscured, Minimum), SC 2.4.12 (Focus Not Obscured, Enhanced), and SC 2.4.13 (Focus Appearance). The purpose of this chapter is to show what the tool was tested on, why each experiment was run, and how the measured outcomes answer the research questions of this thesis.
 
-The evaluation is organised around two research questions. The first research question (RQ-1) asks how accurately NavA11y detects focus-behavior violations when the correct answer is already known. We answer this question because a detection tool is only useful if its verdicts are correct, and the only way to prove correctness is to test it against pages whose violations have been labelled in advance. The second research question (RQ-2) asks how prevalent these violations are on real production websites and how trustworthy the tool's verdicts are in the wild. We answer this question because a tool that works on small synthetic pages must also work on large, complex, real-world pages to be practically valuable.
+The evaluation is organised around two research questions:
+
+- **RQ-1:** How accurately does NavA11y detect focus-behavior violations when the correct answer is already known?
+- **RQ-2:** How prevalent are these violations on real production websites, and how trustworthy are the tool's verdicts in the wild?
+
+We study RQ-1 because a detection tool is only useful if its verdicts are correct, and the only way to prove correctness is to test it against pages whose violations have been labelled in advance. We study RQ-2 because a tool that works on small synthetic pages must also work on large, complex, real-world pages to be practically valuable.
 
 One property of NavA11y shapes the entire analysis. NavA11y is a deterministic, rule-based system. It does not learn from data, it has no training phase, and it produces no probability scores. The same page always yields the same verdict. For this reason the evaluation measures detection correctness against known ground truth, rather than model performance across training runs. Several metrics that are standard for machine-learning systems, such as ROC curves and learning curves, do not apply here, and we state clearly where this is the case instead of inventing numbers to fill a template.
 
@@ -54,19 +59,19 @@ Each verdict on a labelled page falls into one of four categories. A True Positi
 
 Precision is the fraction of flagged cases that are real violations. It answers the question, "When the tool reports a problem, how often is it right?"
 
-$$\text{Precision} = \frac{TP}{TP + FP}$$
+$$\text{Precision} = \frac{TP}{TP + FP} \tag{5.1}$$
 
 Recall is the fraction of real violations that the tool finds. It answers the question, "Of all the real problems, how many did the tool catch?"
 
-$$\text{Recall} = \frac{TP}{TP + FN}$$
+$$\text{Recall} = \frac{TP}{TP + FN} \tag{5.2}$$
 
 The F1 score is the harmonic mean of precision and recall. We use it because it summarises both concerns in a single number and is low if either precision or recall is low.
 
-$$\text{F1} = \frac{2 \cdot \text{Precision} \cdot \text{Recall}}{\text{Precision} + \text{Recall}}$$
+$$\text{F1} = \frac{2 \cdot \text{Precision} \cdot \text{Recall}}{\text{Precision} + \text{Recall}} \tag{5.3}$$
 
 Accuracy is the fraction of all verdicts that are correct.
 
-$$\text{Accuracy} = \frac{TP + TN}{TP + TN + FP + FN}$$
+$$\text{Accuracy} = \frac{TP + TN}{TP + TN + FP + FN} \tag{5.4}$$
 
 For the real-world dataset D_r there is no ground-truth label, so precision and recall cannot be computed directly. There we use the True-Positive Rate, which is the fraction of a manually re-checked sample of flagged violations that a human confirms to be real violations. This metric tells us how much to trust the raw violation counts the tool produces on unlabelled pages.
 
@@ -78,7 +83,7 @@ This section presents the raw outcomes of both experiments. We report the labell
 
 ### 5.4.1 Quantitative Results
 
-**Labelled dataset (D_d).** NavA11y was run on the pages of D_d, which define 32 individual criterion-level verdicts (some pages target more than one criterion). Of these 32 verdicts, 14 correspond to known violations and 18 correspond to known conforming cases. NavA11y classified every one of them correctly. It produced no false positives and no false negatives. The overall confusion matrix is shown in Table 5.1, and the resulting metrics in Table 5.2.
+**Labelled dataset (D_d).** NavA11y was run on the pages of D_d, which define 32 individual criterion-level verdicts (some pages target more than one criterion). Of these 32 verdicts, 14 correspond to known violations and 18 correspond to known conforming cases. NavA11y classified every one of them correctly. It produced no false positives and no false negatives, so precision, recall, F1, and accuracy are all 100%. The overall confusion matrix is shown in Table 5.1.
 
 **Table 5.1: Overall confusion matrix on D_d (32 verdicts).**
 
@@ -87,18 +92,9 @@ This section presents the raw outcomes of both experiments. We report the labell
 | **Actual Violation** | TP = 14 | FN = 0 |
 | **Actual Pass** | FP = 0 | TN = 18 |
 
-**Table 5.2: Overall detection metrics on D_d.**
+The per-criterion breakdown in Table 5.2 shows that this perfect score is not concentrated in one easy criterion. Every criterion was tested with both violation cases and, where applicable, conforming cases, and each was scored correctly.
 
-| Metric | Value |
-| --- | --- |
-| Precision | 100.0% |
-| Recall | 100.0% |
-| F1 score | 100.0% |
-| Accuracy | 100.0% |
-
-The per-criterion breakdown in Table 5.3 shows that this perfect score is not concentrated in one easy criterion. Every criterion was tested with both violation cases and, where applicable, conforming cases, and each was scored correctly.
-
-**Table 5.3: Per-criterion results on D_d.**
+**Table 5.2: Per-criterion results on D_d.**
 
 | Criterion | TP | TN | FP | FN | Precision | Recall |
 | --- | --- | --- | --- | --- | --- | --- |
@@ -109,9 +105,9 @@ The per-criterion breakdown in Table 5.3 shows that this perfect score is not co
 | SC 2.4.13 | 4 | 4 | 0 | 0 | 100% | 100% |
 | **Total** | **14** | **18** | **0** | **0** | **100%** | **100%** |
 
-**Real-world dataset (D_r).** NavA11y was then run on all 25 production websites of D_r. Across these sites it performed 9,544 element-level focus checks and detected 2,780 focus-behavior violations in total. Every one of the 25 sites had at least one violation, which shows that focus-behavior problems are not rare edge cases but are present on essentially all major websites we tested. The mean number of violations per site was 111.2, and the median was 76; the gap between the mean and the median shows that a few very large sites pull the average up. The least-affected site had a single violation, while the most-affected site (walmart.com) had 629. Table 5.4 lists the full per-site results.
+**Real-world dataset (D_r).** NavA11y was then run on all 25 production websites of D_r. Across these sites it performed 9,544 element-level focus checks and detected 2,780 focus-behavior violations in total. Every one of the 25 sites had at least one violation, which shows that focus-behavior problems are not rare edge cases but are present on essentially all major websites we tested. The mean number of violations per site was 111.2, and the median was 76; the gap between the mean and the median shows that a few very large sites pull the average up. The least-affected site had a single violation, while the most-affected site (walmart.com) had 629. Table 5.3 lists the full per-site results.
 
-**Table 5.4: Per-site violation counts on D_r, broken down by criterion.**
+**Table 5.3: Per-site violation counts on D_r, broken down by criterion.**
 
 | Site | Total | 2.4.3 | 2.4.7 | 2.4.11 | 2.4.12 | 2.4.13 |
 | --- | --- | --- | --- | --- | --- | --- |
@@ -142,9 +138,9 @@ The per-criterion breakdown in Table 5.3 shows that this perfect score is not co
 | sciencedirect.com | 1 | 1 | 0 | 0 | 0 | 0 |
 | **Total** | **2,780** | **7** | **168** | **482** | **586** | **1,537** |
 
-Aggregating across all sites reveals a clear pattern in which criteria fail most often, shown in Table 5.5. SC 2.4.13 (Focus Appearance, AAA) is by far the most violated criterion, accounting for more than half of all violations. The two obscuration criteria (SC 2.4.12 and SC 2.4.11) together account for nearly two-fifths. SC 2.4.7 is comparatively rare, and SC 2.4.3 is rare in this corpus because most home pages have a reasonable tab order.
+Aggregating across all sites reveals a clear pattern in which criteria fail most often, shown in Table 5.4. SC 2.4.13 (Focus Appearance, AAA) is by far the most violated criterion, accounting for more than half of all violations. The two obscuration criteria (SC 2.4.12 and SC 2.4.11) together account for nearly two-fifths. SC 2.4.7 is comparatively rare, and SC 2.4.3 is rare in this corpus because most home pages have a reasonable tab order.
 
-**Table 5.5: Aggregate violations by criterion across D_r.**
+**Table 5.4: Aggregate violations by criterion across D_r.**
 
 | Criterion | Level | Violations | Share |
 | --- | --- | --- | --- |
@@ -156,24 +152,23 @@ Aggregating across all sites reveals a clear pattern in which criteria fail most
 
 ### 5.4.2 Visual Results
 
-This subsection presents the results graphically and through tool screenshots, because some patterns are easier to see in a figure than in a table.
+This subsection presents the visual evidence behind the verdicts, which the numeric tables in Section 5.4.1 cannot show on their own. The quantitative results are not repeated as charts here, because the confusion matrix, the per-criterion totals, and the per-site totals are already given exactly in Tables 5.1, 5.2, and 5.3.
 
-Figure 5.1 shows the confusion matrix of the labelled dataset as a 2×2 heat map; the off-diagonal cells are both zero, which visualises the absence of any error. Figure 5.2 is a bar chart of the aggregate violations by criterion from Table 5.5, which makes the dominance of SC 2.4.13 immediately visible. Figure 5.3 is a horizontal bar chart of total violations per site from Table 5.4, ordered from most to least affected, which shows the long-tailed distribution across the corpus.
-
-Figure 5.4 is a screenshot of the interactive HTML report that NavA11y generates for each site. The report lets a reviewer filter by criterion and shows an annotated screenshot of each flagged element, with the focus indicator and any obscuring overlay marked directly on the rendered page. These annotated screenshots are the visual evidence behind each verdict, and they are what a human reviewer inspects during the manual verification described in Section 5.6.
+Figure 5.1 is a screenshot of the interactive HTML report that NavA11y generates for each site. The report lets a reviewer filter by criterion and shows an annotated screenshot of each flagged element, with the focus indicator and any obscuring overlay marked directly on the rendered page. These annotated screenshots are the visual evidence behind each verdict, and they are what a human reviewer inspects during the manual verification described in Section 5.6.
 
 It is worth stating plainly which standard machine-learning figures are **not applicable** here. ROC curves and precision-recall curves require a tunable probability score, and learning curves require a training process over epochs. NavA11y has neither: it is deterministic and produces a hard pass/fail verdict with no score to sweep. Presenting such curves would be misleading, so they are deliberately omitted.
 
-> **Figure placeholders.** The figures referenced above should be exported from the data in this chapter and the generated reports, and placed in the `figures/` folder:
-> `fig5_1_confusion_matrix`, `fig5_2_violations_by_sc`, `fig5_3_violations_per_site`, `fig5_4_report_screenshot` (capture from any `reports/<site>/index.html`).
+![NavA11y interactive HTML report with annotated focus evidence.](figures/fig5_4_report_screenshot.png)
+
+**Figure 5.1:** NavA11y interactive HTML report with annotated focus evidence.
 
 ## 5.5 Comparative Analysis
 
 This section compares NavA11y with existing accessibility tools, because a new tool is only worth building if it does something the existing tools cannot. We compared NavA11y against four widely used automated checkers (axe-core, pa11y, Lighthouse, and QualWeb), focusing on the five focus-behavior criteria.
 
-The central finding is one of coverage. The existing tools are predominantly static analysers: they inspect the HTML, CSS, and ARIA attributes of a page, but they do not drive the keyboard, move focus from element to element, or measure the rendered visual state after focus. As a result, they have no rule at all for the three runtime criteria that NavA11y was built to evaluate, SC 2.4.11, SC 2.4.12, and SC 2.4.13, and they offer only partial, markup-level heuristics for SC 2.4.3 and SC 2.4.7. Table 5.6 summarises this coverage gap.
+The central finding is one of coverage. The existing tools are predominantly static analysers: they inspect the HTML, CSS, and ARIA attributes of a page, but they do not drive the keyboard, move focus from element to element, or measure the rendered visual state after focus. As a result, they have no rule at all for the three runtime criteria that NavA11y was built to evaluate, SC 2.4.11, SC 2.4.12, and SC 2.4.13, and they offer only partial, markup-level heuristics for SC 2.4.3 and SC 2.4.7. Table 5.5 summarises this coverage gap.
 
-**Table 5.6: Focus-behavior criterion coverage by tool.**
+**Table 5.5: Focus-behavior criterion coverage by tool.**
 
 | Criterion | axe-core | pa11y | Lighthouse | QualWeb | NavA11y |
 | --- | --- | --- | --- | --- | --- |
