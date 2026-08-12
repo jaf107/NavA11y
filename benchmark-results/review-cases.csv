@@ -1,0 +1,4 @@
+url,status,failCount,reason
+"https://www.fragrantica.com","error",N/A,"spawnSync /bin/sh ETIMEDOUT"
+"https://www.live.com","error",N/A,"Command failed: node /Users/abujafar.saifullah/Documents/projects/NavA11y/run-check.js ""https://www.live.com"""
+"https://www.yahoo.com","error",N/A,"Command failed: node /Users/abujafar.saifullah/Documents/projects/NavA11y/run-check.js ""https://www.yahoo.com"""

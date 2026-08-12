@@ -1,0 +1,469 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background: #f9f9f2;
+    padding: 48px 40px;
+    width: 860px;
+  }
+
+  h1 {
+    text-align: center;
+    font-size: 15px;
+    font-weight: 700;
+    color: #1a1a2e;
+    margin-bottom: 5px;
+    letter-spacing: 0.2px;
+  }
+  .subtitle {
+    text-align: center;
+    font-size: 11px;
+    color: #888;
+    margin-bottom: 20px;
+  }
+
+  .rq {
+    background: #1a1a2e;
+    color: #fff;
+    border-radius: 6px;
+    padding: 10px 18px;
+    font-size: 11.5px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  .rq strong { color: #f0c040; }
+
+  .flow { display: flex; flex-direction: column; align-items: center; gap: 0; }
+
+  .node {
+    background: #fff;
+    border: 1.5px solid #d0d0d0;
+    border-radius: 10px;
+    padding: 11px 20px;
+    text-align: center;
+    font-size: 12px;
+    color: #1a1a2e;
+    font-weight: 600;
+    min-width: 180px;
+    box-shadow: 0 1px 4px rgba(0,0,0,.07);
+  }
+  .node.accent {
+    border-color: #1a1a2e;
+    background: #1a1a2e;
+    color: #fff;
+  }
+  .node-title { font-size: 12.5px; font-weight: 700; margin-bottom: 4px; }
+  .node-sub { font-size: 10.5px; color: #666; font-weight: 400; line-height: 1.5; }
+  .node.accent .node-sub { color: #ccc; }
+
+  .cylinder {
+    background: #fdf3d0;
+    border: 1.5px solid #e6a817;
+    border-radius: 50px;
+    padding: 10px 24px;
+    text-align: center;
+    font-size: 11.5px;
+    font-weight: 700;
+    color: #7a4f00;
+    box-shadow: 0 1px 4px rgba(0,0,0,.07);
+  }
+  .cylinder .node-sub { color: #a06020; font-weight: 400; font-size: 10px; margin-top: 3px; }
+
+  .arrow {
+    width: 2px; background: #aaa; height: 22px;
+    position: relative; margin: 0 auto;
+  }
+  .arrow::after {
+    content: ''; position: absolute; bottom: -6px; left: -4px;
+    border-left: 5px solid transparent; border-right: 5px solid transparent;
+    border-top: 7px solid #aaa;
+  }
+
+  .phase-wrap {
+    border: 1.5px dashed #c8c89a;
+    border-radius: 12px;
+    background: #fefef5;
+    padding: 22px 18px 18px;
+    width: 100%;
+    position: relative;
+  }
+  .phase-label {
+    position: absolute; top: -10px; left: 16px;
+    background: #fefef5;
+    font-size: 10px; font-weight: 700; color: #888;
+    padding: 0 6px; letter-spacing: 0.5px; text-transform: uppercase;
+  }
+
+  /* ── Shape classification cards ── */
+  .shape-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 12px;
+    margin-bottom: 16px;
+  }
+
+  .shape-card {
+    background: #fff;
+    border: 1.5px solid #e0e0e0;
+    border-radius: 10px;
+    padding: 12px 10px 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+  }
+  .shape-card .sc-title {
+    font-size: 11px;
+    font-weight: 700;
+    color: #1a1a2e;
+    text-align: center;
+    line-height: 1.3;
+  }
+  .shape-card .sc-desc {
+    font-size: 10px;
+    color: #666;
+    text-align: center;
+    line-height: 1.5;
+  }
+  .shape-card .sc-tag {
+    font-size: 9px;
+    background: #eef4ff;
+    color: #2471a3;
+    border-radius: 20px;
+    padding: 2px 8px;
+    font-weight: 600;
+  }
+
+  /* convergence arrow row */
+  .converge {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-around;
+    position: relative;
+    height: 28px;
+    margin-bottom: 0;
+  }
+  .converge::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 12.5%;
+    right: 12.5%;
+    height: 1.5px;
+    background: #aaa;
+  }
+  .converge-tick {
+    width: 1.5px;
+    height: 18px;
+    background: #aaa;
+    position: relative;
+  }
+  .converge-tick::after {
+    content: ''; position: absolute; bottom: -5px; left: -4px;
+    border-left: 5px solid transparent; border-right: 5px solid transparent;
+    border-top: 6px solid #aaa;
+  }
+
+  /* probing section inside phase 1 */
+  .probe-box {
+    background: #fff;
+    border: 1.5px solid #d0d0d0;
+    border-radius: 8px;
+    padding: 12px 16px;
+    width: 100%;
+  }
+  .probe-box .pb-title {
+    font-size: 12px; font-weight: 700; color: #1a1a2e; margin-bottom: 8px;
+  }
+  .probe-steps {
+    display: flex;
+    gap: 0;
+    align-items: stretch;
+  }
+  .probe-step {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 0 8px;
+    position: relative;
+  }
+  .probe-step:not(:last-child)::after {
+    content: '→';
+    position: absolute;
+    right: -8px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #3498db;
+    font-weight: 700;
+    font-size: 14px;
+  }
+  .probe-step .ps-num {
+    width: 20px; height: 20px;
+    background: #1a1a2e; color: #fff;
+    border-radius: 50%;
+    font-size: 10px; font-weight: 700;
+    display: flex; align-items: center; justify-content: center;
+    margin-bottom: 5px; flex-shrink: 0;
+  }
+  .probe-step .ps-text {
+    font-size: 10px; color: #444; line-height: 1.4;
+  }
+
+  /* separator between sub-sections */
+  .phase-sep {
+    width: 100%; height: 1px; background: #e8e8d8; margin: 14px 0;
+  }
+  .phase-sub-label {
+    font-size: 9.5px; color: #aaa; font-weight: 700;
+    text-transform: uppercase; letter-spacing: 0.5px;
+    margin-bottom: 8px;
+  }
+
+  /* two-col eval */
+  .two-col { display: flex; gap: 16px; width: 100%; }
+  .col { flex: 1; }
+
+  .eval-card {
+    flex: 1;
+    background: #fff;
+    border: 1.5px solid #d0d0d0;
+    border-radius: 8px;
+    padding: 12px 14px;
+    font-size: 11px;
+  }
+  .eval-card .eval-title {
+    font-size: 11.5px; font-weight: 700; color: #1a1a2e; margin-bottom: 6px;
+  }
+  .eval-card.dd { border-color: #3498db; }
+  .eval-card.dd .eval-title { color: #2471a3; }
+  .eval-card.dr { border-color: #8e44ad; }
+  .eval-card.dr .eval-title { color: #7d3c98; }
+
+  .metrics { display: flex; gap: 12px; width: 100%; }
+  .metric {
+    flex: 1; background: #fff; border-radius: 8px;
+    padding: 10px 8px; text-align: center;
+    border: 1.5px solid #e0e0e0;
+    box-shadow: 0 1px 3px rgba(0,0,0,.05);
+  }
+  .metric .val { font-size: 18px; font-weight: 700; }
+  .metric .mlabel { font-size: 9.5px; color: #888; margin-top: 3px; line-height: 1.3; }
+
+  .contribution {
+    background: #eaf7ef;
+    border-left: 4px solid #27ae60;
+    border-radius: 6px;
+    padding: 12px 18px;
+    font-size: 11.5px; color: #1a472a; line-height: 1.7; width: 100%;
+  }
+  .contribution strong { color: #1a472a; }
+</style>
+</head>
+<body>
+
+<h1>Shape-Agnostic Focus Obscuration Analysis</h1>
+<p class="subtitle">Eliminating false positives in WCAG 2.4.11 / 2.4.12 detection for non-rectangular elements</p>
+
+<div class="rq">
+  <strong>RQ:</strong> Does shape-agnostic grid probing correctly classify WCAG 2.4.11/2.4.12 obscuration for non-rectangular focusable elements where bounding-box-based probing fails?
+</div>
+
+<div class="flow">
+
+  <!-- INPUT -->
+  <div class="node accent">
+    <div class="node-title">Focusable Element</div>
+    <div class="node-sub">Any non-rectangular focusable UI component<br>(circular, rounded, clipped, multi-line)</div>
+  </div>
+
+  <div class="arrow"></div>
+
+  <!-- PHASE 1 -->
+  <div class="phase-wrap">
+    <span class="phase-label">Phase 1 — Algorithm Design</span>
+
+    <!-- shape type classification -->
+    <div class="phase-sub-label">Step A — Shape Classification</div>
+    <div class="shape-grid">
+
+      <!-- Circular -->
+      <div class="shape-card">
+        <svg width="64" height="54" viewBox="0 0 64 54">
+          <rect x="4" y="7" width="56" height="40" fill="none" stroke="#e74c3c" stroke-width="1.5" stroke-dasharray="4,2" rx="2"/>
+          <circle cx="32" cy="27" r="18" fill="#fadbd8" stroke="#c0392b" stroke-width="1.5"/>
+          <circle cx="7" cy="10" r="3" fill="#e74c3c" opacity="0.5"/>
+          <circle cx="57" cy="10" r="3" fill="#e74c3c" opacity="0.5"/>
+          <circle cx="7" cy="44" r="3" fill="#e74c3c" opacity="0.5"/>
+          <circle cx="57" cy="44" r="3" fill="#e74c3c" opacity="0.5"/>
+          <text x="32" y="51" text-anchor="middle" font-size="7" fill="#888">bbox corners outside shape</text>
+        </svg>
+        <div class="sc-title">Circular / Oval</div>
+        <div class="sc-desc">Corners of the bounding box fall outside the circle — excluded from probing</div>
+        <div class="sc-tag">border-radius: 50%</div>
+      </div>
+
+      <!-- Rounded -->
+      <div class="shape-card">
+        <svg width="64" height="54" viewBox="0 0 64 54">
+          <rect x="4" y="7" width="56" height="40" fill="none" stroke="#e74c3c" stroke-width="1.5" stroke-dasharray="4,2" rx="2"/>
+          <rect x="8" y="11" width="48" height="32" fill="#d5f5e3" stroke="#27ae60" stroke-width="1.5" rx="12"/>
+          <circle cx="8" cy="11" r="3" fill="#e74c3c" opacity="0.4"/>
+          <circle cx="56" cy="11" r="3" fill="#e74c3c" opacity="0.4"/>
+          <circle cx="8" cy="43" r="3" fill="#e74c3c" opacity="0.4"/>
+          <circle cx="56" cy="43" r="3" fill="#e74c3c" opacity="0.4"/>
+          <text x="32" y="51" text-anchor="middle" font-size="7" fill="#888">small corners clipped</text>
+        </svg>
+        <div class="sc-title">Rounded Corners</div>
+        <div class="sc-desc">Corner areas cut by the radius curve — points there belong to the background</div>
+        <div class="sc-tag">border-radius</div>
+      </div>
+
+      <!-- Multi-line -->
+      <div class="shape-card">
+        <svg width="64" height="54" viewBox="0 0 64 54">
+          <rect x="4" y="5" width="56" height="44" fill="none" stroke="#e74c3c" stroke-width="1.5" stroke-dasharray="4,2" rx="2"/>
+          <rect x="8" y="9"  width="48" height="14" fill="#d6eaf8" stroke="#2471a3" stroke-width="1.2" rx="3"/>
+          <rect x="8" y="31" width="32" height="14" fill="#d6eaf8" stroke="#2471a3" stroke-width="1.2" rx="3"/>
+          <rect x="44" y="25" width="16" height="20" fill="none" stroke="#e74c3c" stroke-width="1" stroke-dasharray="3,2" opacity="0.5"/>
+          <text x="32" y="52" text-anchor="middle" font-size="7" fill="#888">gap between lines is empty</text>
+        </svg>
+        <div class="sc-title">Multi-line Text</div>
+        <div class="sc-desc">Link wraps across lines — the gap between lines and the short last line are not part of the element</div>
+        <div class="sc-tag">getClientRects()</div>
+      </div>
+
+      <!-- Clipped -->
+      <div class="shape-card">
+        <svg width="64" height="54" viewBox="0 0 64 54">
+          <rect x="4" y="5" width="56" height="44" fill="none" stroke="#e74c3c" stroke-width="1.5" stroke-dasharray="4,2" rx="2"/>
+          <polygon points="32,9 56,40 8,40" fill="#f9ebff" stroke="#8e44ad" stroke-width="1.5"/>
+          <circle cx="7"  cy="8"  r="3" fill="#e74c3c" opacity="0.4"/>
+          <circle cx="57" cy="8"  r="3" fill="#e74c3c" opacity="0.4"/>
+          <circle cx="7"  cy="46" r="3" fill="#e74c3c" opacity="0.4"/>
+          <circle cx="57" cy="46" r="3" fill="#e74c3c" opacity="0.4"/>
+          <text x="32" y="52" text-anchor="middle" font-size="7" fill="#888">clipped to polygon</text>
+        </svg>
+        <div class="sc-title">Custom Clip</div>
+        <div class="sc-desc">Element is masked to a polygon or custom path — points outside the mask boundary are ignored</div>
+        <div class="sc-tag">clip-path</div>
+      </div>
+
+    </div>
+
+    <!-- convergence lines -->
+    <div class="converge">
+      <div class="converge-tick"></div>
+      <div class="converge-tick"></div>
+      <div class="converge-tick"></div>
+      <div class="converge-tick"></div>
+    </div>
+
+    <!-- rendered shape output -->
+    <div style="display:flex;justify-content:center;margin-bottom:14px;">
+      <div class="cylinder">
+        Rendered Shape Boundary
+        <div class="node-sub">The actual area of the element — known per shape type</div>
+      </div>
+    </div>
+
+    <div class="phase-sep"></div>
+
+    <!-- probing pipeline -->
+    <div class="phase-sub-label">Step B — Shape-Agnostic Probing</div>
+    <div class="probe-box">
+      <div class="probe-steps">
+        <div class="probe-step">
+          <div class="ps-num">1</div>
+          <div class="ps-text">Generate uniform 7×7 grid across bounding box</div>
+        </div>
+        <div class="probe-step">
+          <div class="ps-num">2</div>
+          <div class="ps-text">Test each point — is it inside the rendered shape?</div>
+        </div>
+        <div class="probe-step">
+          <div class="ps-num">3</div>
+          <div class="ps-text">Skip points outside the shape boundary</div>
+        </div>
+        <div class="probe-step">
+          <div class="ps-num">4</div>
+          <div class="ps-text">Check remaining points for overlapping content</div>
+        </div>
+        <div class="probe-step">
+          <div class="ps-num">5</div>
+          <div class="ps-text">Obscuration = hidden shape points ÷ total shape points</div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="arrow"></div>
+
+  <!-- PHASE 2 -->
+  <div class="phase-wrap">
+    <span class="phase-label">Phase 2 — Evaluation</span>
+    <div class="two-col">
+
+      <div class="eval-card dd">
+        <div class="eval-title">Dd-v2 — Controlled Dataset</div>
+        <ul style="list-style:none;padding:0;font-size:10.5px;line-height:1.7">
+          <li>→ Circular buttons</li>
+          <li>→ Rounded-corner elements</li>
+          <li>→ Multi-line inline links</li>
+          <li>→ Clip-path clipped components</li>
+          <li style="margin-top:6px;color:#555;font-style:italic">Known ground-truth verdicts per element</li>
+        </ul>
+      </div>
+
+      <div class="eval-card dr">
+        <div class="eval-title">Baseline Comparison</div>
+        <ul style="list-style:none;padding:0;font-size:10.5px;line-height:1.7">
+          <li>→ Bbox-based probing (prior approach)</li>
+          <li>→ Shape-agnostic probing (proposed)</li>
+          <li>→ Same elements, same pages</li>
+          <li style="margin-top:6px;color:#555;font-style:italic">Compare precision + recall</li>
+        </ul>
+      </div>
+
+    </div>
+  </div>
+
+  <div class="arrow"></div>
+
+  <!-- METRICS -->
+  <div class="metrics">
+    <div class="metric">
+      <div class="val" style="color:#e74c3c">FP↓</div>
+      <div class="mlabel">False positives<br>eliminated</div>
+    </div>
+    <div class="metric">
+      <div class="val" style="color:#27ae60">TP=</div>
+      <div class="mlabel">True positives<br>preserved</div>
+    </div>
+    <div class="metric">
+      <div class="val" style="color:#3498db">P↑</div>
+      <div class="mlabel">Precision<br>improves</div>
+    </div>
+    <div class="metric">
+      <div class="val" style="color:#3498db">R=</div>
+      <div class="mlabel">Recall<br>unchanged</div>
+    </div>
+  </div>
+
+  <div class="arrow"></div>
+
+  <!-- CONTRIBUTION -->
+  <div class="contribution">
+    <strong>Contribution:</strong> Shape-agnostic obscuration analysis — probing only the rendered area of focusable elements — correctly classifies WCAG 2.4.11/2.4.12 violations for non-rectangular elements, where bounding-box probing produces systematic false positives.
+  </div>
+
+</div>
+</body>
+</html>

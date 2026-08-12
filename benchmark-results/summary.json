@@ -1,0 +1,395 @@
+{
+  "timestamp": "2026-05-02T15:48:11.438Z",
+  "config": {
+    "headless": false
+  },
+  "totalSites": 25,
+  "successful": 25,
+  "failed": 0,
+  "totalElapsedMinutes": 0,
+  "results": [
+    {
+      "url": "https://iit.du.ac.bd.",
+      "status": "ok",
+      "elapsed": 0,
+      "failCount": 65,
+      "elementChecks": 336,
+      "violationsBySc": {
+        "2.4.7": 22,
+        "2.4.13": 22,
+        "2.4.11": 10,
+        "2.4.12": 11
+      },
+      "reportPath": "reports/iit_du_ac_bd_",
+      "reportHtml": "reports/iit_du_ac_bd_/index.html",
+      "reportJson": "reports/iit_du_ac_bd_/results.json"
+    },
+    {
+      "url": "https://www.adp.com",
+      "status": "ok",
+      "elapsed": 0,
+      "failCount": 90,
+      "elementChecks": 492,
+      "violationsBySc": {
+        "2.4.13": 68,
+        "2.4.12": 13,
+        "2.4.11": 5,
+        "2.4.7": 4
+      },
+      "reportPath": "reports/www_adp_com",
+      "reportHtml": "reports/www_adp_com/index.html",
+      "reportJson": "reports/www_adp_com/results.json"
+    },
+    {
+      "url": "https://www.agoda.com",
+      "status": "ok",
+      "elapsed": 0,
+      "failCount": 103,
+      "elementChecks": 776,
+      "violationsBySc": {
+        "2.4.7": 4,
+        "2.4.13": 19,
+        "2.4.11": 24,
+        "2.4.12": 56
+      },
+      "reportPath": "reports/www_agoda_com",
+      "reportHtml": "reports/www_agoda_com/index.html",
+      "reportJson": "reports/www_agoda_com/results.json"
+    },
+    {
+      "url": "https://www.caliente.mx",
+      "status": "ok",
+      "elapsed": 0,
+      "failCount": 75,
+      "elementChecks": 232,
+      "violationsBySc": {
+        "2.4.7": 16,
+        "2.4.13": 58,
+        "2.4.12": 1
+      },
+      "reportPath": "reports/www_caliente_mx",
+      "reportHtml": "reports/www_caliente_mx/index.html",
+      "reportJson": "reports/www_caliente_mx/results.json"
+    },
+    {
+      "url": "https://www.capitalone.com",
+      "status": "ok",
+      "elapsed": 0,
+      "failCount": 83,
+      "elementChecks": 312,
+      "violationsBySc": {
+        "2.4.13": 73,
+        "2.4.7": 8,
+        "2.4.11": 1,
+        "2.4.12": 1
+      },
+      "reportPath": "reports/www_capitalone_com",
+      "reportHtml": "reports/www_capitalone_com/index.html",
+      "reportJson": "reports/www_capitalone_com/results.json"
+    },
+    {
+      "url": "https://www.cricbuzz.com",
+      "status": "ok",
+      "elapsed": 0,
+      "failCount": 288,
+      "elementChecks": 808,
+      "violationsBySc": {
+        "2.4.3": 1,
+        "2.4.13": 202,
+        "2.4.11": 39,
+        "2.4.12": 40,
+        "2.4.7": 6
+      },
+      "reportPath": "reports/www_cricbuzz_com",
+      "reportHtml": "reports/www_cricbuzz_com/index.html",
+      "reportJson": "reports/www_cricbuzz_com/results.json"
+    },
+    {
+      "url": "https://www.discord.com",
+      "status": "ok",
+      "elapsed": 0,
+      "failCount": 25,
+      "elementChecks": 200,
+      "violationsBySc": {
+        "2.4.12": 1,
+        "2.4.7": 1,
+        "2.4.13": 23
+      },
+      "reportPath": "reports/www_discord_com",
+      "reportHtml": "reports/www_discord_com/index.html",
+      "reportJson": "reports/www_discord_com/results.json"
+    },
+    {
+      "url": "https://www.doubleclick.net",
+      "status": "ok",
+      "elapsed": 0,
+      "failCount": 18,
+      "elementChecks": 200,
+      "violationsBySc": {
+        "2.4.12": 5,
+        "2.4.13": 13
+      },
+      "reportPath": "reports/www_doubleclick_net",
+      "reportHtml": "reports/www_doubleclick_net/index.html",
+      "reportJson": "reports/www_doubleclick_net/results.json"
+    },
+    {
+      "url": "https://www.ebay.com",
+      "status": "ok",
+      "elapsed": 0,
+      "failCount": 107,
+      "elementChecks": 416,
+      "violationsBySc": {
+        "2.4.3": 1,
+        "2.4.13": 103,
+        "2.4.7": 1,
+        "2.4.12": 2
+      },
+      "reportPath": "reports/www_ebay_com",
+      "reportHtml": "reports/www_ebay_com/index.html",
+      "reportJson": "reports/www_ebay_com/results.json"
+    },
+    {
+      "url": "https://www.genius.com",
+      "status": "ok",
+      "elapsed": 0,
+      "failCount": 250,
+      "elementChecks": 572,
+      "violationsBySc": {
+        "2.4.3": 1,
+        "2.4.13": 143,
+        "2.4.7": 40,
+        "2.4.11": 33,
+        "2.4.12": 33
+      },
+      "reportPath": "reports/www_genius_com",
+      "reportHtml": "reports/www_genius_com/index.html",
+      "reportJson": "reports/www_genius_com/results.json"
+    },
+    {
+      "url": "https://www.google.com",
+      "status": "ok",
+      "elapsed": 0,
+      "failCount": 23,
+      "elementChecks": 80,
+      "violationsBySc": {
+        "2.4.13": 20,
+        "2.4.12": 1,
+        "2.4.7": 2
+      },
+      "reportPath": "reports/www_google_com",
+      "reportHtml": "reports/www_google_com/index.html",
+      "reportJson": "reports/www_google_com/results.json"
+    },
+    {
+      "url": "https://www.nih.gov",
+      "status": "ok",
+      "elapsed": 0,
+      "failCount": 3,
+      "elementChecks": 228,
+      "violationsBySc": {
+        "2.4.13": 3
+      },
+      "reportPath": "reports/www_nih_gov",
+      "reportHtml": "reports/www_nih_gov/index.html",
+      "reportJson": "reports/www_nih_gov/results.json"
+    },
+    {
+      "url": "https://www.openai.com",
+      "status": "ok",
+      "elapsed": 0,
+      "failCount": 102,
+      "elementChecks": 316,
+      "violationsBySc": {
+        "2.4.7": 20,
+        "2.4.13": 78,
+        "2.4.12": 3,
+        "2.4.11": 1
+      },
+      "reportPath": "reports/www_openai_com",
+      "reportHtml": "reports/www_openai_com/index.html",
+      "reportJson": "reports/www_openai_com/results.json"
+    },
+    {
+      "url": "https://www.progressive.com",
+      "status": "ok",
+      "elapsed": 0,
+      "failCount": 3,
+      "elementChecks": 280,
+      "violationsBySc": {
+        "2.4.7": 1,
+        "2.4.13": 2
+      },
+      "reportPath": "reports/www_progressive_com",
+      "reportHtml": "reports/www_progressive_com/index.html",
+      "reportJson": "reports/www_progressive_com/results.json"
+    },
+    {
+      "url": "https://www.qualtrics.com",
+      "status": "ok",
+      "elapsed": 0,
+      "failCount": 93,
+      "elementChecks": 380,
+      "violationsBySc": {
+        "2.4.13": 45,
+        "2.4.12": 25,
+        "2.4.11": 19,
+        "2.4.7": 4
+      },
+      "reportPath": "reports/www_qualtrics_com",
+      "reportHtml": "reports/www_qualtrics_com/index.html",
+      "reportJson": "reports/www_qualtrics_com/results.json"
+    },
+    {
+      "url": "https://www.samsung.com",
+      "status": "ok",
+      "elapsed": 0,
+      "failCount": 19,
+      "elementChecks": 328,
+      "violationsBySc": {
+        "2.4.13": 18,
+        "2.4.12": 1
+      },
+      "reportPath": "reports/www_samsung_com",
+      "reportHtml": "reports/www_samsung_com/index.html",
+      "reportJson": "reports/www_samsung_com/results.json"
+    },
+    {
+      "url": "https://www.sciencedirect.com",
+      "status": "ok",
+      "elapsed": 0,
+      "failCount": 1,
+      "elementChecks": 36,
+      "violationsBySc": {
+        "2.4.3": 1
+      },
+      "reportPath": "reports/www_sciencedirect_com",
+      "reportHtml": "reports/www_sciencedirect_com/index.html",
+      "reportJson": "reports/www_sciencedirect_com/results.json"
+    },
+    {
+      "url": "https://www.shein.com",
+      "status": "ok",
+      "elapsed": 0,
+      "failCount": 172,
+      "elementChecks": 340,
+      "violationsBySc": {
+        "2.4.3": 1,
+        "2.4.11": 81,
+        "2.4.12": 82,
+        "2.4.7": 4,
+        "2.4.13": 4
+      },
+      "reportPath": "reports/www_shein_com",
+      "reportHtml": "reports/www_shein_com/index.html",
+      "reportJson": "reports/www_shein_com/results.json"
+    },
+    {
+      "url": "https://www.stackoverflow.com",
+      "status": "ok",
+      "elapsed": 0,
+      "failCount": 239,
+      "elementChecks": 812,
+      "violationsBySc": {
+        "2.4.3": 1,
+        "2.4.12": 73,
+        "2.4.11": 48,
+        "2.4.13": 117
+      },
+      "reportPath": "reports/www_stackoverflow_com",
+      "reportHtml": "reports/www_stackoverflow_com/index.html",
+      "reportJson": "reports/www_stackoverflow_com/results.json"
+    },
+    {
+      "url": "https://www.steamcommunity.com",
+      "status": "ok",
+      "elapsed": 0,
+      "failCount": 200,
+      "elementChecks": 736,
+      "violationsBySc": {
+        "2.4.13": 184,
+        "2.4.11": 5,
+        "2.4.12": 8,
+        "2.4.7": 3
+      },
+      "reportPath": "reports/www_steamcommunity_com",
+      "reportHtml": "reports/www_steamcommunity_com/index.html",
+      "reportJson": "reports/www_steamcommunity_com/results.json"
+    },
+    {
+      "url": "https://www.usps.com",
+      "status": "ok",
+      "elapsed": 0,
+      "failCount": 57,
+      "elementChecks": 300,
+      "violationsBySc": {
+        "2.4.13": 34,
+        "2.4.11": 3,
+        "2.4.12": 4,
+        "2.4.7": 16
+      },
+      "reportPath": "reports/www_usps_com",
+      "reportHtml": "reports/www_usps_com/index.html",
+      "reportJson": "reports/www_usps_com/results.json"
+    },
+    {
+      "url": "https://www.walmart.com",
+      "status": "ok",
+      "elapsed": 0,
+      "failCount": 629,
+      "elementChecks": 880,
+      "violationsBySc": {
+        "2.4.3": 1,
+        "2.4.11": 211,
+        "2.4.12": 219,
+        "2.4.13": 190,
+        "2.4.7": 8
+      },
+      "reportPath": "reports/www_walmart_com",
+      "reportHtml": "reports/www_walmart_com/index.html",
+      "reportJson": "reports/www_walmart_com/results.json"
+    },
+    {
+      "url": "https://www.wikipedia.org",
+      "status": "ok",
+      "elapsed": 0,
+      "failCount": 30,
+      "elementChecks": 132,
+      "violationsBySc": {
+        "2.4.13": 30
+      },
+      "reportPath": "reports/www_wikipedia_org",
+      "reportHtml": "reports/www_wikipedia_org/index.html",
+      "reportJson": "reports/www_wikipedia_org/results.json"
+    },
+    {
+      "url": "https://www.youtube.com",
+      "status": "ok",
+      "elapsed": 0,
+      "failCount": 29,
+      "elementChecks": 48,
+      "violationsBySc": {
+        "2.4.11": 2,
+        "2.4.12": 7,
+        "2.4.7": 8,
+        "2.4.13": 12
+      },
+      "reportPath": "reports/www_youtube_com",
+      "reportHtml": "reports/www_youtube_com/index.html",
+      "reportJson": "reports/www_youtube_com/results.json"
+    },
+    {
+      "url": "https://www.zerodha.com",
+      "status": "ok",
+      "elapsed": 0,
+      "failCount": 76,
+      "elementChecks": 304,
+      "violationsBySc": {
+        "2.4.13": 76
+      },
+      "reportPath": "reports/www_zerodha_com",
+      "reportHtml": "reports/www_zerodha_com/index.html",
+      "reportJson": "reports/www_zerodha_com/results.json"
+    }
+  ]
+}
