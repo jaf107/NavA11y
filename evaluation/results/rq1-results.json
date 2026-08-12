@@ -1,0 +1,572 @@
+{
+  "timestamp": "2026-06-26T16:58:01.742Z",
+  "dataset": "GDS accessibility-tool-audit (expanded)",
+  "totalTests": 22,
+  "totalAssertions": 32,
+  "metrics": {
+    "precision": 1,
+    "recall": 1,
+    "f1": 1,
+    "accuracy": 1,
+    "confusionMatrix": {
+      "TP": 14,
+      "TN": 18,
+      "FP": 0,
+      "FN": 0
+    }
+  },
+  "perSC": {
+    "2.4.7": {
+      "TP": 2,
+      "TN": 13,
+      "FP": 0,
+      "FN": 0
+    },
+    "2.4.3": {
+      "TP": 4,
+      "TN": 1,
+      "FP": 0,
+      "FN": 0
+    },
+    "2.4.13": {
+      "TP": 4,
+      "TN": 4,
+      "FP": 0,
+      "FN": 0
+    },
+    "2.4.11": {
+      "TP": 2,
+      "TN": 0,
+      "FP": 0,
+      "FN": 0
+    },
+    "2.4.12": {
+      "TP": 2,
+      "TN": 0,
+      "FP": 0,
+      "FN": 0
+    }
+  },
+  "details": [
+    {
+      "id": 1,
+      "name": "Keyboard focus is not indicated visually",
+      "sc": "2.4.7",
+      "expected": "FAIL",
+      "actual": "FAIL",
+      "verdict": "TP",
+      "category": "original"
+    },
+    {
+      "id": 2,
+      "name": "Focus not visible (border regression)",
+      "sc": "2.4.7",
+      "expected": "FAIL",
+      "actual": "FAIL",
+      "verdict": "TP",
+      "category": "original"
+    },
+    {
+      "id": 3,
+      "name": "Focus order in wrong order (CSS float)",
+      "sc": "2.4.3",
+      "expected": "FAIL",
+      "actual": "FAIL",
+      "verdict": "TP",
+      "category": "original"
+    },
+    {
+      "id": 4,
+      "name": "Tabindex greater than 0",
+      "sc": "2.4.3",
+      "expected": "FAIL",
+      "actual": "FAIL",
+      "verdict": "TP",
+      "category": "original"
+    },
+    {
+      "id": 5,
+      "name": "Keyboard trap",
+      "sc": "2.4.3",
+      "expected": "FAIL",
+      "actual": "FAIL",
+      "verdict": "TP",
+      "category": "original"
+    },
+    {
+      "id": 6,
+      "name": "Non-focusable element with tabindex=0 (TN)",
+      "sc": "2.4.7",
+      "expected": "PASS",
+      "actual": "PASS",
+      "verdict": "TN",
+      "category": "original"
+    },
+    {
+      "id": 7,
+      "name": "Focus visible using box shadow",
+      "sc": "2.4.7",
+      "expected": "PASS",
+      "actual": "PASS",
+      "verdict": "TN",
+      "category": "contributed"
+    },
+    {
+      "id": 8,
+      "name": "Focus visible using background colour change",
+      "sc": "2.4.7",
+      "expected": "PASS",
+      "actual": "PASS",
+      "verdict": "TN",
+      "category": "contributed"
+    },
+    {
+      "id": 9,
+      "name": "Focus visible using text decoration",
+      "sc": "2.4.7",
+      "expected": "PASS",
+      "actual": "PASS",
+      "verdict": "TN",
+      "category": "contributed"
+    },
+    {
+      "id": 10,
+      "name": "Focus visible using border increase",
+      "sc": "2.4.7",
+      "expected": "PASS",
+      "actual": "PASS",
+      "verdict": "TN",
+      "category": "contributed"
+    },
+    {
+      "id": 11,
+      "name": "Focus order with skip link (positive tabindex)",
+      "sc": "2.4.3",
+      "expected": "FAIL",
+      "actual": "FAIL",
+      "verdict": "TP",
+      "category": "contributed"
+    },
+    {
+      "id": 12,
+      "name": "Focus order matches visual order",
+      "sc": "2.4.3",
+      "expected": "PASS",
+      "actual": "PASS",
+      "verdict": "TN",
+      "category": "contributed"
+    },
+    {
+      "id": 13,
+      "name": "Focus appearance — outline insufficient contrast",
+      "sc": "2.4.7",
+      "expected": "PASS",
+      "actual": "PASS",
+      "verdict": "TN",
+      "category": "contributed"
+    },
+    {
+      "id": 13,
+      "name": "Focus appearance — outline insufficient contrast",
+      "sc": "2.4.13",
+      "expected": "FAIL",
+      "actual": "FAIL",
+      "verdict": "TP",
+      "category": "contributed"
+    },
+    {
+      "id": 14,
+      "name": "Focus appearance — background sufficient contrast",
+      "sc": "2.4.7",
+      "expected": "PASS",
+      "actual": "PASS",
+      "verdict": "TN",
+      "category": "contributed"
+    },
+    {
+      "id": 14,
+      "name": "Focus appearance — background sufficient contrast",
+      "sc": "2.4.13",
+      "expected": "PASS",
+      "actual": "PASS",
+      "verdict": "TN",
+      "category": "contributed"
+    },
+    {
+      "id": 15,
+      "name": "Focus appearance — border sufficient width and contrast",
+      "sc": "2.4.7",
+      "expected": "PASS",
+      "actual": "PASS",
+      "verdict": "TN",
+      "category": "contributed"
+    },
+    {
+      "id": 15,
+      "name": "Focus appearance — border sufficient width and contrast",
+      "sc": "2.4.13",
+      "expected": "PASS",
+      "actual": "PASS",
+      "verdict": "TN",
+      "category": "contributed"
+    },
+    {
+      "id": 16,
+      "name": "Focus obscured by fixed footer",
+      "sc": "2.4.11",
+      "expected": "FAIL",
+      "actual": "FAIL",
+      "verdict": "TP",
+      "category": "contributed"
+    },
+    {
+      "id": 16,
+      "name": "Focus obscured by fixed footer",
+      "sc": "2.4.12",
+      "expected": "FAIL",
+      "actual": "FAIL",
+      "verdict": "TP",
+      "category": "contributed"
+    },
+    {
+      "id": 17,
+      "name": "Focus obscured by cookie banner",
+      "sc": "2.4.11",
+      "expected": "FAIL",
+      "actual": "FAIL",
+      "verdict": "TP",
+      "category": "contributed"
+    },
+    {
+      "id": 17,
+      "name": "Focus obscured by cookie banner",
+      "sc": "2.4.12",
+      "expected": "FAIL",
+      "actual": "FAIL",
+      "verdict": "TP",
+      "category": "contributed"
+    },
+    {
+      "id": 18,
+      "name": "Focus appearance — outline insufficient width (1px)",
+      "sc": "2.4.7",
+      "expected": "PASS",
+      "actual": "PASS",
+      "verdict": "TN",
+      "category": "contributed"
+    },
+    {
+      "id": 18,
+      "name": "Focus appearance — outline insufficient width (1px)",
+      "sc": "2.4.13",
+      "expected": "FAIL",
+      "actual": "FAIL",
+      "verdict": "TP",
+      "category": "contributed"
+    },
+    {
+      "id": 19,
+      "name": "Focus appearance — outline sufficient width and contrast",
+      "sc": "2.4.7",
+      "expected": "PASS",
+      "actual": "PASS",
+      "verdict": "TN",
+      "category": "contributed"
+    },
+    {
+      "id": 19,
+      "name": "Focus appearance — outline sufficient width and contrast",
+      "sc": "2.4.13",
+      "expected": "PASS",
+      "actual": "PASS",
+      "verdict": "TN",
+      "category": "contributed"
+    },
+    {
+      "id": 20,
+      "name": "Focus appearance — background insufficient contrast",
+      "sc": "2.4.7",
+      "expected": "PASS",
+      "actual": "PASS",
+      "verdict": "TN",
+      "category": "contributed"
+    },
+    {
+      "id": 20,
+      "name": "Focus appearance — background insufficient contrast",
+      "sc": "2.4.13",
+      "expected": "FAIL",
+      "actual": "FAIL",
+      "verdict": "TP",
+      "category": "contributed"
+    },
+    {
+      "id": 21,
+      "name": "Focus appearance — border insufficient width (1px increase)",
+      "sc": "2.4.7",
+      "expected": "PASS",
+      "actual": "PASS",
+      "verdict": "TN",
+      "category": "contributed"
+    },
+    {
+      "id": 21,
+      "name": "Focus appearance — border insufficient width (1px increase)",
+      "sc": "2.4.13",
+      "expected": "FAIL",
+      "actual": "FAIL",
+      "verdict": "TP",
+      "category": "contributed"
+    },
+    {
+      "id": 22,
+      "name": "Focus appearance — outline offset sufficient",
+      "sc": "2.4.7",
+      "expected": "PASS",
+      "actual": "PASS",
+      "verdict": "TN",
+      "category": "contributed"
+    },
+    {
+      "id": 22,
+      "name": "Focus appearance — outline offset sufficient",
+      "sc": "2.4.13",
+      "expected": "PASS",
+      "actual": "PASS",
+      "verdict": "TN",
+      "category": "contributed"
+    }
+  ],
+  "groundTruth": [
+    {
+      "id": 1,
+      "name": "Keyboard focus is not indicated visually",
+      "file": "tests/keyboard-access-keyboard-focus-is-not-indicated-visually.html",
+      "expected": {
+        "2.4.7": "FAIL"
+      },
+      "wcagRef": "G149, G195",
+      "category": "original"
+    },
+    {
+      "id": 2,
+      "name": "Focus not visible (border regression)",
+      "file": "tests/colour-and-contrast-focus-not-visible.html",
+      "expected": {
+        "2.4.7": "FAIL"
+      },
+      "wcagRef": "F78",
+      "category": "original"
+    },
+    {
+      "id": 3,
+      "name": "Focus order in wrong order (CSS float)",
+      "file": "tests/keyboard-access-focus-order-in-wrong-order.html",
+      "expected": {
+        "2.4.3": "FAIL"
+      },
+      "wcagRef": "C27",
+      "category": "original"
+    },
+    {
+      "id": 4,
+      "name": "Tabindex greater than 0",
+      "file": "tests/keyboard-access-tabindex-greater-than-0.html",
+      "expected": {
+        "2.4.3": "FAIL"
+      },
+      "wcagRef": "F44",
+      "category": "original"
+    },
+    {
+      "id": 5,
+      "name": "Keyboard trap",
+      "file": "example-pages/keyboardtrap.html",
+      "expected": {
+        "2.4.3": "FAIL"
+      },
+      "wcagRef": "F55",
+      "category": "original"
+    },
+    {
+      "id": 6,
+      "name": "Non-focusable element with tabindex=0 (TN)",
+      "file": "tests/keyboard-access-keyboard-focus-assigned-to-a-non-focusable-element-using-tabindex0.html",
+      "expected": {
+        "2.4.7": "PASS"
+      },
+      "wcagRef": "best-practice",
+      "category": "original"
+    },
+    {
+      "id": 7,
+      "name": "Focus visible using box shadow",
+      "file": "tests/focus-visible-using-box-shadow.html",
+      "expected": {
+        "2.4.7": "PASS"
+      },
+      "wcagRef": "G195",
+      "category": "contributed"
+    },
+    {
+      "id": 8,
+      "name": "Focus visible using background colour change",
+      "file": "tests/focus-visible-using-background-colour-change.html",
+      "expected": {
+        "2.4.7": "PASS"
+      },
+      "wcagRef": "G195",
+      "category": "contributed"
+    },
+    {
+      "id": 9,
+      "name": "Focus visible using text decoration",
+      "file": "tests/focus-visible-using-text-decoration.html",
+      "expected": {
+        "2.4.7": "PASS"
+      },
+      "wcagRef": "G195",
+      "category": "contributed"
+    },
+    {
+      "id": 10,
+      "name": "Focus visible using border increase",
+      "file": "tests/focus-visible-using-border-increase.html",
+      "expected": {
+        "2.4.7": "PASS"
+      },
+      "wcagRef": "G195",
+      "category": "contributed"
+    },
+    {
+      "id": 11,
+      "name": "Focus order with skip link (positive tabindex)",
+      "file": "tests/focus-order-correct-with-skip-link.html",
+      "expected": {
+        "2.4.3": "FAIL"
+      },
+      "wcagRef": "G1, G124, F44",
+      "category": "contributed"
+    },
+    {
+      "id": 12,
+      "name": "Focus order matches visual order",
+      "file": "tests/focus-order-matches-visual-order.html",
+      "expected": {
+        "2.4.3": "PASS"
+      },
+      "wcagRef": "C27, G59",
+      "category": "contributed"
+    },
+    {
+      "id": 13,
+      "name": "Focus appearance — outline insufficient contrast",
+      "file": "tests/focus-appearance-outline-insufficient-contrast.html",
+      "expected": {
+        "2.4.7": "PASS",
+        "2.4.13": "FAIL"
+      },
+      "wcagRef": "C40",
+      "category": "contributed"
+    },
+    {
+      "id": 14,
+      "name": "Focus appearance — background sufficient contrast",
+      "file": "tests/focus-appearance-background-sufficient-contrast.html",
+      "expected": {
+        "2.4.7": "PASS",
+        "2.4.13": "PASS"
+      },
+      "wcagRef": "C41",
+      "category": "contributed"
+    },
+    {
+      "id": 15,
+      "name": "Focus appearance — border sufficient width and contrast",
+      "file": "tests/focus-appearance-border-sufficient-width-and-contrast.html",
+      "expected": {
+        "2.4.7": "PASS",
+        "2.4.13": "PASS"
+      },
+      "wcagRef": "C40",
+      "category": "contributed"
+    },
+    {
+      "id": 16,
+      "name": "Focus obscured by fixed footer",
+      "file": "tests/focus-obscured-by-fixed-footer.html",
+      "expected": {
+        "2.4.11": "FAIL",
+        "2.4.12": "FAIL"
+      },
+      "wcagRef": "F110, C43",
+      "category": "contributed"
+    },
+    {
+      "id": 17,
+      "name": "Focus obscured by cookie banner",
+      "file": "tests/focus-obscured-by-cookie-banner.html",
+      "expected": {
+        "2.4.11": "FAIL",
+        "2.4.12": "FAIL"
+      },
+      "wcagRef": "F110",
+      "category": "contributed"
+    },
+    {
+      "id": 18,
+      "name": "Focus appearance — outline insufficient width (1px)",
+      "file": "tests/focus-appearance-outline-insufficient-width.html",
+      "expected": {
+        "2.4.7": "PASS",
+        "2.4.13": "FAIL"
+      },
+      "wcagRef": "C40",
+      "category": "contributed"
+    },
+    {
+      "id": 19,
+      "name": "Focus appearance — outline sufficient width and contrast",
+      "file": "tests/focus-appearance-outline-sufficient-width-and-contrast.html",
+      "expected": {
+        "2.4.7": "PASS",
+        "2.4.13": "PASS"
+      },
+      "wcagRef": "C40",
+      "category": "contributed"
+    },
+    {
+      "id": 20,
+      "name": "Focus appearance — background insufficient contrast",
+      "file": "tests/focus-appearance-background-insufficient-contrast.html",
+      "expected": {
+        "2.4.7": "PASS",
+        "2.4.13": "FAIL"
+      },
+      "wcagRef": "C41",
+      "category": "contributed"
+    },
+    {
+      "id": 21,
+      "name": "Focus appearance — border insufficient width (1px increase)",
+      "file": "tests/focus-appearance-border-insufficient-width.html",
+      "expected": {
+        "2.4.7": "PASS",
+        "2.4.13": "FAIL"
+      },
+      "wcagRef": "C40",
+      "category": "contributed"
+    },
+    {
+      "id": 22,
+      "name": "Focus appearance — outline offset sufficient",
+      "file": "tests/focus-appearance-outline-offset-sufficient.html",
+      "expected": {
+        "2.4.7": "PASS",
+        "2.4.13": "PASS"
+      },
+      "wcagRef": "C42",
+      "category": "contributed"
+    }
+  ]
+}

@@ -79,6 +79,32 @@ For element-level records with `sc: "2.4.11"` or `sc: "2.4.12"`, `evidence.obscu
 
 `zIndex` is the string `"auto"` when the computed value is `auto`, otherwise an integer. `obscurers` is an empty array on PASS records with no detected obscurer and on REVIEW records with missing obscuration data.
 
+||||||| 49fd242
+### Evidence schema — style snapshots (SC 2.4.7 / 2.4.13)
+
+For element-level records with `sc: "2.4.7"` or `sc: "2.4.13"` and `result: "FAIL" | "REVIEW"`, `evidence.styleSnapshots` contains the raw computed-style snapshots captured before and after focus:
+
+```json
+"evidence": {
+  "styleSnapshots": {
+    "before": {
+      "outlineStyle": "none", "outlineWidth": 0, "outlineColor": "rgb(...)", "outlineOffset": 0,
+      "boxShadow": "none",
+      "borderTopWidth": 0, "borderTopColor": "rgb(...)", "borderColor": "rgb(...)",
+      "backgroundColor": "rgb(...)", "color": "rgb(...)", "opacity": 1,
+      "transform": "none", "visibility": "visible", "display": "inline-block",
+      "textDecoration": "none", "textDecorationColor": "rgb(...)",
+      "fontWeight": "400", "position": "static", "zIndex": "auto",
+      "transition": "all 0s ease 0s", "filter": "none",
+      "clip": "auto", "clipPath": "none"
+    },
+    "after": { ...same shape, post-focus values... }
+  }
+}
+```
+
+Absent on PASS records and on other SCs. Consumers should treat the field as optional for forward compat with older reports.
+
 ## Datasets
 
 ### D_d — Focus Behavior Dataset (Synthetic, Labeled)
