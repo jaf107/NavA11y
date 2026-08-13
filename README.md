@@ -72,8 +72,6 @@ Page-level records for SC 2.4.3 with `result: "FAIL"` or `result: "REVIEW"` expo
 
 Skip links (anchors targeting `#…` with conventional class/id patterns) are exempt and therefore excluded from this array.
 
-||||||| 49fd242
-||||||| f953cc2
 ### Evidence schema — obscurer details (SC 2.4.11 / 2.4.12)
 
 For element-level records with `sc: "2.4.11"` or `sc: "2.4.12"`, `evidence.obscurers` lists each distinct element detected as obscuring the focused target, with full positional + stacking context needed by repair tooling. The pre-existing `evidence.obscuredBy` array (selector strings only) is retained for backwards compatibility.
