@@ -95,7 +95,6 @@ For element-level records with `sc: "2.4.11"` or `sc: "2.4.12"`, `evidence.obscu
 
 `zIndex` is the string `"auto"` when the computed value is `auto`, otherwise an integer. `obscurers` is an empty array on PASS records with no detected obscurer and on REVIEW records with missing obscuration data.
 
-||||||| 49fd242
 ### Evidence schema — style snapshots (SC 2.4.7 / 2.4.13)
 
 For element-level records with `sc: "2.4.7"` or `sc: "2.4.13"` and `result: "FAIL" | "REVIEW"`, `evidence.styleSnapshots` contains the raw computed-style snapshots captured before and after focus:
